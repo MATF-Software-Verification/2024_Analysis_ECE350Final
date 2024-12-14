@@ -62,7 +62,7 @@ Da biste pokrenuli testove, pratite sledeće korake:
     ```
 
 Ovim postupkom možete pokrenuti testove i generisati izveštaje o pokrivenosti koda.
-## Valgrind
+## Pokretanje programa
 Napomena: pre pokretanja svih Valgrind alata neophodno je:
 1. Klonirajte projekat pomoću sledeće komande:
     ```bash
@@ -72,14 +72,13 @@ Napomena: pre pokretanja svih Valgrind alata neophodno je:
     ```bash
     cd src
     ```
-
 3. Pokrenuti program naredbom:
     ```bash
     make
     ```
 
 ## Valgrind Memcheck
-Nakon sto ste pokrenuli program kao sto je opisano u delu Valgrind, potrebno je da:
+Nakon sto ste pokrenuli program kao sto je opisano u delu **Pokretanje programa**, potrebno je da:
 
 1. Instalacija potrebnih alata
 
@@ -104,7 +103,7 @@ Nakon sto ste pokrenuli program kao sto je opisano u delu Valgrind, potrebno je 
 Kada pokrenete skriptu na ovaj način, **Valgrind** analizira vaš program tokom njegove izvršne faze. To znači da će se sam program pokrenuti i izvršavati dok Valgrind prati memorijske greške. Potrebno je poznavati pravila igre, kako bi bilo moguce da se skript izvrsi do kraja.
 
 ## Valgrind Callgrind
-Nakon sto ste pokrenuli program kao sto je opisano u delu Valgrind, potrebno je da:
+Nakon sto ste pokrenuli program kao sto je opisano u delu **Pokretanje programa**, potrebno je da:
 1. Instalacija potrebnih alata
 
    ```bash
@@ -130,7 +129,7 @@ Pokretanje skripte će se sam program pokrenuti i izvršavati pa je potrebno je 
 
 ## Valgrind Massif
 
-Nakon sto ste pokrenuli program kao sto je opisano u delu Valgrind, potrebno je da:
+Nakon sto ste pokrenuli program kao sto je opisano u delu **Pokretanje programa**, potrebno je da:
 1. Instalacija potrebnih alata
 
    ```bash
