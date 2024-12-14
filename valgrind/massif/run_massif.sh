@@ -6,7 +6,7 @@ program=../../src/Durak
 pid=$$
 
 # Define output file names with PID
-massif_out_file="massif_${pid}.out"
+massif_out_file="massif_${pid}.txt"
 ms_print_out_file="ms_print_${pid}.txt"
 
 out_file="ms_print_${pid}.txt"
