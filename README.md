@@ -68,14 +68,16 @@ Napomena: pre pokretanja svih Valgrind alata neophodno je:
     ```bash
     git clone https://github.com/MATF-Software-Verification/2024_Analysis_ECE350Final.git
     ```
-2. Pozicionirati se src folder:
+2. Pozicionirati se u `src` folder:
     ```bash
     cd src
     ```
-3.Pokrenuti program naredbom:
-     ```bash
+
+3. Pokrenuti program naredbom:
+    ```bash
     make
     ```
+
 ## Valgrind Memcheck
 Nakon sto ste pokrenuli program kao sto je opisano u delu Valgrind, potrebno je da:
 
@@ -199,17 +201,17 @@ Da biste pokrenuli CppCheck , pratite sledeće korake:
     ```bash
     cd cppcheck
     ```
-4. Dodajte **+x** privilegiju za skriptu `run_cppcheck.sh`:
+4. Dodajte **+x** privilegiju za skriptu `run_cppCheck.sh`:
     ```bash
-    chmod +x run_cppcheck.sh
+    chmod +x run_cppCheck.sh
     ```
 
 5. Pokrenite skipt:
     ```bash
-    ./run_cppcheck.sh
+    ./run_cppCheck.sh
     ```
 ## Zaključak
-Rezultate primene svih alata kao i sve zaključke, možete pogledati fajlu Izvestaj.pdf.
+Rezultate primene svih alata i sve zaključke, možete pogledati fajlu ProjectAnalysisReport.pdf.
 ## Autor
 
 **Jelena Mitrović**  
