@@ -62,61 +62,65 @@ Da biste pokrenuli testove, pratite sledeće korake:
     ```
 
 Ovim postupkom možete pokrenuti testove i generisati izveštaje o pokrivenosti koda.
-
-
-## Valgrind Memcheck
-Da biste pokrenuli Valgrind memcheck , pratite sledeće korake:
+## Valgrind:
+Napomena: pre pokretanja svih Valgrind alata neophodno je:
 1. Klonirajte projekat pomoću sledeće komande:
     ```bash
     git clone https://github.com/MATF-Software-Verification/2024_Analysis_ECE350Final.git
     ```
-2. Instalacija potrebnih alata
+2. Pozicionirati se src folder:
+    ```bash
+    cd src
+    ```
+3.Pokrenuti program naredbom:
+     ```bash
+    make
+    ```
+## Valgrind Memcheck
+Nakon sto ste pokrenuli program kao sto je opisano u delu Valgrind, potrebno je da:
 
+1. Instalacija potrebnih alata
 
    ```bash
    sudo apt install valgrind
    ```
 
-3. Pozicionirajte se u direktorijum gde se nalazi skript za pokretanje memcheck-a:
+2. Pozicionirajte se u direktorijum gde se nalazi skript za pokretanje memcheck-a:
     ```bash
-    cd valgrind/memcheck
+    cd ../valgrind/memcheck
     ```
 
-4. Dodajte **+x** privilegiju za skriptu `run_memcheck.sh`:
+3. Dodajte **+x** privilegiju za skriptu `run_memcheck.sh`:
     ```bash
     chmod +x run_memcheck.sh
     ```
 
-5. Pokrenite skipt:
+4. Pokrenite skipt:
     ```bash
     ./run_memcheck.sh
     ```
 Kada pokrenete skriptu na ovaj način, **Valgrind** analizira vaš program tokom njegove izvršne faze. To znači da će se sam program pokrenuti i izvršavati dok Valgrind prati memorijske greške. Potrebno je poznavati pravila igre, kako bi bilo moguce da se skript izvrsi do kraja.
 
 ## Valgrind Callgrind
-Da biste pokrenuli Valgrind Callgrind , pratite sledeće korake:
-1. Klonirajte projekat pomoću sledeće komande:
-    ```bash
-    git clone https://github.com/MATF-Software-Verification/2024_Analysis_ECE350Final.git
-    ```
-2. Instalacija potrebnih alata
+Nakon sto ste pokrenuli program kao sto je opisano u delu Valgrind, potrebno je da:
+1. Instalacija potrebnih alata
 
    ```bash
    sudo apt install valgrind
    sudo apt-get install kcachegrind
    ```
 
-3. Pozicionirajte se u direktorijum gde se nalazi skript za pokretanje callgrind-a:
+2. Pozicionirajte se u direktorijum gde se nalazi skript za pokretanje callgrind-a:
     ```bash
-    cd valgrind/callgrind
+    cd ../valgrind/callgrind
     ```
 
-4. Dodajte **+x** privilegiju za skriptu `run_callgrind.sh`:
+3. Dodajte **+x** privilegiju za skriptu `run_callgrind.sh`:
     ```bash
     chmod +x run_callgrind.sh
     ```
 
-5. Pokrenite skipt:
+4. Pokrenite skipt:
     ```bash
     ./run_callgrind.sh
     ```
@@ -124,28 +128,24 @@ Pokretanje skripte će se sam program pokrenuti i izvršavati pa je potrebno je 
 
 ## Valgrind Massif
 
-Da biste pokrenuli Valgrind Massif , pratite sledeće korake:
-1. Klonirajte projekat pomoću sledeće komande:
-    ```bash
-    git clone https://github.com/MATF-Software-Verification/2024_Analysis_ECE350Final.git
-    ```
-2. Instalacija potrebnih alata
+Nakon sto ste pokrenuli program kao sto je opisano u delu Valgrind, potrebno je da:
+1. Instalacija potrebnih alata
 
    ```bash
    sudo apt install valgrind
    ```
 
-3. Pozicionirajte se u direktorijum gde se nalazi skript za pokretanje massifa-a:
+2. Pozicionirajte se u direktorijum gde se nalazi skript za pokretanje massifa-a:
     ```bash
-    cd valgrind/massif
+    cd ../valgrind/massif
     ```
 
-4. Dodajte **+x** privilegiju za skriptu `run_massif.sh`:
+3. Dodajte **+x** privilegiju za skriptu `run_massif.sh`:
     ```bash
     chmod +x run_massif.sh
     ```
 
-5. Pokrenite skipt:
+4. Pokrenite skipt:
     ```bash
     ./run_massif.sh
     ```
