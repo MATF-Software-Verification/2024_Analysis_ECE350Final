@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Durak.dir/src/main.cpp.o CMakeFiles/Durak.dir/src/Card.cpp.o CMakeFiles/Durak.dir/src/Deck.cpp.o -o Durak 

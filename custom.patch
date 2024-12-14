@@ -1,0 +1,760 @@
+diff --git a/Card.cpp b/Card.cpp
+deleted file mode 100644
+index 2ba86a5..0000000
+--- a/Card.cpp
++++ /dev/null
+@@ -1,115 +0,0 @@
+-#include <iostream>
+-#include "Card.h"
+-
+-using namespace std;
+-
+-int Card::getNumValue(){
+-  int card; //to store numerical value
+-
+-  switch(val){ //use char representing value
+-  case 'A':
+-    card = 14;
+-    break;
+-  case 'K':
+-    card = 13;
+-    break;
+-  case 'Q':
+-    card = 12;
+-    break;
+-  case 'J':
+-    card = 11;
+-    break;
+-  case '0':
+-    card = 10;
+-    break;
+-  default: //for any other value, conver the char to int by subtracting 48 from the ASCII code
+-    card = (int)val - 48;
+-    break;
+-  }
+-  return card;
+-}
+-
+-bool Card::setSuit(char s){
+-  
+-  switch(s){
+-  case 'H':
+-  case 'h':
+-    suit = 'H';
+-    break;
+-  case 'D':
+-  case 'd':
+-    suit = 'D';
+-    break;
+-  case 'C':
+-  case 'c':
+-    suit = 'C';
+-    break;
+-  case 'S':
+-  case 's':
+-    suit = 'S';
+-    break;
+-  default: //if invalid suit
+-    return false; 
+-  }
+-  return true; //if successful
+-}
+-
+-bool Card::setVal(char value){
+-  //1 thru 9, normal. ten is represented with 0. face cards A, K, Q, J are 14, 13, 12, 11
+-  //check for value in bounds
+-  //...
+-  //...
+-  val = value;
+-  return true;
+-}
+-
+-bool Card::setVal(int value){
+-  //1 thru 9, normal. ten is represented with 0. face cards A, K, Q, J are 14, 13, 12, 11
+-  if(value > 14 || value < 0) //out of range
+-    return false;
+-  switch(value){
+-  case 10:
+-    val = '0';
+-    break;
+-  case 11:
+-    val = 'J';
+-    break;
+-  case 12:
+-    val = 'Q';
+-    break;
+-  case 13:
+-    val = 'K';
+-    break;
+-  case 14:
+-    val = 'A';
+-    break;
+-  default: //for other values, store integer as normal. use ASCII offset
+-    val = value + 48;
+-  }
+-  return true;
+-}
+-
+-void Card::print(){
+-  //  char suit = this->getSuit();
+-  //  char val = this->getValue();
+-  if(val == '0')
+-    cout << "10";
+-  else
+-    cout << val;
+-  
+-  cout << " of ";
+-  switch(suit){
+-  case 'H':
+-    cout << "hearts ";
+-    break;
+-  case 'D':
+-    cout << "diamonds ";
+-    break;
+-  case 'S':
+-    cout << "spades ";
+-    break;
+-  case 'C':
+-    cout << "clubs ";
+-    break;
+-  }
+-}
+diff --git a/Card.h b/Card.h
+deleted file mode 100644
+index 1611f70..0000000
+--- a/Card.h
++++ /dev/null
+@@ -1,19 +0,0 @@
+-#include <iostream>
+-
+-using namespace std;
+-
+-class Card{
+-public:
+-  Card(){ val = 'X'; suit = 'X'; }; //default constructor, should not be called
+-  Card(char v, char s){ val = v; suit = s; }; //constructor
+-  char getSuit(){ return suit; };
+-  char getValue(){ return val; };
+-  int getNumValue();
+-  bool setSuit(char);
+-  bool setVal(char);
+-  bool setVal(int);
+-  void print();
+-private:
+-  char val, suit;
+-  
+-};
+diff --git a/Deck.cpp b/Deck.cpp
+deleted file mode 100644
+index 367ac59..0000000
+--- a/Deck.cpp
++++ /dev/null
+@@ -1,307 +0,0 @@
+-
+-#include <iostream>
+-#include <random>
+-#include <algorithm>
+-#include "Deck.h"
+-
+-using namespace std;
+-
+-Deck::Deck(){ //default initializer for 36 cards
+-  size = 36;
+-  //array to quickly iterate thru suits
+-  char suits[4] = {'H', 'D', 'S', 'C'};
+-  //Card to store current card before pushing to deck
+-  Card c; 
+-  //create deck. iterate for each suit
+-  for(int i = 0; i < 4; i++){
+-    c.setSuit(suits[i]);
+-    //generate numerical cards first
+-    for(int j = 6; j <= 14; j++){
+-      c.setVal(j);
+-      this->addCard(c);
+-    }
+-  }
+-}
+-
+-Deck::Deck(vector<Card> cards){
+-  size = cards.size();
+-  for(int i = 0; i < size; i++){
+-    deck.push_back(cards[i]);
+-  }
+-}
+-
+-Deck::Deck(int num){
+-  //empty deck
+-  size = num;
+-}
+-
+-Card Deck::drawCard(){
+-  Card c;
+-  if(size <= 0) //if deck is empty
+-    return c;
+-  size--;
+-  c = deck.back();
+-  deck.pop_back();
+-  return c;
+-}
+-
+-void Deck::addCard(Card c){
+-  deck.push_back(c);
+-  size++;
+-}
+-
+-void Deck::removeCard(Card c){
+-  //  Card c = deck[n - 1];
+-  //find index
+-  for(int i = 0; i < size; i++){
+-    if(deck[i].getNumValue() == c.getNumValue() && deck[i].getSuit() == c.getSuit()){ //match
+-      deck.erase(deck.begin() + i); //remove from Deck and decrement
+-      size--;
+-      return;
+-    }
+-  }
+-}
+-
+-void Deck::shuffleCards(){
+-  //using functions from Algorithm and Random libraries to shuffle vector
+-  //from https://www.delftstack.com/howto/cpp/shuffle-vector-cpp/
+-  random_device rd;
+-  default_random_engine rng(rd());
+-  shuffle(begin(deck), end(deck), rng);
+-}
+-
+-void Deck::print(){
+-  for(int i = 0; i < (int)deck.size(); i++){
+-    deck[i].print();
+-    cout << endl;
+-  }
+-  cout << endl;
+-}
+-
+-Deck Deck::drawHand(){
+-  //vector for the hand of cards
+-  vector<Card> hand;
+-  //draw six cards
+-  for(int i = 0; i < 6; i++){
+-    Card c = this->drawCard();
+-    hand.push_back(c);
+-  }
+-  //put vector into Deck class and return
+-  Deck deck(hand);
+-  return deck;
+-}
+-
+-int Deck::firstPlayer(Deck hand1, Deck hand2, char suit){
+-  //find highest card in hand1
+-  vector<Card> cards1 = hand1.getCards();
+-  int min1 = -1;
+-  for(int i = 0; i < hand1.size; i++){
+-    if(cards1[i].getSuit() == suit){
+-      if(min1 == -1){ //if max is still undefined
+-	min1 = cards1[i].getNumValue();
+-      }
+-      else{ //there is already a card of that suit, so compare
+-	if(cards1[i].getNumValue() < min1)
+-	  min1 = cards1[i].getNumValue();
+-      }
+-    }
+-  }
+-  //find highest card in hand2
+-  vector<Card> cards2 = hand2.getCards();
+-  int min2 = -1;
+-  for(int i = 0; i < hand2.size; i++){
+-    if(cards2[i].getSuit() == suit){
+-      if(min2 == -1){ //if max is still undefined
+-	min2 = cards2[i].getNumValue();
+-      }
+-      else{ //there is already a card of that suit, so compare
+-	if(cards2[i].getNumValue() < min2)
+-	  min2 = cards2[i].getNumValue();
+-      }
+-    }
+-  }
+-
+-  //return which deck has lower value
+-  if(min1 == -1){ //player 1 has no trump
+-    if(min2 == -1) //if neither has a trump card, give to player 1
+-      return 1;
+-    else //player 2 has a trump card
+-      return 2;
+-  }
+-  else{ //player 1 has trump
+-    if(min2 == -1) //player 2 has no trump
+-      return 1;
+-    else
+-      return (min1 < min2) ? 1 : 2;
+-  }
+-}
+-
+-Card Deck::askCard(){
+-  //print options
+-  cout << "Your Hand:\n";
+-  for(int i = 0; i < size; i++){
+-    cout << i + 1 << ". ";
+-    deck[i].print();
+-    cout << endl;
+-  }
+-  //get option
+-  cout << "Choose a card:\n";
+-  int n = 0;
+-  cin >> n;
+-  while(n <= 0 || n > size){
+-    cout << "Invalid choice!\nChoose a card:\n";
+-    cin >> n;
+-  }
+-  //remove card and return
+-  Card c = deck[n - 1];
+-  this->removeCard(c);
+-  return c;
+-}
+-
+-Card Deck::askCard(Deck table){
+-  vector<Card> tableCards = table.getCards();
+-  if(tableCards.size() == 0){
+-    return askCard();
+-  }
+-  //ask for card that has the same value as one on the table
+-  //print options
+-  cout << "Your Hand:\n";
+-  for(int i = 0; i < size; i++){
+-    cout << i + 1 << ". ";
+-    deck[i].print();
+-    cout << endl;
+-  }
+-  //get option
+-  cout << "Choose a card:\n";
+-  Card c;
+-  int n = 0;
+-  bool valid = false;
+-  while(!valid){
+-    cin >> n;
+-    while(n <= 0 || n > size){
+-      cout << "Invalid choice!\nChoose a card:\n";
+-      cin >> n;
+-    }
+-    c = deck[n - 1];
+-    for(int i = 0; i < (int)tableCards.size(); i++){
+-      if(c.getNumValue() == tableCards[i].getNumValue()) //if valid value
+-	valid = true;
+-    }
+-    if(!valid) //if invalid, prompt again
+-      cout << "Card must be a value on the table!\nChoose a card:\n";
+-  }
+-  //successfully got card. remove and return
+-  this->removeCard(c);
+-  return c;
+-}
+-
+-Card Deck::askCard(Card card, char trump){
+-  Card c;
+-  //first, check if there are no winning cards
+-  bool win = false;
+-  for(int i = 0; i < size; i++){
+-    if(deck[i].getSuit() == trump && card.getSuit() != trump) //trump wins
+-      win = true;
+-    if(deck[i].getSuit() == card.getSuit() && deck[i].getNumValue() > card.getNumValue()) //higher card wins
+-      win = true;
+-  }
+-  if(!win) //if no winning cards, return empty card
+-    return c;
+-  //print options
+-  cout << "Your Hand:\n";
+-  for(int i = 0; i < size; i++){
+-    cout << i + 1 << ". ";
+-    deck[i].print();
+-    cout << endl;
+-  }
+-  //get option
+-  cout << "Choose a card:\n";
+-  int n = 0;
+-  bool valid = false;
+-  while(!valid){
+-    cin >> n;
+-    while(n <= 0 || n > size){
+-      cout << "Invalid choice!\nChoose a card:\n";
+-      cin >> n;
+-    }
+-    c = deck[n - 1]; //select card
+-    //check to see if it beats the card
+-    if(c.getSuit() == trump && card.getSuit() != trump) //trump wins
+-      valid = true;
+-    if(c.getSuit() == card.getSuit() && c.getNumValue() > card.getNumValue()) //higher card wins
+-      valid = true;
+-    if(!valid){ //if invalid, prompt again
+-      cout << "Card must beat the ";
+-      card.print();
+-      cout << "!\nChoose a card:\n";
+-    }
+-  }
+-  //successfully got card. remove and return
+-  this->removeCard(c);
+-  return c;
+-}
+-
+-bool Deck::checkValue(Deck values){
+-  //must match value from deck
+-  bool valid = false;
+-  for(int i = 0; i < size; i++){
+-    for(int j = 0; j < values.getSize(); j++){
+-      if(deck[i].getNumValue() == values.getCards()[j].getNumValue()){ //valid card
+-	valid = true;
+-      }
+-    }
+-  }
+-  return valid;
+-}
+-
+-void Deck::clear(){
+-  deck.clear();
+-  size = 0;
+-}
+-
+-Card Deck::findHigh(char suit){
+-  Card max;
+-  for(int i = 0; i < size; i++){
+-    if(deck[i].getSuit() == suit){ //found
+-      //if max is undefined, or new card is greater than, reassign.
+-      if(max.getSuit() == 'X' || deck[i].getNumValue() > max.getNumValue())
+-	max = deck[i];
+-    }
+-  }
+-  if(max.getSuit() == 'X' && size != 0)
+-    max = deck[0];
+-  return max;
+-}
+-
+-Card Deck::findHigh(){
+-  Card max;
+-  for(int i = 0; i < size; i++){
+-    //if max is undefined, or new card is greater than, reassign.
+-    if(max.getSuit() == 'X' || deck[i].getNumValue() > max.getNumValue())
+-      max = deck[i];
+-  }
+-  if(max.getSuit() == 'X' && size != 0)
+-    max = deck[0];
+-  return max;
+-}
+-
+-void Deck::pickUp(Deck &table){
+-  //add all cards to deck
+-  //  vector<Card> cards = table.getCards();
+-  for(int i = 0; i < (int)table.getSize(); i++){
+-    this->addCard(table.getCards()[i]);
+-  }
+-  table.clear();
+-}
+-
+-bool Deck::replenish(Deck &deck){
+-  for(int i = size; i < 6; i++){
+-    Card c = deck.drawCard();
+-
+-    if(c.getSuit() != 'H' && c.getSuit() != 'D' && c.getSuit() != 'C' && c.getSuit() != 'S'){ //if no more cards, return false
+-      return false;
+-    }
+-    this->addCard(c); //otherwise, add card
+-  }
+-  return true;
+-}
+diff --git a/Deck.h b/Deck.h
+deleted file mode 100644
+index 024f777..0000000
+--- a/Deck.h
++++ /dev/null
+@@ -1,36 +0,0 @@
+-#include <iostream>
+-#include <vector>
+-#include "Card.h"
+-
+-using namespace std;
+-
+-class Deck{
+-  //Deck class with A thru 6 only
+-public:
+-  Deck(); //default constructor, creates deck of 36
+-  Deck(vector<Card> cards); //constructor with given cards
+-  Deck(int num); //constructor for empty deck
+-  int getSize(){ return size; } //return size of deck
+-  Card drawCard(); //draw card from pile
+-  void addCard(Card c); //add card to pile
+-  void removeCard(Card c); //remove card from pile
+-  vector<Card> getCards(){ return deck; }; //returns vector of Cards
+-  void shuffleCards(); //shuffles randomly
+-  void print();
+-  Deck drawHand(); //draws a hand of six cards
+-  static int firstPlayer(Deck hand1, Deck hand2, char suit); //determined first player based on lowest trump card
+-  Card askCard(); //asks for any card
+-  Card askCard(Deck table); //asks for card that matches any value on the table
+-  Card askCard(Card card, char trump); //asks for card that beats the card
+-  bool checkValue(Deck values); //checks for valid card matching any value in the Deck argument 
+-  void clear(); //empty deck
+-  Card findHigh(char suit); //finds highest card of given suit
+-  Card findHigh(); //finds highest card
+-  void pickUp(Deck &table); //places cards from table argument into caller Deck
+-  bool replenish(Deck &deck); //replenish up to six cards. returns false if there are not enough cards
+-private:
+-  vector<Card> deck;
+-  Card topCard;
+-  int size;
+-};
+-
+diff --git a/FinalProj_Report.pdf b/FinalProj_Report.pdf
+deleted file mode 100644
+index 50a55c4..0000000
+Binary files a/FinalProj_Report.pdf and /dev/null differ
+diff --git a/README.md b/README.md
+deleted file mode 100644
+index e4dc506..0000000
+--- a/README.md
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# ECE 350 Final Project
+-### Logan Kramer
+-
+-##### Due Wednesday, May 4th at 11:59 pm
+-
+-## The Durak Game [(Wikipedia)](https://en.wikipedia.org/wiki/Durak)
+-#### The goal of the project is to develop a game where the computer (that is, your program) plays Durak against a human opponent. 
+-
+-
+-
+diff --git a/main.cpp b/main.cpp
+deleted file mode 100644
+index 4e71860..0000000
+--- a/main.cpp
++++ /dev/null
+@@ -1,221 +0,0 @@
+-#include <iostream>
+-#include <vector>
+-//#include "Card.h" 
+-#include "Deck.h" //Card class is included from Deck.h
+-
+-using namespace std;
+-
+-char trumpSuit;
+-
+-Card attack(Deck table, Deck &hand, int player);
+-Card defend(Card attack, Deck &hand, int player);
+-
+-int main(){
+-  //two hands of six cards
+-  //from main deck of 36 cards
+-  Deck deck;
+-  //shuffle cards twice for good measure
+-  deck.shuffleCards();
+-  deck.shuffleCards();
+-  //deck.print();
+-
+-  //draw six cards for each hand
+-  Deck hand1 = deck.drawHand();
+-  Deck hand2 = deck.drawHand();
+-
+-  //trump card 
+-  Card trump = deck.drawCard();
+-  trumpSuit = trump.getSuit();
+-  cout << "Trump card:\n";
+-  trump.print();
+-  cout << endl << endl;
+-  
+-  //stack of current cards on the table
+-  Deck table(0);
+-  
+-  //winner 
+-  int winner = 0;
+-
+-  //determine who goes first. player is player 1, computer is player 2
+-  int player = Deck::firstPlayer(hand1, hand2, trumpSuit);
+-  //  player = 1;//temporary for testing only
+-  cout << "First Player: ";
+-  if(player == 1)
+-    cout << "You!\n";
+-  else
+-    cout << "Computer\n";
+-
+-  do{ //start
+-    cout << endl;
+-    //check for winner
+-    if(hand1.getSize() <= 0){
+-      winner = 1;
+-      break;
+-    }
+-    if(hand2.getSize() <= 0){
+-      winner = 2;
+-      break;
+-    }
+-
+-    Card firstAttack;
+-    if(player == 1) //choose card
+-      firstAttack = attack(table, hand1, 1);
+-    else //otherwise, computer goes.
+-      firstAttack = attack(table, hand2, 2);
+-    
+-    cout << "Attack:\n";
+-    firstAttack.print();
+-    cout << endl;
+-    table.addCard(firstAttack); //add card to table
+-    player = (player == 1) ? 2 : 1; //flip player
+-    
+-    //first defense
+-    Card firstDefense;
+-    if(player == 1) //if player, ask for card
+-      firstDefense = defend(firstAttack, hand1, 1);
+-    else //computer. choose card of same suit
+-      firstDefense = defend(firstAttack, hand2, 2);
+-    
+-    if(firstDefense.getValue() == 'X'){ //no valid cards. pick up
+-      if(player == 2) //if computer
+-	cout << "Computer failed to defend and picks up cards.\n";
+-      else{
+-	cout << "You failed to defend!! Pick up cards.\n";
+-	player = 2;
+-	continue;
+-      }
+-      
+-      if(player == 1) //player
+-	hand1.pickUp(table);
+-      else
+-	hand2.pickUp(table);
+-      //replenish
+-      if(!hand1.replenish(deck) || !hand2.replenish(deck))
+-	cout << "No more cards in deck.\n";      
+-      player = (player == 1) ? 2 : 1; //flip player
+-      continue; //repeat loop
+-    } 
+-    else{ //defense successful
+-      cout << "Defense:\n";
+-      firstDefense.print();
+-      cout << endl;
+-      table.addCard(firstDefense); //add to table
+-      player = (player == 1) ? 2 : 1; //flip player
+-    }
+-    //attacking continues. or, call off attack and draw up to six.
+-    if(player == 1){
+-      if(!hand1.checkValue(table)){
+-	cout << "You have no valid cards for an attack and pick up the cards.\n";
+-	hand1.pickUp(table);//pick up cards
+-	player = 2;
+-	continue; 
+-      }
+-      else{
+-	cout << "would you like to continue the attack? (y/n)\n";
+-	char c;
+-	cin >> c;
+-	if(c == 'y'){
+-	  player = 1;
+-	  winner = 0;
+-	  continue; //go back to loop
+-	}
+-	else{ //not attacking. discard table and draw
+-	  cout << "Attack ends. Replenish to six cards.\n";
+-	  table.clear();
+-	  if(!hand1.replenish(deck) || !hand2.replenish(deck))
+-	    cout << "No more cards in deck.\n";
+-	  player = 2; //computer gets next attack
+-	}
+-      }
+-    }
+-    else{ //computer. assume the computer ends the attack
+-      cout << "Computer ends attack. Replenish to six cards.\n";
+-      table.clear();
+-      if(!hand1.replenish(deck) || !hand2.replenish(deck))
+-	cout << "No more cards in deck.\n";
+-      player = 1;
+-    }
+-
+-  } while (winner == 0);
+-
+-  if(winner == 1)
+-    cout << "You won!!!!!!!\n";
+-  else
+-    cout << "The computer won :(\n";
+-}
+-  
+-Card attack(Deck table, Deck &hand, int player){
+-  Card c;
+-  if(hand.getSize() == 0){
+-    cout << "no more choices!!!!\n";
+-    return c;
+-  }
+-
+-  if(player == 1){ //player
+-    cout << "Choose a card for attack (trump: " << trumpSuit << ").\n";
+-    if(table.getSize() == 0) //if there are no cards on the table, any card is valid. (first play)
+-      c = hand.askCard();
+-    else //there are cards on the table. must be a value already on the table
+-      c = hand.askCard(table);
+-  }
+-  else{ //computer
+-    vector<Card> cards = hand.getCards();
+-    if(table.getSize() == 0){
+-      //choose highest card
+-      c = hand.findHigh();
+-    }
+-    else{ //if there are cards on the table, it must be valid
+-      vector<Card> tableCards = table.getCards();
+-      Card max;
+-      for(int i = 0; i < (int)tableCards.size(); i++){
+-	for(int j = 0; j < (int)cards.size(); j++){
+-	  if(tableCards[i].getNumValue() == cards[j].getNumValue()){
+-	    if(max.getSuit() == 'X')
+-	      max = cards[j];
+-	    else{
+-	      if(cards[j].getNumValue() > max.getNumValue())
+-		max = cards[j];
+-	    }
+-	  }
+-	}
+-      }
+-      if(max.getSuit() != 'X')
+-	c = max;
+-      else
+-	c = hand.drawCard();
+-    }
+-    //remove card from computer's hand
+-    hand.removeCard(c);
+-  }
+-  return c;
+-}
+-
+-Card defend(Card attack, Deck &hand, int player){
+-  if(player == 1){ //if player, ask for card
+-    cout << "Choose a card to defend with (trump: " << trumpSuit << ")!\n";
+-    return hand.askCard(attack, trumpSuit);
+-  }
+-  else{ //computer
+-    Card c;
+-    vector<Card> cards = hand.getCards();
+-    //first, try beating card with suit
+-    for(int i = 0; i < (int)cards.size(); i++){
+-      if(cards[i].getSuit() == attack.getSuit() && cards[i].getNumValue() > attack.getNumValue()){ //if same suit, and greater value
+-	//remove from deck and return.
+-	c = cards[i];
+-	hand.removeCard(c);
+-      }
+-    }
+-    //second, try playing trump, assuming the card given is not trump
+-    if(attack.getSuit() != trumpSuit){
+-      for(int i = 0; i < (int)cards.size(); i++){
+-	if(cards[i].getNumValue() > attack.getNumValue()){ //winning card. remove from deck and return.
+-	  c = cards[i];
+-	  hand.removeCard(c);
+-	}
+-      }
+-    }
+-    return c;
+-
+-  }
+-}
+diff --git a/makefile b/makefile
+deleted file mode 100644
+index 37b4774..0000000
+--- a/makefile
++++ /dev/null
+@@ -1,6 +0,0 @@
+-CFLAGS= -g -Wall -Wextra -Wwrite-strings
+-
+-Durak: main.cpp
+-	g++ ${CFLAGS} -o Durak main.cpp Card.cpp Deck.cpp
+-clean:
+-	rm -f Durak

@@ -1,0 +1,61 @@
+2. Razlaganje alokacija
+Najvažnije linije:
+
+    99.92% (72,862B): Ukazuje da je skoro celokupna memorija (72,862 bajta) alocirana na heap-u.
+    ->99.70% (72,704B): Velika većina ove memorije je alocirana kroz određene funkcije unutar standardne C++ biblioteke (npr. libstdc++.so).
+
+
+3. Identifikacija potencijalnih problema
+
+    Rast memorije: Pogledajte da li se useful-heap(B) i extra-heap(B) postepeno povećavaju tokom snapshot-a, čak i kada ne bi trebalo. Ovo može ukazivati na curenje memorije.
+    Hotspot memorije: Funkcije koje alociraju najveći procenat memorije (npr. Deck::askCard i main) su potencijalni kandidati za optimizaciju ili detaljniju analizu.
+    Fragmentacija: Ako je razlika između total(B) i useful-heap(B) značajna, postoji problem fragmentacije memorije.
+Alokacija Memorije:
+
+    Dominacija dinamickih alokacija:
+     Oko 99.89% svih alokacija memorije dolazi iz funkcija kao što su malloc, new i std::allocator. 
+     Ovo ukazuje na to da program u velikoj meri koristi dinamičku alokaciju memorije. Ovaj tip alokacije omogućava fleksibilnost tokom izvršavanja programa, ali takođe može dovesti do problema sa curenjima         memorije ako se memorija ne oslobodi pravilno.
+
+    Veza sa C++ standardnom bibliotekom (libstdc++): Velika većina (96.91%) ovih alokacija vezana je za C++ standardnu biblioteku, posebno za funkcije kao što su call_init i razne inicijalizacione rutine. Ove funkcije su odgovorne za postavljanje početnog stanja programa, uključujući inicijalizaciju objekata i drugih resursa, što može obuhvatiti značajnu količinu memorije.
+
+I/O Operacije:
+
+    Alokacija memorije povezana sa I/O operacijama: Oko 2.73% memorije je povezano sa I/O operacijama.
+    
+Tumacenje GRAFIKA:
+
+Analiza Grafika:
+
+    Osnovna struktura:
+        Osovina Y (vertikalna osa): Ova osa prikazuje količinu memorije u bajtovima, s maksimalnim vrednostima do 73,31 MB.
+        Osovina X (horizontalna osa): Prikazuje vreme ili broj snimaka (snapshots) tokom izvođenja programa.
+
+    Simboli @ i #:
+        @: Ovaj simbol označava korisnu memoriju (heap memory) koja je aktivno korišćena u programu. To znači da je program zaista koristio ovu memoriju za rad sa podacima ili stvaranje objekata.
+        #: Ovaj simbol označava rezervisanu memoriju koja nije bila direktno iskorišćena. Ovo je memorija koja je dodeljena programu, ali nije bila u aktivnoj upotrebi u trenutnom trenutku. Može biti rezervisana za buduće potrebe ili za interne procese kao što su predmemorija ili alokacija predvidivih objekata.
+
+Tumačenje tokom vremena:
+
+    Početak (snimci 0-2):
+        Na početku grafikona, memorija je relativno stabilna, i velika većina memorije koja je alocirana je označena simbolom @. To znači da je program već na početku koristio memoriju, ali potrošnja memorije je još uvek mala.
+
+    Uspon u potrošnji memorije (snimci 3-16):
+        U ovom periodu, potrošnja memorije se postepeno povećava, što može ukazivati na to da program dinamički alocira memoriju kako bi podržao rastuće zahteve. Simboli @ dominiraju, što znači da se sve više memorije koristi za aktivne operacije.
+        U snimku 16, označen je peak, što znači da je u tom trenutku postignut vrh potrošnje memorije. Ovdje možemo pretpostaviti da je program doživeo najveću potrošnju memorije za korisne podatke, možda zbog složenijih operacija ili alokacija većih objekata.
+
+    Stabilizacija i pad (snimci 17-93):
+        Nakon vrha, potrošnja memorije se stabilizuje ili čak smanjuje. Ako se vrednosti za korisnu memoriju (@) ne smanjuju drastično, to može ukazivati na to da program održava memoriju koja mu je potrebna za trenutno stanje, ali nije alocirao dodatne resurse.
+        Količina rezervisane memorije (#) može se povećavati u nekim trenucima, što znači da je program predvideo potrebu za dodatnom memorijom, ali je nije odmah iskoristio. To može ukazivati na to da je program "spreman" za rastuće zahteve, ali bez trenutnog povećanja stvarne upotrebe memorije.
+
+Značaj promena u upotrebi memorije:
+
+    Korisna memorija (@): Ako je velik deo grafikona popunjen simbolima @, to znači da program aktivno koristi memoriju za obavljanje svojih operacija. Ako se ovo brzo povećava, to može ukazivati na povećanje složenosti zadataka koje program rešava.
+
+    Rezervisana memorija (#): Ako se broj # znakova povećava tokom vremena, to može značiti da program alocira više memorije nego što trenutno koristi. Ovo može biti znak da postoji višak memorijskih resursa ili da je sistem pripremio memoriju za buduće operacije koje još nisu započete. Ako je ovo prisutno tokom većeg dela trajanja programa, može ukazivati na potencijalnu optimizaciju memorije.
+
+Zaključak:
+
+Ovaj grafikon daje uvid u dinamiku upotrebe memorije tokom vremena, pomažući da identifikuješ kada je program koristio veću količinu memorije i da li je to bilo zbog stvarne potrebe za podacima (@) ili zbog rezervacije resursa za buduće potrebe (#). Najveći vrh na snimku 16 (peak) predstavlja trenutak kada je program zahtevao najviše memorije za svoje operacije, dok kasniji stabilizovani periodi mogu ukazivati na optimizaciju memorijske potrošnje ili neiskorišćene resurse.
++dodaj grafik
+
++ dodaj sliku!

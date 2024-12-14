@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.90"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Card::getSuit&apos; can be const." verbose="The member function &apos;Card::getSuit&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/Card.cpp" file="../src/Card.h" line="10" column="8"/>
+            <symbol>Card::getSuit</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Card::getValue&apos; can be const." verbose="The member function &apos;Card::getValue&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/Card.cpp" file="../src/Card.h" line="11" column="8"/>
+            <symbol>Card::getValue</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Card::getNumValue&apos; can be const." verbose="The member function &apos;Card::getNumValue&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/Card.cpp" file="../src/Card.h" line="12" column="7"/>
+            <location file="../src/Card.cpp" line="6" column="11"/>
+            <symbol>Card::getNumValue</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Card::print&apos; can be const." verbose="The member function &apos;Card::print&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/Card.cpp" file="../src/Card.h" line="16" column="8"/>
+            <location file="../src/Card.cpp" line="125" column="12"/>
+            <symbol>Card::print</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Card::isEmpty&apos; can be const." verbose="The member function &apos;Card::isEmpty&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/Card.cpp" file="../src/Card.h" line="17" column="8"/>
+            <location file="../src/Card.cpp" line="147" column="12"/>
+            <symbol>Card::isEmpty</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Card::getSuit&apos; can be const." verbose="The member function &apos;Card::getSuit&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/Deck.cpp" file="../src/Card.h" line="10" column="8"/>
+            <symbol>Card::getSuit</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Card::getValue&apos; can be const." verbose="The member function &apos;Card::getValue&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/Deck.cpp" file="../src/Card.h" line="11" column="8"/>
+            <symbol>Card::getValue</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Deck::getSize&apos; can be const." verbose="The member function &apos;Deck::getSize&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/Deck.cpp" file="../src/Deck.h" line="14" column="7"/>
+            <symbol>Deck::getSize</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Deck::getCards&apos; can be const." verbose="The member function &apos;Deck::getCards&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/Deck.cpp" file="../src/Deck.h" line="18" column="16"/>
+            <symbol>Deck::getCards</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Deck&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Deck&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../src/Deck.cpp" file="../src/Deck.h" line="12" column="3"/>
+            <symbol>Deck</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Deck&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Deck&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../src/Deck.cpp" file="../src/Deck.h" line="13" column="3"/>
+            <symbol>Deck</symbol>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Either the condition &apos;n&lt;=0&apos; is redundant, otherwise there is negative array index -1." verbose="Either the condition &apos;n&lt;=0&apos; is redundant, otherwise there is negative array index -1." cwe="786">
+            <location file="../src/Deck.cpp" line="165" column="12" info="Negative array index"/>
+            <location file="../src/Deck.cpp" line="160" column="11" info="Assuming that condition &apos;n&lt;=0&apos; is not redundant"/>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Either the condition &apos;n&lt;=0&apos; is redundant, otherwise there is negative array index -1." verbose="Either the condition &apos;n&lt;=0&apos; is redundant, otherwise there is negative array index -1." cwe="786">
+            <location file="../src/Deck.cpp" line="194" column="9" info="Negative array index"/>
+            <location file="../src/Deck.cpp" line="190" column="13" info="Assuming that condition &apos;n&lt;=0&apos; is not redundant"/>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Either the condition &apos;n&lt;=0&apos; is redundant, otherwise there is negative array index -1." verbose="Either the condition &apos;n&lt;=0&apos; is redundant, otherwise there is negative array index -1." cwe="786">
+            <location file="../src/Deck.cpp" line="236" column="9" info="Negative array index"/>
+            <location file="../src/Deck.cpp" line="232" column="13" info="Assuming that condition &apos;n&lt;=0&apos; is not redundant"/>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Card::getSuit&apos; can be const." verbose="The member function &apos;Card::getSuit&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/main.cpp" file="../src/Card.h" line="10" column="8"/>
+            <symbol>Card::getSuit</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Card::getValue&apos; can be const." verbose="The member function &apos;Card::getValue&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/main.cpp" file="../src/Card.h" line="11" column="8"/>
+            <symbol>Card::getValue</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Deck::getSize&apos; can be const." verbose="The member function &apos;Deck::getSize&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/main.cpp" file="../src/Deck.h" line="14" column="7"/>
+            <symbol>Deck::getSize</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Deck::getCards&apos; can be const." verbose="The member function &apos;Deck::getCards&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true">
+            <location file0="../src/main.cpp" file="../src/Deck.h" line="18" column="16"/>
+            <symbol>Deck::getCards</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Deck&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Deck&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../src/main.cpp" file="../src/Deck.h" line="12" column="3"/>
+            <symbol>Deck</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Deck&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Deck&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../src/main.cpp" file="../src/Deck.h" line="13" column="3"/>
+            <symbol>Deck</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;isEmpty&apos; is never used." verbose="The function &apos;isEmpty&apos; is never used." cwe="561">
+            <location file="../src/Card.cpp" line="147" column="0"/>
+            <symbol>isEmpty</symbol>
+        </error>
+    </errors>
+</results>

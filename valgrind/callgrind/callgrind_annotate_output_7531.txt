@@ -1,0 +1,3426 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind_output_7531.txt' (creator: callgrind-3.15.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 405244
+Trigger: Program termination
+Profiled target:  ../../src/Durak (PID 7532, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir        
+--------------------------------------------------------------------------------
+2,574,531  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir         file:function
+--------------------------------------------------------------------------------
+1,054,502  /build/glibc-LcI20x/glibc-2.31/elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+  566,915  /build/glibc-LcI20x/glibc-2.31/elf/dl-lookup.c:do_lookup_x [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+  275,143  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+  119,015  /build/glibc-LcI20x/glibc-2.31/elf/dl-lookup.c:check_match [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   90,613  /build/glibc-LcI20x/glibc-2.31/elf/do-rel.h:_dl_relocate_object
+   84,912  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/strcmp.S:strcmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   71,545  /build/glibc-LcI20x/glibc-2.31/elf/dl-addr.c:_dl_addr [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+   24,515  /build/glibc-LcI20x/glibc-2.31/elf/dl-tunables.c:__GI___tunables_init [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+   12,128  ???:std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+   10,206  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object
+    8,960  /build/glibc-LcI20x/glibc-2.31/wcsmbs/btowc.c:btowc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    8,579  /build/glibc-LcI20x/glibc-2.31/elf/dl-version.c:_dl_check_map_versions [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    7,789  /build/glibc-LcI20x/glibc-2.31/elf/dl-tunables.h:__GI___tunables_init
+    7,268  /build/glibc-LcI20x/glibc-2.31/elf/../elf/dl-runtime.c:_dl_fixup [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    6,579  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h:do_lookup_x
+    3,966  /build/glibc-LcI20x/glibc-2.31/elf/dl-cache.c:_dl_cache_libcmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    3,608  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    3,348  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::__normal_iterator(Card* const&) [/home/user/ECE350Final/src/Durak]
+    3,186  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:_dl_map_object_from_fd [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    3,062  /build/glibc-LcI20x/glibc-2.31/elf/dl-misc.c:_dl_name_match_p [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    3,000  /usr/include/c++/9/bits/vector.tcc:void std::vector<Card, std::allocator<Card> >::_M_realloc_insert<Card const&>(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, Card const&) [/home/user/ECE350Final/src/Durak]
+    2,870  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave'2 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    2,816  /build/glibc-LcI20x/glibc-2.31/wcsmbs/wctob.c:wctob [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    2,745  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    2,733  ???:std::ctype<wchar_t>::_M_initialize_ctype() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    2,702  /build/glibc-LcI20x/glibc-2.31/libio/iofwrite.c:fwrite [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    2,698  /usr/include/c++/9/bits/stl_uninitialized.h:Card* std::__relocate_a_1<Card*, Card*, std::allocator<Card> >(Card*, Card*, Card*, std::allocator<Card>&) [/home/user/ECE350Final/src/Durak]
+    2,678  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator+(long) const [/home/user/ECE350Final/src/Durak]
+    2,520  ???:std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    2,496  ???:__dynamic_cast [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    2,484  /usr/include/c++/9/bits/stl_uninitialized.h:void std::__relocate_object_a<Card, Card, std::allocator<Card> >(Card*, Card*, std::allocator<Card>&) [/home/user/ECE350Final/src/Durak]
+    2,408  /usr/include/c++/9/bits/move.h:Card* std::__addressof<Card>(Card&) [/home/user/ECE350Final/src/Durak]
+    2,240  /usr/include/c++/9/bits/move.h:std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Card> >, std::is_move_constructible<Card>, std::is_move_assignable<Card> >::value, void>::type std::swap<Card>(Card&, Card&) [/home/user/ECE350Final/src/Durak]
+    2,239  /build/glibc-LcI20x/glibc-2.31/elf/dl-deps.c:_dl_map_object_deps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    2,196  /usr/include/c++/9/bits/uniform_int_dist.h:unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&, std::uniform_int_distribution<unsigned long>::param_type const&) [/home/user/ECE350Final/src/Durak]
+    2,116  /usr/include/c++/9/ext/new_allocator.h:void __gnu_cxx::new_allocator<Card>::construct<Card, Card>(Card*, Card&&) [/home/user/ECE350Final/src/Durak]
+    2,114  /usr/include/c++/9/bits/move.h:std::remove_reference<Card&>::type&& std::move<Card&>(Card&) [/home/user/ECE350Final/src/Durak]
+    2,105  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:_dl_map_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    2,023  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::base() const [/home/user/ECE350Final/src/Durak]
+    1,958  /usr/include/c++/9/bits/stl_uninitialized.h:Card* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*>(__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*) [/home/user/ECE350Final/src/Durak]
+    1,934  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,920  /usr/include/c++/9/bits/stl_algo.h:void std::shuffle<__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&>(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&) [/home/user/ECE350Final/src/Durak]
+    1,876  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/strlen-avx2.S:__strlen_avx2 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,869  /usr/include/c++/9/bits/stl_iterator.h:bool __gnu_cxx::operator!=<Card const*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > > const&) [/home/user/ECE350Final/src/Durak]
+    1,850  /home/user/ECE350Final/src/Card.cpp:Card::getNumValue() [/home/user/ECE350Final/src/Durak]
+    1,820  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator++(int) [/home/user/ECE350Final/src/Durak]
+    1,813  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,792  /usr/include/c++/9/new:operator new(unsigned long, void*) [/home/user/ECE350Final/src/Durak]
+    1,781  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::size() const [/home/user/ECE350Final/src/Durak]
+    1,748  /usr/include/c++/9/bits/alloc_traits.h:void std::allocator_traits<std::allocator<Card> >::construct<Card, Card>(std::allocator<Card>&, Card*, Card&&) [/home/user/ECE350Final/src/Durak]
+    1,692  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::push_back(Card const&) [/home/user/ECE350Final/src/Durak]
+    1,608  /build/glibc-LcI20x/glibc-2.31/elf/get-dynamic-info.h:_dl_map_object_from_fd
+    1,600  /usr/include/c++/9/bits/stl_uninitialized.h:Card* std::__relocate_a<Card*, Card*, std::allocator<Card> >(Card*, Card*, Card*, std::allocator<Card>&) [/home/user/ECE350Final/src/Durak]
+    1,568  /usr/include/c++/9/bits/alloc_traits.h:void std::allocator_traits<std::allocator<Card> >::destroy<Card>(std::allocator<Card>&, Card*) [/home/user/ECE350Final/src/Durak]
+    1,547  /usr/include/c++/9/bits/move.h:Card const& std::forward<Card const&>(std::remove_reference<Card const&>::type&) [/home/user/ECE350Final/src/Durak]
+    1,540  /usr/include/c++/9/bits/stl_algobase.h:void std::iter_swap<__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) [/home/user/ECE350Final/src/Durak]
+    1,496  /usr/include/c++/9/bits/stl_construct.h:void std::_Construct<Card, Card const&>(Card*, Card const&) [/home/user/ECE350Final/src/Durak]
+    1,480  ???:__cxxabiv1::__si_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,475  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_M_check_len(unsigned long, char const*) const [/home/user/ECE350Final/src/Durak]
+    1,472  /usr/include/c++/9/ext/new_allocator.h:void __gnu_cxx::new_allocator<Card>::construct<Card, Card const&>(Card*, Card const&) [/home/user/ECE350Final/src/Durak]
+    1,447  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:open_verify.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,428  /usr/include/c++/9/bits/stl_algo.h:std::pair<unsigned long, unsigned long> std::__gen_two_uniform_ints<unsigned long, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&>(unsigned long, unsigned long, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&) [/home/user/ECE350Final/src/Durak]
+    1,408  /build/glibc-LcI20x/glibc-2.31/elf/dl-sort-maps.c:_dl_sort_maps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,344  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::base() const [/home/user/ECE350Final/src/Durak]
+    1,342  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::difference_type __gnu_cxx::operator-<Card*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&) [/home/user/ECE350Final/src/Durak]
+    1,323  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::vector(std::vector<Card, std::allocator<Card> > const&) [/home/user/ECE350Final/src/Durak]
+    1,323  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,288  /usr/include/c++/9/bits/move.h:Card&& std::forward<Card>(std::remove_reference<Card>::type&) [/home/user/ECE350Final/src/Durak]
+    1,270  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c:_IO_do_write@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,265  /build/glibc-LcI20x/glibc-2.31/elf/dl-cache.c:_dl_load_cache_lookup [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,260  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) [/home/user/ECE350Final/src/Durak]
+    1,250  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_max_size(std::allocator<Card> const&) [/home/user/ECE350Final/src/Durak]
+    1,224  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator*() const [/home/user/ECE350Final/src/Durak]
+    1,216  /usr/include/c++/9/bits/alloc_traits.h:void std::allocator_traits<std::allocator<Card> >::construct<Card, Card const&>(std::allocator<Card>&, Card*, Card const&) [/home/user/ECE350Final/src/Durak]
+    1,195  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S:__memcmp_avx2_movbe [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,187  /build/glibc-LcI20x/glibc-2.31/elf/dl-object.c:_dl_new_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,168  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+    1,124  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:open_path [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,107  /build/glibc-LcI20x/glibc-2.31/elf/rtld.c:dl_main [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,100  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_relocate(Card*, Card*, Card*, std::allocator<Card>&) [/home/user/ECE350Final/src/Durak]
+    1,092  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:memset [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,088  /usr/include/c++/9/bits/stl_pair.h:std::pair<std::__decay_and_strip<unsigned long>::__type, std::__decay_and_strip<unsigned long>::__type> std::make_pair<unsigned long, unsigned long>(unsigned long&&, unsigned long&&) [/home/user/ECE350Final/src/Durak]
+    1,087  ???:std::ctype<char>::_M_widen_init() const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,086  ???:std::locale::id::_M_id() const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+    1,065  /build/glibc-LcI20x/glibc-2.31/elf/dl-minimal.c:malloc [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+    1,050  /usr/include/c++/9/bits/stl_algobase.h:Card* std::__niter_base<Card*>(Card*) [/home/user/ECE350Final/src/Durak]
+    1,040  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::end() [/home/user/ECE350Final/src/Durak]
+    1,036  /build/glibc-LcI20x/glibc-2.31/wctype/wctype_l.c:wctype_l [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      952  /usr/include/c++/9/bits/move.h:unsigned long&& std::forward<unsigned long>(std::remove_reference<unsigned long>::type&) [/home/user/ECE350Final/src/Durak]
+      945  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      936  /usr/include/c++/9/bits/random.h:std::__detail::_Mod<unsigned long, 2147483647ul, 16807ul, 0ul, true, true>::__calc(unsigned long) [/home/user/ECE350Final/src/Durak]
+      918  /build/glibc-LcI20x/glibc-2.31/libio/libioP.h:fwrite
+      903  /usr/include/c++/9/bits/stl_iterator.h:bool __gnu_cxx::operator!=<Card*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&) [/home/user/ECE350Final/src/Durak]
+      902  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      900  /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::allocate(unsigned long, void const*) [/home/user/ECE350Final/src/Durak]
+      896  /build/glibc-LcI20x/glibc-2.31/wcsmbs/./wcsmbsload.h:btowc
+      896  /usr/include/c++/9/ext/new_allocator.h:void __gnu_cxx::new_allocator<Card>::destroy<Card>(Card*) [/home/user/ECE350Final/src/Durak]
+      894  /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_deallocate(Card*, unsigned long) [/home/user/ECE350Final/src/Durak]
+      888  /build/glibc-LcI20x/glibc-2.31/elf/dl-reloc.c:_dl_relocate_object [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      859  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__mempcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      850  /home/user/ECE350Final/src/Deck.cpp:Deck::removeCard(Card) [/home/user/ECE350Final/src/Durak]
+      828  /home/user/ECE350Final/src/Card.cpp:Card::setVal(int) [/home/user/ECE350Final/src/Durak]
+      824  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S:strlen [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      816  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::operator++() [/home/user/ECE350Final/src/Durak]
+      800  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_do_relocate(Card*, Card*, Card*, std::allocator<Card>&, std::integral_constant<bool, true>) [/home/user/ECE350Final/src/Durak]
+      779  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::begin() [/home/user/ECE350Final/src/Durak]
+      777  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c:_IO_file_write@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      768  /build/glibc-LcI20x/glibc-2.31/elf/dl-profstub.c:_dl_mcount_wrapper_check [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      768  /build/glibc-LcI20x/glibc-2.31/iconv/gconv_simple.c:__gconv_btwoc_ascii [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      768  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c:ptmalloc_init.part.0
+      760  /home/user/ECE350Final/src/Deck.cpp:Deck::addCard(Card) [/home/user/ECE350Final/src/Durak]
+      758  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86/cacheinfo.c:intel_check_word.isra.0 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      748  /usr/include/c++/9/bits/stl_pair.h:std::pair<unsigned long, unsigned long>::pair<unsigned long, unsigned long, true>(unsigned long&&, unsigned long&&) [/home/user/ECE350Final/src/Durak]
+      731  /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_allocate(unsigned long) [/home/user/ECE350Final/src/Durak]
+      720  /usr/include/c++/9/bits/alloc_traits.h:std::allocator_traits<std::allocator<Card> >::deallocate(std::allocator<Card>&, Card*, unsigned long) [/home/user/ECE350Final/src/Durak]
+      706  /build/glibc-LcI20x/glibc-2.31/stdlib/cxa_finalize.c:__cxa_finalize [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      700  /usr/include/c++/9/bits/stl_algobase.h:unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [/home/user/ECE350Final/src/Durak]
+      693  /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_get_Tp_allocator() [/home/user/ECE350Final/src/Durak]
+      691  ???:std::locale::_Impl::_Impl(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      687  /build/glibc-LcI20x/glibc-2.31/elf/./dl-map-segments.h:_dl_map_object_from_fd
+      684  ???:std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      675  /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::~_Vector_base() [/home/user/ECE350Final/src/Durak]
+      665  /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::max_size() const [/home/user/ECE350Final/src/Durak]
+      661  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86/dl-prop.h:_dl_process_pt_note [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      650  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_use_relocate() [/home/user/ECE350Final/src/Durak]
+      630  /usr/include/c++/9/bits/alloc_traits.h:std::allocator_traits<std::allocator<Card> >::allocate(std::allocator<Card>&, unsigned long) [/home/user/ECE350Final/src/Durak]
+      629  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:memcpy [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      608  /build/glibc-LcI20x/glibc-2.31/libio/iofflush.c:fflush [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      600  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::max_size() const [/home/user/ECE350Final/src/Durak]
+      598  /build/glibc-LcI20x/glibc-2.31/elf/dl-hwcaps.c:_dl_important_hwcaps [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      597  /home/user/ECE350Final/src/Deck.cpp:Deck::Deck() [/home/user/ECE350Final/src/Durak]
+      594  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::~vector() [/home/user/ECE350Final/src/Durak]
+      588  /usr/include/c++/9/bits/allocator.h:std::allocator<Card>::allocator(std::allocator<Card> const&) [/home/user/ECE350Final/src/Durak]
+      588  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::__normal_iterator(Card const* const&) [/home/user/ECE350Final/src/Durak]
+      585  /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::deallocate(Card*, unsigned long) [/home/user/ECE350Final/src/Durak]
+      576  /usr/include/c++/9/bits/uniform_int_dist.h:std::uniform_int_distribution<unsigned long>::param_type::a() const [/home/user/ECE350Final/src/Durak]
+      576  /usr/include/c++/9/bits/uniform_int_dist.h:std::uniform_int_distribution<unsigned long>::uniform_int_distribution(unsigned long, unsigned long) [/home/user/ECE350Final/src/Durak]
+      570  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strchr.S:index [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      570  ???:std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      567  /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_create_storage(unsigned long) [/home/user/ECE350Final/src/Durak]
+      562  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:mempcpy [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      544  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::operator*() const [/home/user/ECE350Final/src/Durak]
+      540  /usr/include/c++/9/bits/random.h:std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>::operator()() [/home/user/ECE350Final/src/Durak]
+      540  /usr/include/c++/9/bits/uniform_int_dist.h:std::uniform_int_distribution<unsigned long>::param_type::param_type(unsigned long, unsigned long) [/home/user/ECE350Final/src/Durak]
+      537  /build/glibc-LcI20x/glibc-2.31/elf/../elf/dl-sysdep.c:_dl_sysdep_start [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      536  ???:__cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      528  /usr/include/c++/9/bits/allocator.h:std::allocator<Card>::~allocator() [/home/user/ECE350Final/src/Durak]
+      517  ???:0x00000000048ef720 [???]
+      510  /build/glibc-LcI20x/glibc-2.31/string/../bits/stdlib-bsearch.h:intel_check_word.isra.0
+      504  /usr/include/c++/9/bits/uniform_int_dist.h:unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&) [/home/user/ECE350Final/src/Durak]
+      504  ???:std::ostream::put(char) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      500  /usr/include/c++/9/bits/alloc_traits.h:std::allocator_traits<std::allocator<Card> >::max_size(std::allocator<Card> const&) [/home/user/ECE350Final/src/Durak]
+      497  /home/user/ECE350Final/src/main.cpp:defend(Card, Deck&, int) [/home/user/ECE350Final/src/Durak]
+      497  /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_get_Tp_allocator() const [/home/user/ECE350Final/src/Durak]
+      495  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      491  /build/glibc-LcI20x/glibc-2.31/elf/dl-environ.c:_dl_next_ld_env_entry [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      486  /build/glibc-LcI20x/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      483  /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_Vector_base(unsigned long, std::allocator<Card> const&) [/home/user/ECE350Final/src/Durak]
+      476  /home/user/ECE350Final/src/Deck.cpp:Deck::checkValue(Deck) [/home/user/ECE350Final/src/Durak]
+      472  ???:std::ios_base::ios_base() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      462  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::begin() const [/home/user/ECE350Final/src/Durak]
+      462  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::end() const [/home/user/ECE350Final/src/Durak]
+      451  /build/glibc-LcI20x/glibc-2.31/elf/dl-tunables.c:__tunable_get_val [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      447  /build/glibc-LcI20x/glibc-2.31/elf/dl-fini.c:_dl_fini [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      442  /home/user/ECE350Final/src/Deck.cpp:Deck::drawCard() [/home/user/ECE350Final/src/Durak]
+      439  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h:_dl_start
+      428  /build/glibc-LcI20x/glibc-2.31/stdlib/cxa_atexit.c:__new_exitfn [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      420  /build/glibc-LcI20x/glibc-2.31/elf/dl-error-skeleton.c:_dl_catch_exception [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      420  /usr/include/c++/9/bits/stl_construct.h:void std::_Destroy<Card*, Card>(Card*, Card*, std::allocator<Card>&) [/home/user/ECE350Final/src/Durak]
+      420  /usr/include/c++/9/ext/alloc_traits.h:__gnu_cxx::__alloc_traits<std::allocator<Card>, Card>::_S_select_on_copy(std::allocator<Card> const&) [/home/user/ECE350Final/src/Durak]
+      414  ???:std::__cxx11::numpunct<char>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      414  ???:std::numpunct<char>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      409  /build/glibc-LcI20x/glibc-2.31/elf/dl-init.c:call_init.part.0 [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      396  /build/glibc-LcI20x/glibc-2.31/stdlib/cxa_atexit.c:__cxa_atexit [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      392  /usr/include/c++/9/bits/stl_construct.h:void std::_Destroy<Card*>(Card*, Card*) [/home/user/ECE350Final/src/Durak]
+      390  /build/glibc-LcI20x/glibc-2.31/elf/rtld.c:rtld_lock_default_lock_recursive [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      390  /build/glibc-LcI20x/glibc-2.31/elf/rtld.c:rtld_lock_default_unlock_recursive [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      389  /build/glibc-LcI20x/glibc-2.31/stdlib/exit.c:__run_exit_handlers [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      387  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c:_IO_file_sync@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+      385  /usr/include/c++/9/bits/vector.tcc:std::vector<Card, std::allocator<Card> >::_M_erase(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) [/home/user/ECE350Final/src/Durak]
+      374  ???:std::locale::locale() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      361  /build/glibc-LcI20x/glibc-2.31/libio/libioP.h:fflush
+      360  /usr/include/c++/9/bits/random.h:unsigned long std::__detail::__mod<unsigned long, 2147483647ul, 16807ul, 0ul>(unsigned long) [/home/user/ECE350Final/src/Durak]
+      357  /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_Vector_impl::_Vector_impl(std::allocator<Card> const&) [/home/user/ECE350Final/src/Durak]
+      356  /build/glibc-LcI20x/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      356  /usr/include/c++/9/bits/stl_algobase.h:unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [/home/user/ECE350Final/src/Durak]
+      354  ???:std::ostream& std::ostream::_M_insert<long>(long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      351  /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator-(long) const [/home/user/ECE350Final/src/Durak]
+      351  /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_Vector_impl_data::_Vector_impl_data() [/home/user/ECE350Final/src/Durak]
+      350  ???:std::__cxx11::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      350  ???:std::numpunct<wchar_t>::_M_initialize_numpunct(__locale_struct*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      349  /home/user/ECE350Final/src/Deck.cpp:Deck::firstPlayer(Deck, Deck, char) [/home/user/ECE350Final/src/Durak]
+      336  /home/user/ECE350Final/src/Card.h:Card::getSuit() [/home/user/ECE350Final/src/Durak]
+      336  /usr/include/c++/9/bits/stl_uninitialized.h:Card* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*, Card>(__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*, std::allocator<Card>&) [/home/user/ECE350Final/src/Durak]
+      336  /usr/include/c++/9/bits/stl_uninitialized.h:Card* std::uninitialized_copy<__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*>(__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*) [/home/user/ECE350Final/src/Durak]
+      336  /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::new_allocator(__gnu_cxx::new_allocator<Card> const&) [/home/user/ECE350Final/src/Durak]
+      336  /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::~new_allocator() [/home/user/ECE350Final/src/Durak]
+      335  /build/glibc-LcI20x/glibc-2.31/elf/get-dynamic-info.h:dl_main
+      329  /build/glibc-LcI20x/glibc-2.31/elf/../elf/dl-tls.c:_dl_allocate_tls_storage [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      327  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c:_dl_init_paths [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      326  /home/user/ECE350Final/src/Card.cpp:Card::print() [/home/user/ECE350Final/src/Durak]
+      325  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::back() [/home/user/ECE350Final/src/Durak]
+      317  ???:std::ios_base::Init::Init() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      310  /build/glibc-LcI20x/glibc-2.31/setjmp/../sysdeps/x86_64/setjmp.S:__sigsetjmp [/usr/lib/x86_64-linux-gnu/ld-2.31.so]
+      309  /build/glibc-LcI20x/glibc-2.31/elf/do-rel.h:_dl_start
+      306  ???:0x00000000000d7450 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      306  ???:__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::xsputn(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28]
+      300  /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_nothrow_relocate(std::integral_constant<bool, true>) [/home/user/ECE350Final/src/Durak]
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/stl_pair.h
+--------------------------------------------------------------------------------
+Ir  
+
+-- line 333 ----------------------------------------
+  .         : first(__x), second(std::forward<_U2>(__y)) { }
+  .  
+  .        template<typename _U1, typename _U2, typename
+  .  	       enable_if<_PCCP::template
+  .  			   _MoveConstructiblePair<_U1, _U2>()
+  .  			  && _PCCP::template
+  .  			   _ImplicitlyMoveConvertiblePair<_U1, _U2>(),
+  .                           bool>::type=true>
+238  	constexpr pair(_U1&& __x, _U2&& __y)
+510  	: first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
+476  => /usr/include/c++/9/bits/move.h:unsigned long&& std::forward<unsigned long>(std::remove_reference<unsigned long>::type&) (68x)
+  .  
+  .        template<typename _U1, typename _U2, typename
+  .  	       enable_if<_PCCP::template
+  .  			   _MoveConstructiblePair<_U1, _U2>()
+  .  			  && !_PCCP::template
+  .  			   _ImplicitlyMoveConvertiblePair<_U1, _U2>(),
+  .                           bool>::type=false>
+  .  	explicit constexpr pair(_U1&& __x, _U2&& __y)
+-- line 350 ----------------------------------------
+-- line 516 ----------------------------------------
+  .     */
+  .    // _GLIBCXX_RESOLVE_LIB_DEFECTS
+  .    // 181.  make_pair() unintended behavior
+  .  #if __cplusplus >= 201103L
+  .    // NB: DR 706.
+  .    template<typename _T1, typename _T2>
+  .      constexpr pair<typename __decay_and_strip<_T1>::__type,
+  .                     typename __decay_and_strip<_T2>::__type>
+340      make_pair(_T1&& __x, _T2&& __y)
+  .      {
+  .        typedef typename __decay_and_strip<_T1>::__type __ds_type1;
+  .        typedef typename __decay_and_strip<_T2>::__type __ds_type2;
+  .        typedef pair<__ds_type1, __ds_type2> 	      __pair_type;
+510        return __pair_type(std::forward<_T1>(__x), std::forward<_T2>(__y));
+1,224  => /usr/include/c++/9/bits/stl_pair.h:std::pair<unsigned long, unsigned long>::pair<unsigned long, unsigned long, true>(unsigned long&&, unsigned long&&) (34x)
+476  => /usr/include/c++/9/bits/move.h:unsigned long&& std::forward<unsigned long>(std::remove_reference<unsigned long>::type&) (68x)
+238      }
+  .  #else
+  .    template<typename _T1, typename _T2>
+  .      inline pair<_T1, _T2>
+  .      make_pair(_T1 __x, _T2 __y)
+  .      { return pair<_T1, _T2>(__x, __y); }
+  .  #endif
+  .  
+  .    /// @}
+-- line 538 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/uniform_int_dist.h
+--------------------------------------------------------------------------------
+Ir  
+
+-- line 66 ----------------------------------------
+  .        /** Parameter type. */
+  .        struct param_type
+  .        {
+  .  	typedef uniform_int_distribution<_IntType> distribution_type;
+  .  
+  .  	param_type() : param_type(0) { }
+  .  
+  .  	explicit
+216  	param_type(_IntType __a,
+  .  		   _IntType __b = numeric_limits<_IntType>::max())
+216  	: _M_a(__a), _M_b(__b)
+  .  	{
+  .  	  __glibcxx_assert(_M_a <= _M_b);
+108  	}
+  .  
+  .  	result_type
+288  	a() const
+288  	{ return _M_a; }
+  .  
+  .  	result_type
+144  	b() const
+144  	{ return _M_b; }
+  .  
+  .  	friend bool
+  .  	operator==(const param_type& __p1, const param_type& __p2)
+  .  	{ return __p1._M_a == __p2._M_a && __p1._M_b == __p2._M_b; }
+  .  
+  .  	friend bool
+  .  	operator!=(const param_type& __p1, const param_type& __p2)
+  .  	{ return !(__p1 == __p2); }
+-- line 95 ----------------------------------------
+-- line 104 ----------------------------------------
+  .         * @brief Constructs a uniform distribution object.
+  .         */
+  .        uniform_int_distribution() : uniform_int_distribution(0) { }
+  .  
+  .        /**
+  .         * @brief Constructs a uniform distribution object.
+  .         */
+  .        explicit
+252        uniform_int_distribution(_IntType __a,
+  .  			       _IntType __b = numeric_limits<_IntType>::max())
+216        : _M_param(__a, __b)
+540  => /usr/include/c++/9/bits/uniform_int_dist.h:std::uniform_int_distribution<unsigned long>::param_type::param_type(unsigned long, unsigned long) (36x)
+108        { }
+  .  
+  .        explicit
+  .        uniform_int_distribution(const param_type& __p)
+  .        : _M_param(__p)
+  .        { }
+  .  
+  .        /**
+  .         * @brief Resets the distribution state.
+-- line 123 ----------------------------------------
+-- line 164 ----------------------------------------
+  .        max() const
+  .        { return this->b(); }
+  .  
+  .        /**
+  .         * @brief Generating functions.
+  .         */
+  .        template<typename _UniformRandomNumberGenerator>
+  .  	result_type
+216  	operator()(_UniformRandomNumberGenerator& __urng)
+288          { return this->operator()(__urng, _M_param); }
+4,896  => /usr/include/c++/9/bits/uniform_int_dist.h:unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&, std::uniform_int_distribution<unsigned long>::param_type const&) (36x)
+  .  
+  .        template<typename _UniformRandomNumberGenerator>
+  .  	result_type
+  .  	operator()(_UniformRandomNumberGenerator& __urng,
+  .  		   const param_type& __p);
+  .  
+  .        template<typename _ForwardIterator,
+  .  	       typename _UniformRandomNumberGenerator>
+-- line 181 ----------------------------------------
+-- line 217 ----------------------------------------
+  .  			const param_type& __p);
+  .  
+  .        param_type _M_param;
+  .      };
+  .  
+  .    template<typename _IntType>
+  .      template<typename _UniformRandomNumberGenerator>
+  .        typename uniform_int_distribution<_IntType>::result_type
+396        uniform_int_distribution<_IntType>::
+  .        operator()(_UniformRandomNumberGenerator& __urng,
+  .  		 const param_type& __param)
+  .        {
+  .  	typedef typename _UniformRandomNumberGenerator::result_type
+  .  	  _Gresult_type;
+  .  	typedef typename std::make_unsigned<result_type>::type __utype;
+  .  	typedef typename std::common_type<_Gresult_type, __utype>::type
+  .  	  __uctype;
+  .  
+ 36  	const __uctype __urngmin = __urng.min();
+ 36  	const __uctype __urngmax = __urng.max();
+ 36  	const __uctype __urngrange = __urngmax - __urngmin;
+108  	const __uctype __urange
+252  	  = __uctype(__param.b()) - __uctype(__param.a());
+288  => /usr/include/c++/9/bits/uniform_int_dist.h:std::uniform_int_distribution<unsigned long>::param_type::a() const (36x)
+288  => /usr/include/c++/9/bits/uniform_int_dist.h:std::uniform_int_distribution<unsigned long>::param_type::b() const (36x)
+  .  
+  .  	__uctype __ret;
+  .  
+ 72  	if (__urngrange > __urange)
+  .  	  {
+  .  	    // downscaling
+108  	    const __uctype __uerange = __urange + 1; // __urange can be zero
+144  	    const __uctype __scaling = __urngrange / __uerange;
+108  	    const __uctype __past = __uerange * __scaling;
+  .  	    do
+180  	      __ret = __uctype(__urng()) - __urngmin;
+1,836  => /usr/include/c++/9/bits/random.h:std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>::operator()() (36x)
+108  	    while (__ret >= __past);
+180  	    __ret /= __scaling;
+  .  	  }
+  .  	else if (__urngrange < __urange)
+  .  	  {
+  .  	    // upscaling
+  .  	    /*
+  .  	      Note that every value in [0, urange]
+  .  	      can be written uniquely as
+  .  
+-- line 260 ----------------------------------------
+-- line 276 ----------------------------------------
+  .  			 (__urng, param_type(0, __urange / __uerngrange)));
+  .  		__ret = __tmp + (__uctype(__urng()) - __urngmin);
+  .  	      }
+  .  	    while (__ret > __urange || __ret < __tmp);
+  .  	  }
+  .  	else
+  .  	  __ret = __uctype(__urng()) - __urngmin;
+  .  
+180  	return __ret + __param.a();
+288  => /usr/include/c++/9/bits/uniform_int_dist.h:std::uniform_int_distribution<unsigned long>::param_type::a() const (36x)
+252        }
+  .  
+  .  
+  .    template<typename _IntType>
+  .      template<typename _ForwardIterator,
+  .  	     typename _UniformRandomNumberGenerator>
+  .        void
+  .        uniform_int_distribution<_IntType>::
+  .        __generate_impl(_ForwardIterator __f, _ForwardIterator __t,
+-- line 293 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/stl_algo.h
+--------------------------------------------------------------------------------
+Ir  
+
+-- line 3761 ----------------------------------------
+  .     *  between invocations.
+  .     *
+  .     *  If we know we want two integers in ranges that are sufficiently
+  .     *  small, we can compose the ranges, use a single distribution
+  .     *  invocation, and significantly reduce the waste.
+  .    */
+  .    template<typename _IntType, typename _UniformRandomBitGenerator>
+  .      pair<_IntType, _IntType>
+340      __gen_two_uniform_ints(_IntType __b0, _IntType __b1,
+  .  			   _UniformRandomBitGenerator&& __g)
+  .      {
+  .        _IntType __x
+442  	= uniform_int_distribution<_IntType>{0, (__b0 * __b1) - 1}(__g);
+5,100  => /usr/include/c++/9/bits/uniform_int_dist.h:unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&) (34x)
+1,054  => /usr/include/c++/9/bits/uniform_int_dist.h:std::uniform_int_distribution<unsigned long>::uniform_int_distribution(unsigned long, unsigned long) (34x)
+476        return std::make_pair(__x / __b1, __x % __b1);
+2,788  => /usr/include/c++/9/bits/stl_pair.h:std::pair<std::__decay_and_strip<unsigned long>::__type, std::__decay_and_strip<unsigned long>::__type> std::make_pair<unsigned long, unsigned long>(unsigned long&&, unsigned long&&) (34x)
+170      }
+  .  
+  .    /**
+  .     *  @brief Shuffle the elements of a sequence using a uniform random
+  .     *         number generator.
+  .     *  @ingroup mutating_algorithms
+  .     *  @param  __first   A forward iterator.
+  .     *  @param  __last    A forward iterator.
+  .     *  @param  __g       A UniformRandomNumberGenerator (26.5.1.3).
+-- line 3783 ----------------------------------------
+-- line 3784 ----------------------------------------
+  .     *  @return  Nothing.
+  .     *
+  .     *  Reorders the elements in the range @p [__first,__last) using @p __g to
+  .     *  provide random numbers.
+  .    */
+  .    template<typename _RandomAccessIterator,
+  .  	   typename _UniformRandomNumberGenerator>
+  .      void
+ 22      shuffle(_RandomAccessIterator __first, _RandomAccessIterator __last,
+  .  	    _UniformRandomNumberGenerator&& __g)
+  .      {
+  .        // concept requirements
+  .        __glibcxx_function_requires(_Mutable_RandomAccessIteratorConcept<
+  .  	    _RandomAccessIterator>)
+  .        __glibcxx_requires_valid_range(__first, __last);
+  .  
+ 14        if (__first == __last)
+ 70  => /usr/include/c++/9/bits/stl_iterator.h:bool __gnu_cxx::operator==<Card*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&) (2x)
+  .  	return;
+  .  
+  .        typedef typename iterator_traits<_RandomAccessIterator>::difference_type
+  .  	_DistanceType;
+  .  
+  .        typedef typename std::make_unsigned<_DistanceType>::type __ud_type;
+  .        typedef typename std::uniform_int_distribution<__ud_type> __distr_type;
+  .        typedef typename __distr_type::param_type __p_type;
+  .  
+  .        typedef typename remove_reference<_UniformRandomNumberGenerator>::type
+  .  	_Gen;
+  .        typedef typename common_type<typename _Gen::result_type, __ud_type>::type
+  .  	__uc_type;
+  .  
+  2        const __uc_type __urngrange = __g.max() - __g.min();
+ 12        const __uc_type __urange = __uc_type(__last - __first);
+ 72  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::difference_type __gnu_cxx::operator-<Card*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&) (2x)
+  .  
+ 10        if (__urngrange / __urange >= __urange)
+  .          // I.e. (__urngrange >= __urange * __urange) but without wrap issues.
+  .        {
+ 10  	_RandomAccessIterator __i = __first + 1;
+ 76  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator+(long) const (2x)
+  .  
+  .  	// Since we know the range isn't empty, an even number of elements
+  .  	// means an uneven number of elements /to swap/, in which case we
+  .  	// do the first one up front:
+  .  
+  8  	if ((__urange % 2) == 0)
+  .  	{
+ 10  	  __distr_type __d{0, 1};
+ 62  => /usr/include/c++/9/bits/uniform_int_dist.h:std::uniform_int_distribution<unsigned long>::uniform_int_distribution(unsigned long, unsigned long) (2x)
+ 36  	  std::iter_swap(__i++, __first + __d(__g));
+182  => /usr/include/c++/9/bits/stl_algobase.h:void std::iter_swap<__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) (2x)
+ 76  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator+(long) const (2x)
+ 76  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator++(int) (2x)
+300  => /usr/include/c++/9/bits/uniform_int_dist.h:unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&) (2x)
+  .  	}
+  .  
+  .  	// Now we know that __last - __i is even, so we do the rest in pairs,
+  .  	// using a single distribution invocation to produce swap positions
+  .  	// for two successive elements at a time:
+  .  
+286  	while (__i != __last)
+1,260  => /usr/include/c++/9/bits/stl_iterator.h:bool __gnu_cxx::operator!=<Card*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&) (36x)
+  .  	{
+238  	  const __uc_type __swap_range = __uc_type(__i - __first) + 1;
+1,224  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::difference_type __gnu_cxx::operator-<Card*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&) (34x)
+  .  
+  .  	  const pair<__uc_type, __uc_type> __pospos =
+306  	    __gen_two_uniform_ints(__swap_range, __swap_range + 1, __g);
+10,370  => /usr/include/c++/9/bits/stl_algo.h:std::pair<unsigned long, unsigned long> std::__gen_two_uniform_ints<unsigned long, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&>(unsigned long, unsigned long, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&) (34x)
+  .  
+476  	  std::iter_swap(__i++, __first + __pospos.first);
+3,094  => /usr/include/c++/9/bits/stl_algobase.h:void std::iter_swap<__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) (34x)
+1,292  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator+(long) const (34x)
+1,292  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator++(int) (34x)
+476  	  std::iter_swap(__i++, __first + __pospos.second);
+3,094  => /usr/include/c++/9/bits/stl_algobase.h:void std::iter_swap<__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) (34x)
+1,292  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator+(long) const (34x)
+1,292  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator++(int) (34x)
+  .  	}
+  .  
+  .  	return;
+  .        }
+  .  
+  .        __distr_type __d;
+  .  
+  .        for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
+  .  	std::iter_swap(__i, __first + __d(__g, __p_type(0, __i - __first)));
+ 14      }
+  .  #endif
+  .  
+  .  #endif // C++11
+  .  
+  .  _GLIBCXX_BEGIN_NAMESPACE_ALGO
+  .  
+  .    /**
+  .     *  @brief Apply a function to every element of a sequence.
+-- line 3863 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /home/user/ECE350Final/src/Card.h
+--------------------------------------------------------------------------------
+Ir  
+
+  .  #pragma once
+  .  #include <iostream>
+  .  
+  .  using namespace std;
+  .  
+  .  class Card{
+  .  public:
+242    Card(){ val = 'X'; suit = 'X'; }; //default constructor, should not be called
+  .    Card(char v, char s){ val = v; suit = s; }; //constructor
+336    char getSuit(){ return suit; };
+  8    char getValue(){ return val; };
+  .    int getNumValue();
+  .    bool setSuit(char);
+  .    bool setVal(char);
+  .    bool setVal(int);
+  .    void print();
+  .    bool isEmpty();
+  .        
+  .    //ja dodala
+-- line 19 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/stl_construct.h
+--------------------------------------------------------------------------------
+Ir    
+
+-- line 66 ----------------------------------------
+    .  
+    .    /**
+    .     * Constructs an object in existing memory by invoking an allocated
+    .     * object's constructor with an initializer.
+    .     */
+    .  #if __cplusplus >= 201103L
+    .    template<typename _T1, typename... _Args>
+    .      inline void
+  476      _Construct(_T1* __p, _Args&&... __args)
+1,020      { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+  544  => /usr/include/c++/9/new:operator new(unsigned long, void*) (68x)
+  476  => /usr/include/c++/9/bits/move.h:Card const& std::forward<Card const&>(std::remove_reference<Card const&>::type&) (68x)
+    .  #else
+    .    template<typename _T1, typename _T2>
+    .      inline void
+    .      _Construct(_T1* __p, const _T2& __value)
+    .      {
+    .        // _GLIBCXX_RESOLVE_LIB_DEFECTS
+    .        // 402. wrong new expression in [some_]allocator::construct
+    .        ::new(static_cast<void*>(__p)) _T1(__value);
+-- line 83 ----------------------------------------
+-- line 109 ----------------------------------------
+    .  	}
+    .      };
+    .  
+    .    template<>
+    .      struct _Destroy_aux<true>
+    .      {
+    .        template<typename _ForwardIterator>
+    .          static void
+  224          __destroy(_ForwardIterator, _ForwardIterator) { }
+    .      };
+    .  
+    .    /**
+    .     * Destroy a range of objects.  If the value_type of the object has
+    .     * a trivial destructor, the compiler should optimize all of this
+    .     * away, otherwise the objects' destructors must be invoked.
+    .     */
+    .    template<typename _ForwardIterator>
+    .      inline void
+  168      _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+    .      {
+    .        typedef typename iterator_traits<_ForwardIterator>::value_type
+    .                         _Value_type;
+    .  #if __cplusplus >= 201103L
+    .        // A deleted destructor is trivial, this ensures we reject such types:
+    .        static_assert(is_destructible<_Value_type>::value,
+    .  		    "value type is destructible");
+    .  #endif
+    .        std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
+  140  	__destroy(__first, __last);
+  224  => /usr/include/c++/9/bits/stl_construct.h:void std::_Destroy_aux<true>::__destroy<Card*>(Card*, Card*) (28x)
+   84      }
+    .  
+    .    template<bool>
+    .      struct _Destroy_n_aux
+    .      {
+    .        template<typename _ForwardIterator, typename _Size>
+    .          static _ForwardIterator
+    .          __destroy_n(_ForwardIterator __first, _Size __count)
+    .  	{
+-- line 146 ----------------------------------------
+-- line 195 ----------------------------------------
+    .      {
+    .        typedef __gnu_cxx::__alloc_traits<_Allocator> __traits;
+    .        for (; __first != __last; ++__first)
+    .  	__traits::destroy(__alloc, std::__addressof(*__first));
+    .      }
+    .  
+    .    template<typename _ForwardIterator, typename _Tp>
+    .      inline void
+  196      _Destroy(_ForwardIterator __first, _ForwardIterator __last,
+    .  	     allocator<_Tp>&)
+    .      {
+  140        _Destroy(__first, __last);
+  616  => /usr/include/c++/9/bits/stl_construct.h:void std::_Destroy<Card*>(Card*, Card*) (28x)
+   84      }
+    .  
+    .  #if __cplusplus > 201402L
+    .    template <typename _Tp>
+    .      inline void
+    .      destroy_at(_Tp* __location)
+    .      {
+    .        std::_Destroy(__location);
+    .      }
+-- line 215 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/stl_algobase.h
+--------------------------------------------------------------------------------
+Ir  
+
+-- line 115 ----------------------------------------
+  .     *  @param  __b  Another iterator.
+  .     *  @return   Nothing.
+  .     *
+  .     *  This function swaps the values pointed to by two iterators, not the
+  .     *  iterators themselves.
+  .    */
+  .    template<typename _ForwardIterator1, typename _ForwardIterator2>
+  .      inline void
+490      iter_swap(_ForwardIterator1 __a, _ForwardIterator2 __b)
+  .      {
+  .        // concept requirements
+  .        __glibcxx_function_requires(_Mutable_ForwardIteratorConcept<
+  .  				  _ForwardIterator1>)
+  .        __glibcxx_function_requires(_Mutable_ForwardIteratorConcept<
+  .  				  _ForwardIterator2>)
+  .  
+  .  #if __cplusplus < 201103L
+-- line 131 ----------------------------------------
+-- line 143 ----------------------------------------
+  .  	_ReferenceType1;
+  .        typedef typename iterator_traits<_ForwardIterator2>::reference
+  .  	_ReferenceType2;
+  .        std::__iter_swap<__are_same<_ValueType1, _ValueType2>::__value
+  .  	&& __are_same<_ValueType1&, _ReferenceType1>::__value
+  .  	&& __are_same<_ValueType2&, _ReferenceType2>::__value>::
+  .  	iter_swap(__a, __b);
+  .  #else
+700        swap(*__a, *__b);
+3,710  => /usr/include/c++/9/bits/move.h:std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Card> >, std::is_move_constructible<Card>, std::is_move_assignable<Card> >::value, void>::type std::swap<Card>(Card&, Card&) (70x)
+1,120  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator*() const (140x)
+  .  #endif
+350      }
+  .  
+  .    /**
+  .     *  @brief Swap the elements of two sequences.
+  .     *  @ingroup mutating_algorithms
+  .     *  @param  __first1  A forward iterator.
+  .     *  @param  __last1   A forward iterator.
+  .     *  @param  __first2  A forward iterator.
+  .     *  @return   An iterator equal to @p first2+(last1-first1).
+-- line 161 ----------------------------------------
+-- line 190 ----------------------------------------
+  .     *
+  .     *  This is the simple classic generic implementation.  It will work on
+  .     *  temporary expressions, since they are only evaluated once, unlike a
+  .     *  preprocessor macro.
+  .    */
+  .    template<typename _Tp>
+  .      _GLIBCXX14_CONSTEXPR
+  .      inline const _Tp&
+250      min(const _Tp& __a, const _Tp& __b)
+  .      {
+  .        // concept requirements
+  .        __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
+  .        //return __b < __a ? __b : __a;
+300        if (__b < __a)
+  .  	return __b;
+ 50        return __a;
+100      }
+  .  
+  .    /**
+  .     *  @brief This does what you think it does.
+  .     *  @ingroup sorting_algorithms
+  .     *  @param  __a  A thing of arbitrary type.
+  .     *  @param  __b  Another thing of arbitrary type.
+  .     *  @return   The greater of the parameters.
+  .     *
+  .     *  This is the simple classic generic implementation.  It will work on
+  .     *  temporary expressions, since they are only evaluated once, unlike a
+  .     *  preprocessor macro.
+  .    */
+  .    template<typename _Tp>
+  .      _GLIBCXX14_CONSTEXPR
+  .      inline const _Tp&
+125      max(const _Tp& __a, const _Tp& __b)
+  .      {
+  .        // concept requirements
+  .        __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
+  .        //return  __a < __b ? __b : __a;
+150        if (__a < __b)
+ 12  	return __b;
+ 19        return __a;
+ 50      }
+  .  
+  .    /**
+  .     *  @brief This does what you think it does.
+  .     *  @ingroup sorting_algorithms
+  .     *  @param  __a  A thing of arbitrary type.
+  .     *  @param  __b  Another thing of arbitrary type.
+  .     *  @param  __comp  A @link comparison_functors comparison functor@endlink.
+  .     *  @return   The lesser of the parameters.
+-- line 238 ----------------------------------------
+-- line 272 ----------------------------------------
+  .  	return __b;
+  .        return __a;
+  .      }
+  .  
+  .    // Fallback implementation of the function in bits/stl_iterator.h used to
+  .    // remove the __normal_iterator wrapper. See copy, fill, ...
+  .    template<typename _Iterator>
+  .      inline _Iterator
+600      __niter_base(_Iterator __it)
+  .      _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
+450      { return __it; }
+  .  
+  .    // Reverse the __niter_base transformation to get a
+  .    // __normal_iterator back again (this assumes that __normal_iterator
+  .    // is only used to wrap random access iterators, like pointers).
+  .    template<typename _From, typename _To>
+  .      inline _From
+ 30      __niter_wrap(_From __from, _To __res)
+ 70      { return __from + (__res - std::__niter_base(__from)); }
+190  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator+(long) const (5x)
+ 90  => /usr/include/c++/9/bits/stl_iterator.h:Card* std::__niter_base<Card*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) (5x)
+  .  
+  .    // No need to wrap, iterator already has the right type.
+  .    template<typename _Iterator>
+  .      inline _Iterator
+  .      __niter_wrap(const _Iterator&, _Iterator __res)
+  .      { return __res; }
+  .  
+  .    // All of these auxiliary structs serve two purposes.  (1) Replace
+-- line 298 ----------------------------------------
+-- line 367 ----------------------------------------
+  .      };
+  .  #endif
+  .  
+  .    template<bool _IsMove>
+  .      struct __copy_move<_IsMove, true, random_access_iterator_tag>
+  .      {
+  .        template<typename _Tp>
+  .  	static _Tp*
+ 35  	__copy_m(const _Tp* __first, const _Tp* __last, _Tp* __result)
+  .  	{
+  .  #if __cplusplus >= 201103L
+  .  	  using __assignable = conditional<_IsMove,
+  .  					   is_move_assignable<_Tp>,
+  .  					   is_copy_assignable<_Tp>>;
+  .  	  // trivial types can have deleted assignment
+  .  	  static_assert( __assignable::type::value, "type is not assignable" );
+  .  #endif
+ 20  	  const ptrdiff_t _Num = __last - __first;
+ 10  	  if (_Num)
+ 35  	    __builtin_memmove(__result, __first, sizeof(_Tp) * _Num);
+ 83  => ???:0x000000000010a300 (5x)
+ 20  	  return __result + _Num;
+ 10  	}
+  .      };
+  .  
+  .    template<bool _IsMove, typename _II, typename _OI>
+  .      inline _OI
+ 35      __copy_move_a(_II __first, _II __last, _OI __result)
+  .      {
+  .        typedef typename iterator_traits<_II>::value_type _ValueTypeI;
+  .        typedef typename iterator_traits<_OI>::value_type _ValueTypeO;
+  .        typedef typename iterator_traits<_II>::iterator_category _Category;
+  5        const bool __simple = (__is_trivially_copyable(_ValueTypeI)
+  .  			     && __is_pointer<_II>::__value
+  .  			     && __is_pointer<_OI>::__value
+  .  			     && __are_same<_ValueTypeI, _ValueTypeO>::__value);
+  .  
+  .        return std::__copy_move<_IsMove, __simple,
+ 30  			      _Category>::__copy_m(__first, __last, __result);
+213  => /usr/include/c++/9/bits/stl_algobase.h:Card* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<Card>(Card const*, Card const*, Card*) (5x)
+ 10      }
+  .  
+  .    // Helpers for streambuf iterators (either istream or ostream).
+  .    // NB: avoid including <iosfwd>, relatively large.
+  .    template<typename _CharT>
+  .      struct char_traits;
+  .  
+  .    template<typename _CharT, typename _Traits>
+  .      class istreambuf_iterator;
+-- line 413 ----------------------------------------
+-- line 430 ----------------------------------------
+  .    template<bool _IsMove, typename _CharT>
+  .      typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value,
+  .  				    _CharT*>::__type
+  .      __copy_move_a2(istreambuf_iterator<_CharT, char_traits<_CharT> >,
+  .  		   istreambuf_iterator<_CharT, char_traits<_CharT> >, _CharT*);
+  .  
+  .    template<bool _IsMove, typename _II, typename _OI>
+  .      inline _OI
+ 45      __copy_move_a2(_II __first, _II __last, _OI __result)
+  .      {
+100        return std::__niter_wrap(__result,
+380  => /usr/include/c++/9/bits/stl_algobase.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > std::__niter_wrap<__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, Card*>(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, Card*) (5x)
+293  => /usr/include/c++/9/bits/stl_algobase.h:Card* std::__copy_move_a<true, Card*, Card*>(Card*, Card*, Card*) (5x)
+270  => /usr/include/c++/9/bits/stl_iterator.h:Card* std::__niter_base<Card*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) (15x)
+  .  		std::__copy_move_a<_IsMove>(std::__niter_base(__first),
+  .  					    std::__niter_base(__last),
+  .  					    std::__niter_base(__result)));
+ 25      }
+  .  
+  .    /**
+  .     *  @brief Copies the range [first,last) into result.
+  .     *  @ingroup mutating_algorithms
+  .     *  @param  __first  An input iterator.
+  .     *  @param  __last   An input iterator.
+  .     *  @param  __result An output iterator.
+  .     *  @return   result + (last - first)
+-- line 452 ----------------------------------------
+-- line 489 ----------------------------------------
+  .     *  optimizations such as unrolling).  Result may not be contained within
+  .     *  [first,last); the move_backward function should be used instead.
+  .     *
+  .     *  Note that the end of the output range is permitted to be contained
+  .     *  within [first,last).
+  .    */
+  .    template<typename _II, typename _OI>
+  .      inline _OI
+ 40      move(_II __first, _II __last, _OI __result)
+  .      {
+  .        // concept requirements
+  .        __glibcxx_function_requires(_InputIteratorConcept<_II>)
+  .        __glibcxx_function_requires(_OutputIteratorConcept<_OI,
+  .  	    typename iterator_traits<_II>::value_type>)
+  .        __glibcxx_requires_can_increment_range(__first, __last, __result);
+  .  
+ 65        return std::__copy_move_a2<true>(std::__miter_base(__first),
+1,113  => /usr/include/c++/9/bits/stl_algobase.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > std::__copy_move_a2<true, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) (5x)
+ 70  => /usr/include/c++/9/bits/cpp_type_traits.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > std::__miter_base<__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) (10x)
+  .  				       std::__miter_base(__last), __result);
+ 20      }
+  .  
+  .  #define _GLIBCXX_MOVE3(_Tp, _Up, _Vp) std::move(_Tp, _Up, _Vp)
+  .  #else
+  .  #define _GLIBCXX_MOVE3(_Tp, _Up, _Vp) std::copy(_Tp, _Up, _Vp)
+  .  #endif
+  .  
+  .    template<bool, bool, typename>
+  .      struct __copy_move_backward
+-- line 515 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/new
+--------------------------------------------------------------------------------
+Ir    
+
+-- line 166 ----------------------------------------
+    .    _GLIBCXX_USE_NOEXCEPT __attribute__((__externally_visible__));
+    .  void operator delete[](void*, std::size_t, std::align_val_t)
+    .    _GLIBCXX_USE_NOEXCEPT __attribute__((__externally_visible__));
+    .  #endif // __cpp_sized_deallocation
+    .  #endif // __cpp_aligned_new
+    .  
+    .  // Default placement versions of operator new.
+    .  _GLIBCXX_NODISCARD inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+1,792  { return __p; }
+    .  _GLIBCXX_NODISCARD inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+    .  { return __p; }
+    .  
+    .  // Default placement versions of operator delete.
+    .  inline void operator delete  (void*, void*) _GLIBCXX_USE_NOEXCEPT { }
+    .  inline void operator delete[](void*, void*) _GLIBCXX_USE_NOEXCEPT { }
+    .  //@}
+    .  } // extern "C++"
+-- line 182 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /home/user/ECE350Final/src/main.cpp
+--------------------------------------------------------------------------------
+Ir  
+
+-- line 5 ----------------------------------------
+  .  
+  .  using namespace std;
+  .  
+  .  char trumpSuit;
+  .  
+  .  Card attack(Deck table, Deck &hand, int player);
+  .  Card defend(Card attack, Deck &hand, int player);
+  .  
+  8  int main(){
+  .    //two hands of six cards
+  .    //from main deck of 36 cards
+  6    Deck deck;
+24,341  => /home/user/ECE350Final/src/Deck.cpp:Deck::Deck() (1x)
+266  => /home/user/ECE350Final/src/Deck.h:Deck::~Deck() (1x)
+  .    //shuffle cards twice for good measure
+  3    deck.shuffleCards();
+19,166  => /home/user/ECE350Final/src/Deck.cpp:Deck::shuffleCards() (1x)
+  3    deck.shuffleCards();
+14,154  => /home/user/ECE350Final/src/Deck.cpp:Deck::shuffleCards() (1x)
+  .    //deck.print();
+  .  
+  .    //draw six cards for each hand
+  8    Deck hand1 = deck.drawHand();
+15,009  => /home/user/ECE350Final/src/Deck.cpp:Deck::drawHand() (1x)
+266  => /home/user/ECE350Final/src/Deck.h:Deck::~Deck() (1x)
+  8    Deck hand2 = deck.drawHand();
+14,865  => /home/user/ECE350Final/src/Deck.cpp:Deck::drawHand() (1x)
+266  => /home/user/ECE350Final/src/Deck.h:Deck::~Deck() (1x)
+  .  
+  .    //trump card 
+  4    Card trump = deck.drawCard();
+190  => /home/user/ECE350Final/src/Deck.cpp:Deck::drawCard() (1x)
+  4    trumpSuit = trump.getSuit();
+  8  => /home/user/ECE350Final/src/Card.h:Card::getSuit() (1x)
+  3    cout << "Trump card:\n";
+4,149  => ???:0x000000000010a250 (1x)
+  3    trump.print();
+879  => /home/user/ECE350Final/src/Card.cpp:Card::print() (1x)
+  9    cout << endl << endl;
+5,554  => ???:0x000000000010a270 (2x)
+  .    
+  .    //stack of current cards on the table
+  7    Deck table(0);
+266  => /home/user/ECE350Final/src/Deck.h:Deck::~Deck() (1x)
+ 97  => /home/user/ECE350Final/src/Deck.cpp:Deck::Deck(int) (1x)
+  .    
+  .    //winner 
+  1    int winner = 0;
+  .  
+  .    //determine who goes first. player is player 1, computer is player 2
+ 25    int player = Deck::firstPlayer(hand1, hand2, trumpSuit);
+4,026  => /home/user/ECE350Final/src/Deck.cpp:Deck::firstPlayer(Deck, Deck, char) (1x)
+2,570  => /home/user/ECE350Final/src/Deck.h:Deck::Deck(Deck const&) (2x)
+532  => /home/user/ECE350Final/src/Deck.h:Deck::~Deck() (2x)
+  .    //  player = 1;//temporary for testing only
+  3    cout << "First Player: ";
+338  => ???:0x000000000010a250 (1x)
+  2    if(player == 1)
+  4      cout << "You!\n";
+437  => ???:0x000000000010a250 (1x)
+  .    else
+  .      cout << "Computer\n";
+  .  
+  1    do{ //start
+  8      cout << endl;
+756  => ???:0x000000000010a270 (2x)
+  .      //check for winner
+ 14      if(hand1.getSize() <= 0){
+ 16  => /home/user/ECE350Final/src/Deck.h:Deck::getSize() (2x)
+  .        winner = 1;
+  .        break;
+  .      }
+ 14      if(hand2.getSize() <= 0){
+ 16  => /home/user/ECE350Final/src/Deck.h:Deck::getSize() (2x)
+  1        winner = 2;
+  1        break;
+  .      }
+  .  
+  3      Card firstAttack;
+ 11  => /home/user/ECE350Final/src/Card.h:Card::Card() (1x)
+  2      if(player == 1) //choose card
+ 16        firstAttack = attack(table, hand1, 1);
+22,658  => /home/user/ECE350Final/src/main.cpp:attack(Deck, Deck&, int) (1x)
+456  => /home/user/ECE350Final/src/Deck.h:Deck::Deck(Deck const&) (1x)
+143  => /home/user/ECE350Final/src/Deck.h:Deck::~Deck() (1x)
+  .      else //otherwise, computer goes.
+  .        firstAttack = attack(table, hand2, 2);
+  .      
+  3      cout << "Attack:\n";
+435  => ???:0x000000000010a250 (1x)
+  3      firstAttack.print();
+876  => /home/user/ECE350Final/src/Card.cpp:Card::print() (1x)
+  4      cout << endl;
+378  => ???:0x000000000010a270 (1x)
+  5      table.addCard(firstAttack); //add card to table
+1,017  => /home/user/ECE350Final/src/Deck.cpp:Deck::addCard(Card) (1x)
+  5      player = (player == 1) ? 2 : 1; //flip player
+  .      
+  .      //first defense
+  3      Card firstDefense;
+ 11  => /home/user/ECE350Final/src/Card.h:Card::Card() (1x)
+  2      if(player == 1) //if player, ask for card
+  .        firstDefense = defend(firstAttack, hand1, 1);
+  .      else //computer. choose card of same suit
+  7        firstDefense = defend(firstAttack, hand2, 2);
+8,818  => /home/user/ECE350Final/src/main.cpp:defend(Card, Deck&, int) (1x)
+  .      
+  7      if(firstDefense.getValue() == 'X'){ //no valid cards. pick up
+  8  => /home/user/ECE350Final/src/Card.h:Card::getValue() (1x)
+  .        if(player == 2) //if computer
+  .  	cout << "Computer failed to defend and picks up cards.\n";
+  .        else{
+  .  	cout << "You failed to defend!! Pick up cards.\n";
+  .  	player = 2;
+  .  	continue;
+  .        }
+  .        
+-- line 87 ----------------------------------------
+-- line 91 ----------------------------------------
+  .  	hand2.pickUp(table);
+  .        //replenish
+  .        if(!hand1.replenish(deck) || !hand2.replenish(deck))
+  .  	cout << "No more cards in deck.\n";      
+  .        player = (player == 1) ? 2 : 1; //flip player
+  .        continue; //repeat loop
+  .      } 
+  .      else{ //defense successful
+  3        cout << "Defense:\n";
+435  => ???:0x000000000010a250 (1x)
+  3        firstDefense.print();
+876  => /home/user/ECE350Final/src/Card.cpp:Card::print() (1x)
+  4        cout << endl;
+378  => ???:0x000000000010a270 (1x)
+  5        table.addCard(firstDefense); //add to table
+1,299  => /home/user/ECE350Final/src/Deck.cpp:Deck::addCard(Card) (1x)
+  4        player = (player == 1) ? 2 : 1; //flip player
+  .      }
+  .      //attacking continues. or, call off attack and draw up to six.
+  2      if(player == 1){
+ 17        if(!hand1.checkValue(table)){
+11,780  => /home/user/ECE350Final/src/Deck.cpp:Deck::checkValue(Deck) (1x)
+797  => /home/user/ECE350Final/src/Deck.h:Deck::Deck(Deck const&) (1x)
+266  => /home/user/ECE350Final/src/Deck.h:Deck::~Deck() (1x)
+  3  	cout << "You have no valid cards for an attack and pick up the cards.\n";
+438  => ???:0x000000000010a250 (1x)
+  5  	hand1.pickUp(table);//pick up cards
+2,543  => /home/user/ECE350Final/src/Deck.cpp:Deck::pickUp(Deck&) (1x)
+  1  	player = 2;
+  1  	continue; 
+  .        }
+  .        else{
+  .  	cout << "would you like to continue the attack? (y/n)\n";
+  .  	char c;
+  .  	cin >> c;
+  .  	if(c == 'y'){
+  .  	  player = 1;
+  .  	  winner = 0;
+-- line 119 ----------------------------------------
+-- line 131 ----------------------------------------
+  .      else{ //computer. assume the computer ends the attack
+  .        cout << "Computer ends attack. Replenish to six cards.\n";
+  .        table.clear();
+  .        if(!hand1.replenish(deck) || !hand2.replenish(deck))
+  .  	cout << "No more cards in deck.\n";
+  .        player = 1;
+  .      }
+  .  
+  2    } while (winner == 0);
+  .  
+  2    if(winner == 1)
+  .      cout << "You won!!!!!!!\n";
+  .    else
+  3      cout << "The computer won :(\n";
+429  => ???:0x000000000010a250 (1x)
+  8  }
+  .  //sve fje osim attack i deffend su testirane u klasama 
+  .    
+ 11  Card attack(Deck table, Deck &hand, int player){
+  3    Card c;
+ 11  => /home/user/ECE350Final/src/Card.h:Card::Card() (1x)
+  7    if(hand.getSize() == 0){
+  8  => /home/user/ECE350Final/src/Deck.h:Deck::getSize() (1x)
+  .      cout << "no more choices!!!!\n";
+  .      return c;
+  .    }
+  .  
+  2    if(player == 1){ //player
+ 12      cout << "Choose a card for attack (trump: " << trumpSuit << ").\n";
+879  => ???:0x000000000010a250 (2x)
+247  => ???:0x000000000010a2a0 (1x)
+  7      if(table.getSize() == 0) //if there are no cards on the table, any card is valid. (first play)
+  8  => /home/user/ECE350Final/src/Deck.h:Deck::getSize() (1x)
+  5        c = hand.askCard();
+21,450  => /home/user/ECE350Final/src/Deck.cpp:Deck::askCard() (1x)
+  .      else //there are cards on the table. must be a value already on the table
+  .        c = hand.askCard(table);
+  .    }
+  .    else{ //computer
+  .      vector<Card> cards = hand.getCards();
+  .      if(table.getSize() == 0){
+  .        //choose highest card
+  .        c = hand.findHigh();
+-- line 166 ----------------------------------------
+-- line 183 ----------------------------------------
+  .        if(max.getSuit() != 'X')
+  .  	c = max;
+  .        else
+  .  	c = hand.drawCard();
+  .      }
+  .      //remove card from computer's hand
+  .      hand.removeCard(c);
+  .    }
+  1    return c;
+  7  }
+  .  
+ 11  Card defend(Card attack, Deck &hand, int player){
+  2    if(player == 1){ //if player, ask for card
+  .      cout << "Choose a card to defend with (trump: " << trumpSuit << ")!\n";
+  .      return hand.askCard(attack, trumpSuit);
+  .    }
+  .    else{ //computer
+  3      Card c;
+ 11  => /home/user/ECE350Final/src/Card.h:Card::Card() (1x)
+  9      vector<Card> cards = hand.getCards();
+1,277  => /home/user/ECE350Final/src/Deck.h:Deck::getCards() (1x)
+255  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::~vector() (1x)
+  .      //first, try beating card with suit
+ 62      for(int i = 0; i < (int)cards.size(); i++){
+ 91  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::size() const (7x)
+132        if(cards[i].getSuit() == attack.getSuit() && cards[i].getNumValue() > attack.getNumValue()){ //if same suit, and greater value
+100  => /home/user/ECE350Final/src/Card.cpp:Card::getNumValue() (4x)
+ 96  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (8x)
+ 96  => /home/user/ECE350Final/src/Card.h:Card::getSuit() (12x)
+  .  	//remove from deck and return.
+ 16  	c = cards[i];
+ 24  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (2x)
+ 10  	hand.removeCard(c);
+2,021  => /home/user/ECE350Final/src/Deck.cpp:Deck::removeCard(Card) (2x)
+  .        }
+  .      }
+  .      //second, try playing trump, assuming the card given is not trump
+  8      if(attack.getSuit() != trumpSuit){
+  8  => /home/user/ECE350Final/src/Card.h:Card::getSuit() (1x)
+ 62        for(int i = 0; i < (int)cards.size(); i++){
+ 91  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::size() const (7x)
+ 96  	if(cards[i].getNumValue() > attack.getNumValue()){ //winning card. remove from deck and return.
+308  => /home/user/ECE350Final/src/Card.cpp:Card::getNumValue() (12x)
+ 72  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (6x)
+ 48  	  c = cards[i];
+ 72  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (6x)
+ 30  	  hand.removeCard(c);
+3,799  => /home/user/ECE350Final/src/Deck.cpp:Deck::removeCard(Card) (6x)
+  .  	}
+  .        }
+  .      }
+  1      return c;
+  .  
+  .    }
+ 28  }
+107,938  => /home/user/ECE350Final/src/main.cpp:__static_initialization_and_destruction_0(int, int) (1x)
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/stl_iterator.h
+--------------------------------------------------------------------------------
+Ir    
+
+-- line 795 ----------------------------------------
+    .        typedef typename __traits_type::difference_type 	difference_type;
+    .        typedef typename __traits_type::reference 	reference;
+    .        typedef typename __traits_type::pointer   	pointer;
+    .  
+    .        _GLIBCXX_CONSTEXPR __normal_iterator() _GLIBCXX_NOEXCEPT
+    .        : _M_current(_Iterator()) { }
+    .  
+    .        explicit
+1,640        __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+2,296        : _M_current(__i) { }
+    .  
+    .        // Allow iterator to const_iterator conversion
+    .        template<typename _Iter>
+   42          __normal_iterator(const __normal_iterator<_Iter,
+    .  			  typename __enable_if<
+    .        	       (std::__are_same<_Iter, typename _Container::pointer>::__value),
+    .  		      _Container>::__type>& __i) _GLIBCXX_NOEXCEPT
+   63          : _M_current(__i.base()) { }
+   49  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::base() const (7x)
+    .  
+    .        // Forward iterator requirements
+    .        reference
+  884        operator*() const _GLIBCXX_NOEXCEPT
+  884        { return *_M_current; }
+    .  
+    .        pointer
+    .        operator->() const _GLIBCXX_NOEXCEPT
+    .        { return _M_current; }
+    .  
+    .        __normal_iterator&
+  272        operator++() _GLIBCXX_NOEXCEPT
+    .        {
+  340  	++_M_current;
+   68  	return *this;
+  136        }
+    .  
+    .        __normal_iterator
+  630        operator++(int) _GLIBCXX_NOEXCEPT
+1,190        { return __normal_iterator(_M_current++); }
+  840  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::__normal_iterator(Card* const&) (70x)
+    .  
+    .        // Bidirectional iterator requirements
+    .        __normal_iterator&
+    .        operator--() _GLIBCXX_NOEXCEPT
+    .        {
+    .  	--_M_current;
+    .  	return *this;
+    .        }
+-- line 840 ----------------------------------------
+-- line 848 ----------------------------------------
+    .        operator[](difference_type __n) const _GLIBCXX_NOEXCEPT
+    .        { return _M_current[__n]; }
+    .  
+    .        __normal_iterator&
+    .        operator+=(difference_type __n) _GLIBCXX_NOEXCEPT
+    .        { _M_current += __n; return *this; }
+    .  
+    .        __normal_iterator
+  927        operator+(difference_type __n) const _GLIBCXX_NOEXCEPT
+1,751        { return __normal_iterator(_M_current + __n); }
+1,236  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::__normal_iterator(Card* const&) (103x)
+    .  
+    .        __normal_iterator&
+    .        operator-=(difference_type __n) _GLIBCXX_NOEXCEPT
+    .        { _M_current -= __n; return *this; }
+    .  
+    .        __normal_iterator
+  117        operator-(difference_type __n) const _GLIBCXX_NOEXCEPT
+  234        { return __normal_iterator(_M_current - __n); }
+  156  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::__normal_iterator(Card* const&) (13x)
+    .  
+    .        const _Iterator&
+1,924        base() const _GLIBCXX_NOEXCEPT
+1,443        { return _M_current; }
+    .      };
+    .  
+    .    // Note: In what follows, the left- and right-hand-side iterators are
+    .    // allowed to vary in types (conceptually in cv-qualification) so that
+    .    // comparison between cv-qualified and non-cv-qualified iterators be
+    .    // valid.  However, the greedy and unfriendly operators in std::rel_ops
+    .    // will make overload resolution ambiguous (when in scope) if we don't
+    .    // provide overloads whose operands are of the same type.  Can someone
+-- line 877 ----------------------------------------
+-- line 882 ----------------------------------------
+    .      inline bool
+    .      operator==(const __normal_iterator<_IteratorL, _Container>& __lhs,
+    .  	       const __normal_iterator<_IteratorR, _Container>& __rhs)
+    .      _GLIBCXX_NOEXCEPT
+    .      { return __lhs.base() == __rhs.base(); }
+    .  
+    .    template<typename _Iterator, typename _Container>
+    .      inline bool
+   14      operator==(const __normal_iterator<_Iterator, _Container>& __lhs,
+    .  	       const __normal_iterator<_Iterator, _Container>& __rhs)
+    .      _GLIBCXX_NOEXCEPT
+   28      { return __lhs.base() == __rhs.base(); }
+   28  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::base() const (4x)
+    .  
+    .    template<typename _IteratorL, typename _IteratorR, typename _Container>
+    .      inline bool
+    .      operator!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+    .  	       const __normal_iterator<_IteratorR, _Container>& __rhs)
+    .      _GLIBCXX_NOEXCEPT
+    .      { return __lhs.base() != __rhs.base(); }
+    .  
+    .    template<typename _Iterator, typename _Container>
+    .      inline bool
+  924      operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+    .  	       const __normal_iterator<_Iterator, _Container>& __rhs)
+    .      _GLIBCXX_NOEXCEPT
+1,848      { return __lhs.base() != __rhs.base(); }
+1,246  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::base() const (178x)
+    .  
+    .    // Random access iterator requirements
+    .    template<typename _IteratorL, typename _IteratorR, typename _Container>
+    .      inline bool
+    .      operator<(const __normal_iterator<_IteratorL, _Container>& __lhs,
+    .  	      const __normal_iterator<_IteratorR, _Container>& __rhs)
+    .      _GLIBCXX_NOEXCEPT
+    .      { return __lhs.base() < __rhs.base(); }
+-- line 915 ----------------------------------------
+-- line 978 ----------------------------------------
+    .      inline typename __normal_iterator<_IteratorL, _Container>::difference_type
+    .      operator-(const __normal_iterator<_IteratorL, _Container>& __lhs,
+    .  	      const __normal_iterator<_IteratorR, _Container>& __rhs)
+    .  #endif
+    .      { return __lhs.base() - __rhs.base(); }
+    .  
+    .    template<typename _Iterator, typename _Container>
+    .      inline typename __normal_iterator<_Iterator, _Container>::difference_type
+  476      operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+    .  	      const __normal_iterator<_Iterator, _Container>& __rhs)
+    .      _GLIBCXX_NOEXCEPT
+1,020      { return __lhs.base() - __rhs.base(); }
+  854  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::base() const (122x)
+    .  
+    .    template<typename _Iterator, typename _Container>
+    .      inline __normal_iterator<_Iterator, _Container>
+    .      operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+    .  	      __n, const __normal_iterator<_Iterator, _Container>& __i)
+    .      _GLIBCXX_NOEXCEPT
+    .      { return __normal_iterator<_Iterator, _Container>(__i.base() + __n); }
+    .  
+-- line 997 ----------------------------------------
+-- line 999 ----------------------------------------
+    .  } // namespace
+    .  
+    .  namespace std _GLIBCXX_VISIBILITY(default)
+    .  {
+    .  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+    .  
+    .    template<typename _Iterator, typename _Container>
+    .      _Iterator
+  100      __niter_base(__gnu_cxx::__normal_iterator<_Iterator, _Container> __it)
+    .      _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
+  120      { return __it.base(); }
+  140  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::base() const (20x)
+    .  
+    .  #if __cplusplus >= 201103L
+    .  
+    .    /**
+    .     * @addtogroup iterators
+    .     * @{
+    .     */
+    .  
+-- line 1017 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/move.h
+--------------------------------------------------------------------------------
+Ir    
+
+-- line 39 ----------------------------------------
+    .  
+    .    // Used, in C++03 mode too, by allocators, etc.
+    .    /**
+    .     *  @brief Same as C++11 std::addressof
+    .     *  @ingroup utilities
+    .     */
+    .    template<typename _Tp>
+    .      inline _GLIBCXX_CONSTEXPR _Tp*
+1,376      __addressof(_Tp& __r) _GLIBCXX_NOEXCEPT
+1,032      { return __builtin_addressof(__r); }
+    .  
+    .  #if __cplusplus >= 201103L
+    .  
+    .  _GLIBCXX_END_NAMESPACE_VERSION
+    .  } // namespace
+    .  
+    .  #include <type_traits> // Brings in std::declval too.
+    .  
+-- line 56 ----------------------------------------
+-- line 66 ----------------------------------------
+    .    /**
+    .     *  @brief  Forward an lvalue.
+    .     *  @return The parameter cast to the specified type.
+    .     *
+    .     *  This function is used to implement "perfect forwarding".
+    .     */
+    .    template<typename _Tp>
+    .      constexpr _Tp&&
+2,164      forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+1,623      { return static_cast<_Tp&&>(__t); }
+    .  
+    .    /**
+    .     *  @brief  Forward an rvalue.
+    .     *  @return The parameter cast to the specified type.
+    .     *
+    .     *  This function is used to implement "perfect forwarding".
+    .     */
+    .    template<typename _Tp>
+-- line 83 ----------------------------------------
+-- line 91 ----------------------------------------
+    .  
+    .    /**
+    .     *  @brief  Convert a value to an rvalue.
+    .     *  @param  __t  A thing of arbitrary type.
+    .     *  @return The parameter cast to an rvalue-reference to allow moving it.
+    .    */
+    .    template<typename _Tp>
+    .      constexpr typename std::remove_reference<_Tp>::type&&
+1,208      move(_Tp&& __t) noexcept
+  906      { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+    .  
+    .  
+    .    template<typename _Tp>
+    .      struct __move_if_noexcept_cond
+    .      : public __and_<__not_<is_nothrow_move_constructible<_Tp>>,
+    .                      is_copy_constructible<_Tp>>::type { };
+    .  
+    .    /**
+-- line 108 ----------------------------------------
+-- line 174 ----------------------------------------
+    .     *  @return   Nothing.
+    .    */
+    .    template<typename _Tp>
+    .      inline
+    .  #if __cplusplus >= 201103L
+    .      typename enable_if<__and_<__not_<__is_tuple_like<_Tp>>,
+    .  			      is_move_constructible<_Tp>,
+    .  			      is_move_assignable<_Tp>>::value>::type
+  630      swap(_Tp& __a, _Tp& __b)
+    .      noexcept(__and_<is_nothrow_move_constructible<_Tp>,
+    .  	            is_nothrow_move_assignable<_Tp>>::value)
+    .  #else
+    .      void
+    .      swap(_Tp& __a, _Tp& __b)
+    .  #endif
+    .      {
+    .        // concept requirements
+    .        __glibcxx_function_requires(_SGIAssignableConcept<_Tp>)
+    .  
+  350        _Tp __tmp = _GLIBCXX_MOVE(__a);
+  490  => /usr/include/c++/9/bits/move.h:std::remove_reference<Card&>::type&& std::move<Card&>(Card&) (70x)
+  420        __a = _GLIBCXX_MOVE(__b);
+  490  => /usr/include/c++/9/bits/move.h:std::remove_reference<Card&>::type&& std::move<Card&>(Card&) (70x)
+  420        __b = _GLIBCXX_MOVE(__tmp);
+  490  => /usr/include/c++/9/bits/move.h:std::remove_reference<Card&>::type&& std::move<Card&>(Card&) (70x)
+  420      }
+    .  
+    .    // _GLIBCXX_RESOLVE_LIB_DEFECTS
+    .    // DR 809. std::swap should be overloaded for array types.
+    .    /// Swap the contents of two arrays.
+    .    template<typename _Tp, size_t _Nm>
+    .      inline
+    .  #if __cplusplus >= 201103L
+    .      typename enable_if<__is_swappable<_Tp>::value>::type
+-- line 204 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/alloc_traits.h
+--------------------------------------------------------------------------------
+Ir    
+
+-- line 434 ----------------------------------------
+    .        /**
+    .         *  @brief  Allocate memory.
+    .         *  @param  __a  An allocator.
+    .         *  @param  __n  The number of objects to allocate space for.
+    .         *
+    .         *  Calls @c a.allocate(n)
+    .        */
+    .        _GLIBCXX_NODISCARD static pointer
+  270        allocate(allocator_type& __a, size_type __n)
+  360        { return __a.allocate(__n); }
+4,963  => /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::allocate(unsigned long, void const*) (45x)
+    .  
+    .        /**
+    .         *  @brief  Allocate memory.
+    .         *  @param  __a  An allocator.
+    .         *  @param  __n  The number of objects to allocate space for.
+    .         *  @param  __hint Aid to locality.
+    .         *  @return Memory of suitable size and alignment for @a n objects
+    .         *          of type @c value_type
+-- line 451 ----------------------------------------
+-- line 460 ----------------------------------------
+    .         *  @brief  Deallocate memory.
+    .         *  @param  __a  An allocator.
+    .         *  @param  __p  Pointer to the memory to deallocate.
+    .         *  @param  __n  The number of objects space was allocated for.
+    .         *
+    .         *  Calls <tt> a.deallocate(p, n) </tt>
+    .        */
+    .        static void
+  315        deallocate(allocator_type& __a, pointer __p, size_type __n)
+  405        { __a.deallocate(__p, __n); }
+5,386  => /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::deallocate(Card*, unsigned long) (45x)
+    .  
+    .        /**
+    .         *  @brief  Construct an object of type @a _Up
+    .         *  @param  __a  An allocator.
+    .         *  @param  __p  Pointer to memory of suitable size and alignment for Tp
+    .         *  @param  __args Constructor arguments.
+    .         *
+    .         *  Calls <tt> __a.construct(__p, std::forward<Args>(__args)...) </tt>
+    .        */
+    .        template<typename _Up, typename... _Args>
+    .  	static void
+1,092  	construct(allocator_type& __a, _Up* __p, _Args&&... __args)
+    .  	noexcept(std::is_nothrow_constructible<_Up, _Args...>::value)
+1,872  	{ __a.construct(__p, std::forward<_Args>(__args)...); }
+2,432  => /usr/include/c++/9/ext/new_allocator.h:void __gnu_cxx::new_allocator<Card>::construct<Card, Card const&>(Card*, Card const&) (64x)
+  448  => /usr/include/c++/9/bits/move.h:Card const& std::forward<Card const&>(std::remove_reference<Card const&>::type&) (64x)
+    .  
+    .        /**
+    .         *  @brief  Destroy an object of type @a _Up
+    .         *  @param  __a  An allocator.
+    .         *  @param  __p  Pointer to the object to destroy
+    .         *
+    .         *  Calls @c __a.destroy(__p).
+    .        */
+    .        template<typename _Up>
+    .  	static void
+  672  	destroy(allocator_type& __a, _Up* __p)
+    .  	noexcept(noexcept(__a.destroy(__p)))
+  896  	{ __a.destroy(__p); }
+  896  => /usr/include/c++/9/ext/new_allocator.h:void __gnu_cxx::new_allocator<Card>::destroy<Card>(Card*) (112x)
+    .  
+    .        /**
+    .         *  @brief  The maximum supported allocation size
+    .         *  @param  __a  An allocator.
+    .         *  @return @c __a.max_size()
+    .        */
+    .        static size_type
+  250        max_size(const allocator_type& __a) noexcept
+  250        { return __a.max_size(); }
+  350  => /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::max_size() const (50x)
+    .  
+    .        /**
+    .         *  @brief  Obtain an allocator to use when copying a container.
+    .         *  @param  __rhs  An allocator.
+    .         *  @return @c __rhs
+    .        */
+    .        static allocator_type
+  126        select_on_container_copy_construction(const allocator_type& __rhs)
+  168        { return __rhs; }
+  462  => /usr/include/c++/9/bits/allocator.h:std::allocator<Card>::allocator(std::allocator<Card> const&) (21x)
+    .      };
+    .  
+    .  
+    .    template<typename _Alloc>
+    .      inline void
+    .      __do_alloc_on_copy(_Alloc& __one, const _Alloc& __two, true_type)
+    .      { __one = __two; }
+    .  
+-- line 522 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/random.h
+--------------------------------------------------------------------------------
+Ir  
+
+-- line 127 ----------------------------------------
+  .  
+  .      // Special cases:
+  .      // - for m == 2^n or m == 0, unsigned integer overflow is safe.
+  .      // - a * (m - 1) + c fits in _Tp, there is no overflow.
+  .      template<typename _Tp, _Tp __m, _Tp __a, _Tp __c, bool __s>
+  .        struct _Mod<_Tp, __m, __a, __c, true, __s>
+  .        {
+  .  	static _Tp
+168  	__calc(_Tp __x)
+  .  	{
+120  	  _Tp __res = __a * __x + __c;
+  .  	  if (__m)
+672  	    __res %= __m;
+ 42  	  return __res;
+ 84  	}
+  .        };
+  .  
+  .      template<typename _Tp, _Tp __m, _Tp __a = 1, _Tp __c = 0>
+  .        inline _Tp
+210        __mod(_Tp __x)
+210        { return _Mod<_Tp, __m, __a, __c>::__calc(__x); }
+150  => /usr/include/c++/9/bits/random.h:std::__detail::_Mod<unsigned long, 2147483647ul, 1ul, 0ul, true, true>::__calc(unsigned long) (6x)
+  .  
+  .      /*
+  .       * An adaptor class for converting the output of any Generator into
+  .       * the input for a specific Distribution.
+  .       */
+  .      template<typename _Engine, typename _DInputType>
+  .        struct _Adaptor
+  .        {
+-- line 155 ----------------------------------------
+-- line 274 ----------------------------------------
+  .        /**
+  .         * @brief Constructs a %linear_congruential_engine random number
+  .         *        generator engine with seed @p __s.  The default seed value
+  .         *        is 1.
+  .         *
+  .         * @param __s The initial seed value.
+  .         */
+  .        explicit
+ 12        linear_congruential_engine(result_type __s)
+ 16        { seed(__s); }
+262  => /usr/include/c++/9/bits/random.tcc:std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>::seed(unsigned long) (2x)
+  .  
+  .        /**
+  .         * @brief Constructs a %linear_congruential_engine random number
+  .         *        generator engine seeded from the seed sequence @p __q.
+  .         *
+  .         * @param __q the seed sequence.
+  .         */
+  .        template<typename _Sseq, typename = _If_seed_seq<_Sseq>>
+-- line 291 ----------------------------------------
+-- line 339 ----------------------------------------
+  .  	for (; __z != 0ULL; --__z)
+  .  	  (*this)();
+  .        }
+  .  
+  .        /**
+  .         * @brief Gets the next random number in the sequence.
+  .         */
+  .        result_type
+180        operator()()
+  .        {
+216  	_M_x = __detail::__mod<_UIntType, __m, __a, __c>(_M_x);
+1,296  => /usr/include/c++/9/bits/random.h:unsigned long std::__detail::__mod<unsigned long, 2147483647ul, 16807ul, 0ul>(unsigned long) (36x)
+ 72  	return _M_x;
+ 72        }
+  .  
+  .        /**
+  .         * @brief Compares two linear congruential random number generator
+  .         * objects of the same type for equality.
+  .         *
+  .         * @param __lhs A linear congruential random number generator object.
+  .         * @param __rhs Another linear congruential random number generator
+  .         *              object.
+-- line 359 ----------------------------------------
+-- line 1598 ----------------------------------------
+  .    {
+  .    public:
+  .      /** The type of the generated random value. */
+  .      typedef unsigned int result_type;
+  .  
+  .      // constructors, destructors and member functions
+  .  
+  .  #ifdef _GLIBCXX_USE_DEV_RANDOM
+ 72      random_device() { _M_init("default"); }
+3,321  => ???:0x000000000010a2c0 (2x)
+2,167  => ???:0x000000000010a320 (2x)
+ 16  => ???:0x000000000010a210 (2x)
+  8  => ???:0x000000000010a350 (2x)
+  8  => ???:0x000000000010a280 (2x)
+  .  
+  .      explicit
+  .      random_device(const std::string& __token) { _M_init(__token); }
+  .  
+ 10      ~random_device()
+ 12      { _M_fini(); }
+ 12  => ???:0x000000000010a230 (2x)
+  .  #else
+  .      random_device() { _M_init_pretr1("mt19937"); }
+  .  
+  .      explicit
+  .      random_device(const std::string& __token)
+  .      { _M_init_pretr1(__token); }
+  .  #endif
+  .  
+-- line 1620 ----------------------------------------
+-- line 1632 ----------------------------------------
+  .  #ifdef _GLIBCXX_USE_DEV_RANDOM
+  .        return this->_M_getentropy();
+  .  #else
+  .        return 0.0;
+  .  #endif
+  .      }
+  .  
+  .      result_type
+ 10      operator()()
+  .      {
+  .  #ifdef _GLIBCXX_USE_DEV_RANDOM
+  6        return this->_M_getval();
+ 82  => ???:0x000000000010a2d0 (2x)
+  .  #else
+  .        return this->_M_getval_pretr1();
+  .  #endif
+  4      }
+  .  
+  .      // No copy functions.
+  .      random_device(const random_device&) = delete;
+  .      void operator=(const random_device&) = delete;
+  .  
+  .    private:
+  .  
+  .      void _M_init(const std::string& __token);
+-- line 1655 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /home/user/ECE350Final/src/Deck.cpp
+--------------------------------------------------------------------------------
+Ir  
+
+-- line 2 ----------------------------------------
+  .  #include <iostream>
+  .  #include <random>
+  .  #include <algorithm>
+  .  #include "Deck.h"
+  .  
+  .  using namespace std;
+  .  
+  .  
+ 16  Deck::Deck(){ //default initializer for 36 cards
+ 67  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::vector() (1x)
+ 11  => /home/user/ECE350Final/src/Card.h:Card::Card() (1x)
+  .  //pravimo spil od 36 karata, za svaki znak (H,D,S,C) imamo 9 dozvoljenih karata (6-14) i pravimo spil sa pravima
+  2    size = 0;
+  .    //array to quickly iterate thru suits
+  1    char suits[4] = {'H', 'D', 'S', 'C'};
+  .    //Card to store current card before pushing to deck
+  3    Card c; 
+ 11  => /home/user/ECE350Final/src/Card.h:Card::Card() (1x)
+  .    //create deck. iterate for each suit
+ 19    for(int i = 0; i < 4; i++){
+ 32      c.setSuit(suits[i]);
+ 96  => /home/user/ECE350Final/src/Card.cpp:Card::setSuit(char) (4x)
+  .      //generate numerical cards first
+156      for(int j = 6; j <= 14; j++){
+180        c.setVal(j);
+828  => /home/user/ECE350Final/src/Card.cpp:Card::setVal(int) (36x)
+180        this->addCard(c);
+22,731  => /home/user/ECE350Final/src/Deck.cpp:Deck::addCard(Card) (36x)
+  .      }
+  .    }
+  8  }
+  .  
+ 28  Deck::Deck(vector<Card> cards){
+134  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::vector() (2x)
+ 22  => /home/user/ECE350Final/src/Card.h:Card::Card() (2x)
+ 12   size = cards.size();
+ 26  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::size() const (2x)
+ 82    for(int i = 0; i < size; i++){
+120      deck.push_back(cards[i]);
+11,764  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::push_back(Card const&) (12x)
+144  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (12x)
+  .        //this->addCard(cards[i]);
+  .    }
+ 10  }
+  .  
+ 13  Deck::Deck(int num){
+ 67  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::vector() (1x)
+ 11  => /home/user/ECE350Final/src/Card.h:Card::Card() (1x)
+  .    //broj karata koje su trenuttno na stolu
+  3    size = num;
+  3  }
+  .  
+104  Card Deck::drawCard(){
+ 39    Card c;
+143  => /home/user/ECE350Final/src/Card.h:Card::Card() (13x)
+ 52    if(size <= 0){ //if deck is empty
+  .      
+  .      return c;
+  .    }
+  .    
+ 65    size--;
+ 65    c = deck.back();
+1,352  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::back() (13x)
+ 39    deck.pop_back();
+533  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::pop_back() (13x)
+ 13    return c;
+ 65  }
+  .  
+240  void Deck::addCard(Card c){
+200    deck.push_back(c);
+24,509  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::push_back(Card const&) (40x)
+  .    //JOS JEDAN BAG, push back automatski inkrementira velicinu niza
+200    size++;
+120  }
+  .  
+ 99  void Deck::removeCard(Card c){
+  .    //  Card c = deck[n - 1];
+  .    //find index
+ 99    for(int i = 0; i < size; i++){
+391      if(deck[i].getNumValue() == c.getNumValue() && deck[i].getSuit() == c.getSuit()){ //match
+784  => /home/user/ECE350Final/src/Card.cpp:Card::getNumValue() (32x)
+288  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (24x)
+128  => /home/user/ECE350Final/src/Card.h:Card::getSuit() (16x)
+147        deck.erase(deck.begin() + i); //remove from Deck and decrement
+4,185  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::erase(__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >) (7x)
+266  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator+(long) const (7x)
+217  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::begin() (7x)
+154  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::__normal_iterator<Card*>(__gnu_cxx::__normal_iterator<Card*, __gnu_cxx::__enable_if<std::__are_same<Card*, Card*>::__value, std::vector<Card, std::allocator<Card> > >::__type> const&) (7x)
+ 35        size--;
+  7        return;
+  .      }
+  .    }
+ 72  }
+  .  
+ 22  void Deck::shuffleCards(){
+  .    //using functions from Algorithm and Random libraries to shuffle vector
+  .    //from https://www.delftstack.com/howto/cpp/shuffle-vector-cpp/
+ 12    random_device rd;
+5,592  => /usr/include/c++/9/bits/random.h:std::random_device::random_device() (2x)
+ 34  => /usr/include/c++/9/bits/random.h:std::random_device::~random_device() (2x)
+ 16    default_random_engine rng(rd());
+290  => /usr/include/c++/9/bits/random.h:std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>::linear_congruential_engine(unsigned long) (2x)
+102  => /usr/include/c++/9/bits/random.h:std::random_device::operator()() (2x)
+ 26    shuffle(begin(deck), end(deck), rng);
+27,044  => /usr/include/c++/9/bits/stl_algo.h:void std::shuffle<__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&>(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&) (2x)
+166  => /usr/include/c++/9/bits/range_access.h:decltype (({parm (4x)
+ 16  }
+  .  
+  .  void Deck::print(){
+  .    for(int i = 0; i < (int)deck.size(); i++){
+  .      deck[i].print();
+  .      cout << endl;
+  .    }
+  .    cout << endl;
+  .  }
+  .  
+ 20  Deck Deck::drawHand(){
+  .    //vector for the hand of cards
+ 12    vector<Card> hand;
+510  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::~vector() (2x)
+134  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::vector() (2x)
+  .    //draw six cards
+ 54    for(int i = 0; i < 6; i++){
+ 48      Card c = this->drawCard();
+2,280  => /home/user/ECE350Final/src/Deck.cpp:Deck::drawCard() (12x)
+ 60      hand.push_back(c);
+11,332  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::push_back(Card const&) (12x)
+  .    }
+  .    //put vector into Deck class and return
+ 26    Deck deck(hand);
+12,342  => /home/user/ECE350Final/src/Deck.cpp:Deck::Deck(std::vector<Card, std::allocator<Card> >) (2x)
+2,526  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::vector(std::vector<Card, std::allocator<Card> > const&) (2x)
+510  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::~vector() (2x)
+  4    return deck;
+ 16  }
+  .  
+ 12  int Deck::firstPlayer(Deck hand1, Deck hand2, char suit){
+  .    //find highest card in hand1
+  .  
+  9    vector<Card> cards1 = hand1.getCards();
+1,277  => /home/user/ECE350Final/src/Deck.h:Deck::getCards() (1x)
+255  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::~vector() (1x)
+  1    int min1 = -1;
+ 41    for(int i = 0; i < hand1.size; i++){
+ 72      if(cards1[i].getSuit() == suit){
+ 72  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (6x)
+ 48  => /home/user/ECE350Final/src/Card.h:Card::getSuit() (6x)
+  6        if(min1 == -1){ //if max is still undefined
+ 10  	min1 = cards1[i].getNumValue();
+ 12  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (1x)
+ 27  => /home/user/ECE350Final/src/Card.cpp:Card::getNumValue() (1x)
+  .        }
+  .        else{ //there is already a card of that suit, so compare
+ 24  	if(cards1[i].getNumValue() < min1)
+ 24  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (2x)
+ 50  => /home/user/ECE350Final/src/Card.cpp:Card::getNumValue() (2x)
+  .  	  min1 = cards1[i].getNumValue();
+  .        }
+  .      }
+  .    }
+  .    
+  .    //find highest card in hand2
+  8    vector<Card> cards2 = hand2.getCards();
+1,424  => /home/user/ECE350Final/src/Deck.h:Deck::getCards() (1x)
+255  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::~vector() (1x)
+  1    int min2 = -1;
+ 41    for(int i = 0; i < hand2.size; i++){
+ 72      if(cards2[i].getSuit() == suit){
+ 72  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (6x)
+ 48  => /home/user/ECE350Final/src/Card.h:Card::getSuit() (6x)
+  4        if(min2 == -1){ //if max is still undefined
+ 10  	min2 = cards2[i].getNumValue();
+ 12  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (1x)
+ 23  => /home/user/ECE350Final/src/Card.cpp:Card::getNumValue() (1x)
+  .        }
+  .        else{ //there is already a card of that suit, so compare
+ 12  	if(cards2[i].getNumValue() < min2)
+ 12  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (1x)
+ 27  => /home/user/ECE350Final/src/Card.cpp:Card::getNumValue() (1x)
+  9  	  min2 = cards2[i].getNumValue();
+ 12  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (1x)
+ 27  => /home/user/ECE350Final/src/Card.cpp:Card::getNumValue() (1x)
+  .        }
+  .      }
+  .    }
+  .  
+  .    //return which deck has lower value
+  2    if(min1 == -1){ //player 1 has no trump
+  .      if(min2 == -1) //if neither has a trump card, give to player 1
+  .        return 1;
+  .      else //player 2 has a trump card
+  .        return 2;
+  .    }
+  .    else{ //player 1 has trump
+  2      if(min2 == -1) //player 2 has no trump
+  .        return 1;
+  .      else
+  6        return (min1 < min2) ? 1 : 2;
+  .    }
+  7  }
+  .  
+  8  Card Deck::askCard(){
+  .    //print options
+  3    cout << "Your Hand:\n";
+431  => ???:0x000000000010a250 (1x)
+ 41    for(int i = 0; i < size; i++){
+ 48      cout << i + 1 << ". ";
+4,635  => ???:0x000000000010a330 (6x)
+1,692  => ???:0x000000000010a250 (6x)
+ 48      deck[i].print();
+5,312  => /home/user/ECE350Final/src/Card.cpp:Card::print() (6x)
+ 72  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (6x)
+ 24      cout << endl;
+2,268  => ???:0x000000000010a270 (6x)
+  .    }
+  .    //get option
+  3    cout << "Choose a card:\n";
+431  => ???:0x000000000010a250 (1x)
+  1    int n = 0;
+  4    cin >> n;
+5,337  => ???:0x000000000010a200 (1x)
+  8    while(n <= 0 || n > size){
+  .      cout << "Invalid choice!\nChoose a card:\n";
+  .      cin >> n;
+  .    }
+  .    //remove card and return
+  9    Card c = deck[n - 1];
+ 12  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (1x)
+  5    this->removeCard(c);
+1,052  => /home/user/ECE350Final/src/Deck.cpp:Deck::removeCard(Card) (1x)
+  1    return c;
+  5  }
+  .  
+  .  Card Deck::askCard(Deck table){
+  .    vector<Card> tableCards = table.getCards();
+  .    if(tableCards.size() == 0){
+  .      return askCard();
+  .    }
+  .    //ask for card that has the same value as one on the table
+  .    //print options
+-- line 176 ----------------------------------------
+-- line 245 ----------------------------------------
+  .        cout << "!\nChoose a card:\n";
+  .      }
+  .    }
+  .    //successfully got card. remove and return
+  .    this->removeCard(c);
+  .    return c;
+  .  }
+  .  
+ 11  bool Deck::checkValue(Deck values){
+  .    //must match value from deck
+  1    bool valid = false;
+ 35    for(int i = 0; i < size; i++){
+130      for(int j = 0; j < values.getSize(); j++){
+120  => /home/user/ECE350Final/src/Deck.h:Deck::getSize() (15x)
+290        if(deck[i].getNumValue() == values.getCards()[j].getNumValue()){ //valid card
+7,890  => /home/user/ECE350Final/src/Deck.h:Deck::getCards() (10x)
+2,550  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::~vector() (10x)
+504  => /home/user/ECE350Final/src/Card.cpp:Card::getNumValue() (20x)
+240  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (20x)
+  .  	valid = true;
+  .        }
+  .      }
+  .    }
+  1    return valid;
+  8  }
+  .  
+  5  void Deck::clear(){
+  3    deck.clear();
+ 87  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::clear() (1x)
+  2    size = 0;
+  3  }
+  .  
+  .  Card Deck::findHigh(char suit){
+  .    Card max;
+  .    for(int i = 0; i < size; i++){
+  .      if(deck[i].getSuit() == suit){ //found
+  .        //if max is undefined, or new card is greater than, reassign.
+  .        if(max.getSuit() == 'X' || deck[i].getNumValue() > max.getNumValue())
+  .  	max = deck[i];
+-- line 277 ----------------------------------------
+-- line 292 ----------------------------------------
+  .    //ovaj deo koda nije potreban, ako spil nije prazan karta ce da se postavi u petlji iznad.
+  .    /*
+  .    if(max.getSuit() == 'X' && size != 0)
+  .      max = deck[0];
+  .    */
+  .    return max;
+  .  }
+  .  
+ 10  void Deck::pickUp(Deck &table){
+  .    //add all cards to deck
+  .    //  vector<Card> cards = table.getCards();
+ 26    for(int i = 0; i < (int)table.getSize(); i++){
+ 24  => /home/user/ECE350Final/src/Deck.h:Deck::getSize() (3x)
+ 38      this->addCard(table.getCards()[i]);
+1,578  => /home/user/ECE350Final/src/Deck.h:Deck::getCards() (2x)
+510  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::~vector() (2x)
+222  => /home/user/ECE350Final/src/Deck.cpp:Deck::addCard(Card) (2x)
+ 24  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::operator[](unsigned long) (2x)
+  .    }
+  3    table.clear();
+100  => /home/user/ECE350Final/src/Deck.cpp:Deck::clear() (1x)
+  8  }
+  .  
+  .  bool Deck::replenish(Deck &deck){
+  .    for(int i = size; i < 6; i++){
+  .      Card c = deck.drawCard();
+  .      if(c.getSuit() != 'H' && c.getSuit() != 'D' && c.getSuit() != 'C' && c.getSuit() != 'S'){ //if no more cards, return false
+  .        return false;
+  .      }
+  .      this->addCard(c); //otherwise, add card
+  .    }
+  .    return true;
+ 21  }
+120  => /home/user/ECE350Final/src/Deck.cpp:__static_initialization_and_destruction_0(int, int) (1x)
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/ext/alloc_traits.h
+--------------------------------------------------------------------------------
+Ir  
+
+-- line 89 ----------------------------------------
+  .  
+  .      // overload destroy for non-standard pointer types
+  .      template<typename _Ptr>
+  .        static typename std::enable_if<__is_custom_pointer<_Ptr>::value>::type
+  .        destroy(_Alloc& __a, _Ptr __p)
+  .        noexcept(noexcept(_Base_type::destroy(__a, std::__to_address(__p))))
+  .        { _Base_type::destroy(__a, std::__to_address(__p)); }
+  .  
+189      static _Alloc _S_select_on_copy(const _Alloc& __a)
+231      { return _Base_type::select_on_container_copy_construction(__a); }
+756  => /usr/include/c++/9/bits/alloc_traits.h:std::allocator_traits<std::allocator<Card> >::select_on_container_copy_construction(std::allocator<Card> const&) (21x)
+  .  
+  .      static void _S_on_swap(_Alloc& __a, _Alloc& __b)
+  .      { std::__alloc_on_swap(__a, __b); }
+  .  
+  .      static constexpr bool _S_propagate_on_copy_assign()
+  .      { return _Base_type::propagate_on_container_copy_assignment::value; }
+  .  
+  .      static constexpr bool _S_propagate_on_move_assign()
+-- line 106 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/ext/new_allocator.h
+--------------------------------------------------------------------------------
+Ir    
+
+-- line 72 ----------------------------------------
+    .  
+    .  #if __cplusplus >= 201103L
+    .        // _GLIBCXX_RESOLVE_LIB_DEFECTS
+    .        // 2103. propagate_on_container_move_assignment
+    .        typedef std::true_type propagate_on_container_move_assignment;
+    .  #endif
+    .  
+    .        _GLIBCXX20_CONSTEXPR
+   42        new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+    .  
+    .        _GLIBCXX20_CONSTEXPR
+  336        new_allocator(const new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+    .  
+    .        template<typename _Tp1>
+    .  	_GLIBCXX20_CONSTEXPR
+    .  	new_allocator(const new_allocator<_Tp1>&) _GLIBCXX_USE_NOEXCEPT { }
+    .  
+  336        ~new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+    .  
+    .        pointer
+    .        address(reference __x) const _GLIBCXX_NOEXCEPT
+    .        { return std::__addressof(__x); }
+    .  
+    .        const_pointer
+    .        address(const_reference __x) const _GLIBCXX_NOEXCEPT
+    .        { return std::__addressof(__x); }
+    .  
+    .        // NB: __n is permitted to be 0.  The C++ standard says nothing
+    .        // about what the return value is when __n == 0.
+    .        _GLIBCXX_NODISCARD pointer
+  315        allocate(size_type __n, const void* = static_cast<const void*>(0))
+    .        {
+  315  	if (__n > this->max_size())
+  315  => /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::max_size() const (45x)
+    .  	  std::__throw_bad_alloc();
+    .  
+    .  #if __cpp_aligned_new
+    .  	if (alignof(_Tp) > __STDCPP_DEFAULT_NEW_ALIGNMENT__)
+    .  	  {
+    .  	    std::align_val_t __al = std::align_val_t(alignof(_Tp));
+    .  	    return static_cast<_Tp*>(::operator new(__n * sizeof(_Tp), __al));
+    .  	  }
+    .  #endif
+  180  	return static_cast<_Tp*>(::operator new(__n * sizeof(_Tp)));
+3,748  => ???:0x000000000010a260 (45x)
+   90        }
+    .  
+    .        // __p is not permitted to be a null pointer.
+    .        void
+  315        deallocate(pointer __p, size_type)
+    .        {
+    .  #if __cpp_aligned_new
+    .  	if (alignof(_Tp) > __STDCPP_DEFAULT_NEW_ALIGNMENT__)
+    .  	  {
+    .  	    ::operator delete(__p, std::align_val_t(alignof(_Tp)));
+    .  	    return;
+    .  	  }
+    .  #endif
+  135  	::operator delete(__p);
+4,801  => ???:0x000000000010a240 (45x)
+  135        }
+    .  
+    .        size_type
+  380        max_size() const _GLIBCXX_USE_NOEXCEPT
+    .        {
+    .  #if __PTRDIFF_MAX__ < __SIZE_MAX__
+   95  	return size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
+    .  #else
+    .  	return size_t(-1) / sizeof(_Tp);
+    .  #endif
+  190        }
+    .  
+    .  #if __cplusplus >= 201103L
+    .        template<typename _Up, typename... _Args>
+    .  	void
+1,248  	construct(_Up* __p, _Args&&... __args)
+    .  	noexcept(std::is_nothrow_constructible<_Up, _Args...>::value)
+2,340  	{ ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+  736  => /usr/include/c++/9/new:operator new(unsigned long, void*) (92x)
+  644  => /usr/include/c++/9/bits/move.h:Card&& std::forward<Card>(std::remove_reference<Card>::type&) (92x)
+    .  
+    .        template<typename _Up>
+    .  	void
+  560  	destroy(_Up* __p)
+    .  	noexcept(std::is_nothrow_destructible<_Up>::value)
+  336  	{ __p->~_Up(); }
+    .  #else
+    .        // _GLIBCXX_RESOLVE_LIB_DEFECTS
+    .        // 402. wrong new expression in [some_] allocator::construct
+    .        void
+    .        construct(pointer __p, const _Tp& __val)
+    .        { ::new((void *)__p) _Tp(__val); }
+    .  
+    .        void
+-- line 160 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/vector.tcc
+--------------------------------------------------------------------------------
+Ir  
+
+-- line 163 ----------------------------------------
+  .  	_M_realloc_insert(__position, __x);
+  .  #endif
+  .  
+  .        return iterator(this->_M_impl._M_start + __n);
+  .      }
+  .  
+  .    template<typename _Tp, typename _Alloc>
+  .      typename vector<_Tp, _Alloc>::iterator
+ 70      vector<_Tp, _Alloc>::
+  .      _M_erase(iterator __position)
+  .      {
+112        if (__position + 1 != end())
+266  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator+(long) const (7x)
+224  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::end() (7x)
+245  => /usr/include/c++/9/bits/stl_iterator.h:bool __gnu_cxx::operator!=<Card*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&) (7x)
+ 70  	_GLIBCXX_MOVE3(__position + 1, end(), __position);
+1,308  => /usr/include/c++/9/bits/stl_algobase.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > std::move<__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) (5x)
+190  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator+(long) const (5x)
+160  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::end() (5x)
+ 35        --this->_M_impl._M_finish;
+ 42        _Alloc_traits::destroy(this->_M_impl, this->_M_impl._M_finish);
+154  => /usr/include/c++/9/bits/alloc_traits.h:void std::allocator_traits<std::allocator<Card> >::destroy<Card>(std::allocator<Card>&, Card*) (7x)
+  .        _GLIBCXX_ASAN_ANNOTATE_SHRINK(1);
+  7        return __position;
+ 49      }
+  .  
+  .    template<typename _Tp, typename _Alloc>
+  .      typename vector<_Tp, _Alloc>::iterator
+  .      vector<_Tp, _Alloc>::
+  .      _M_erase(iterator __first, iterator __last)
+  .      {
+  .        if (__first != __last)
+  .  	{
+-- line 188 ----------------------------------------
+-- line 418 ----------------------------------------
+  .        *__position = std::forward<_Arg>(__arg);
+  .  #endif
+  .      }
+  .  
+  .  #if __cplusplus >= 201103L
+  .    template<typename _Tp, typename _Alloc>
+  .      template<typename... _Args>
+  .        void
+275        vector<_Tp, _Alloc>::
+  .        _M_realloc_insert(iterator __position, _Args&&... __args)
+  .  #else
+  .    template<typename _Tp, typename _Alloc>
+  .      void
+  .      vector<_Tp, _Alloc>::
+  .      _M_realloc_insert(iterator __position, const _Tp& __x)
+  .  #endif
+  .      {
+150        const size_type __len =
+6,881  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_M_check_len(unsigned long, char const*) const (25x)
+  .  	_M_check_len(size_type(1), "vector::_M_realloc_insert");
+ 75        pointer __old_start = this->_M_impl._M_start;
+ 75        pointer __old_finish = this->_M_impl._M_finish;
+250        const size_type __elems_before = __position - begin();
+900  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::difference_type __gnu_cxx::operator-<Card*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > > const&) (25x)
+775  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::begin() (25x)
+150        pointer __new_start(this->_M_allocate(__len));
+3,938  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_allocate(unsigned long) (25x)
+ 50        pointer __new_finish(__new_start);
+  .        __try
+  .  	{
+  .  	  // The order of the three operations is dictated by the C++11
+  .  	  // case, where the moves could alter a new element belonging
+  .  	  // to the existing vector.  This is an issue only for callers
+  .  	  // taking the element by lvalue ref (see last bullet of C++11
+  .  	  // [res.on.arguments]).
+250  	  _Alloc_traits::construct(this->_M_impl,
+1,600  => /usr/include/c++/9/bits/alloc_traits.h:void std::allocator_traits<std::allocator<Card> >::construct<Card, Card const&>(std::allocator<Card>&, Card*, Card const&) (25x)
+175  => /usr/include/c++/9/bits/move.h:Card const& std::forward<Card const&>(std::remove_reference<Card const&>::type&) (25x)
+ 50  				   __new_start + __elems_before,
+  .  #if __cplusplus >= 201103L
+  .  				   std::forward<_Args>(__args)...);
+  .  #else
+  .  				   __x);
+  .  #endif
+ 25  	  __new_finish = pointer();
+  .  
+  .  #if __cplusplus >= 201103L
+ 75  	  if _GLIBCXX17_CONSTEXPR (_S_use_relocate())
+475  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_use_relocate() (25x)
+  .  	    {
+250  	      __new_finish = _S_relocate(__old_start, __position.base(),
+17,470  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_relocate(Card*, Card*, Card*, std::allocator<Card>&) (25x)
+175  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::base() const (25x)
+100  					 __new_start, _M_get_Tp_allocator());
+175  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_get_Tp_allocator() (25x)
+  .  
+ 25  	      ++__new_finish;
+  .  
+275  	      __new_finish = _S_relocate(__position.base(), __old_finish,
+2,750  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_relocate(Card*, Card*, Card*, std::allocator<Card>&) (25x)
+175  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::base() const (25x)
+100  					 __new_finish, _M_get_Tp_allocator());
+175  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_get_Tp_allocator() (25x)
+  .  	    }
+  .  	  else
+  .  #endif
+  .  	    {
+  .  	      __new_finish
+  .  		= std::__uninitialized_move_if_noexcept_a
+  .  		(__old_start, __position.base(),
+  .  		 __new_start, _M_get_Tp_allocator());
+-- line 475 ----------------------------------------
+-- line 488 ----------------------------------------
+  .  	    _Alloc_traits::destroy(this->_M_impl,
+  .  				   __new_start + __elems_before);
+  .  	  else
+  .  	    std::_Destroy(__new_start, __new_finish, _M_get_Tp_allocator());
+  .  	  _M_deallocate(__new_start, __len);
+  .  	  __throw_exception_again;
+  .  	}
+  .  #if __cplusplus >= 201103L
+100        if _GLIBCXX17_CONSTEXPR (!_S_use_relocate())
+475  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_use_relocate() (25x)
+  .  #endif
+  .  	std::_Destroy(__old_start, __old_finish, _M_get_Tp_allocator());
+  .        _GLIBCXX_ASAN_ANNOTATE_REINIT;
+125        _M_deallocate(__old_start,
+3,478  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_deallocate(Card*, unsigned long) (25x)
+100  		    this->_M_impl._M_end_of_storage - __old_start);
+ 75        this->_M_impl._M_start = __new_start;
+ 75        this->_M_impl._M_finish = __new_finish;
+150        this->_M_impl._M_end_of_storage = __new_start + __len;
+200      }
+  .  
+  .    template<typename _Tp, typename _Alloc>
+  .      void
+  .      vector<_Tp, _Alloc>::
+  .      _M_fill_insert(iterator __position, size_type __n, const value_type& __x)
+  .      {
+  .        if (__n != 0)
+  .  	{
+-- line 513 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/stl_vector.h
+--------------------------------------------------------------------------------
+Ir    
+
+-- line 86 ----------------------------------------
+    .         	pointer;
+    .  
+    .        struct _Vector_impl_data
+    .        {
+    .  	pointer _M_start;
+    .  	pointer _M_finish;
+    .  	pointer _M_end_of_storage;
+    .  
+  108  	_Vector_impl_data() _GLIBCXX_NOEXCEPT
+  162  	: _M_start(), _M_finish(), _M_end_of_storage()
+   81  	{ }
+    .  
+    .  #if __cplusplus >= 201103L
+    .  	_Vector_impl_data(_Vector_impl_data&& __x) noexcept
+    .  	: _M_start(__x._M_start), _M_finish(__x._M_finish),
+    .  	  _M_end_of_storage(__x._M_end_of_storage)
+    .  	{ __x._M_start = __x._M_finish = __x._M_end_of_storage = pointer(); }
+    .  #endif
+    .  
+-- line 104 ----------------------------------------
+-- line 117 ----------------------------------------
+    .  	  // information used by TBAA.
+    .  	  _Vector_impl_data __tmp;
+    .  	  __tmp._M_copy_data(*this);
+    .  	  _M_copy_data(__x);
+    .  	  __x._M_copy_data(__tmp);
+    .  	}
+    .        };
+    .  
+  297        struct _Vector_impl
+  486  => /usr/include/c++/9/bits/allocator.h:std::allocator<Card>::~allocator() (27x)
+    .  	: public _Tp_alloc_type, public _Vector_impl_data
+    .        {
+   30  	_Vector_impl() _GLIBCXX_NOEXCEPT_IF(
+    .  	    is_nothrow_default_constructible<_Tp_alloc_type>::value)
+   36  	: _Tp_alloc_type()
+  108  => /usr/include/c++/9/bits/allocator.h:std::allocator<Card>::allocator() (6x)
+   78  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_Vector_impl_data::_Vector_impl_data() (6x)
+   18  	{ }
+    .  
+  126  	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
+  168  	: _Tp_alloc_type(__a)
+  462  => /usr/include/c++/9/bits/allocator.h:std::allocator<Card>::allocator(std::allocator<Card> const&) (21x)
+  273  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_Vector_impl_data::_Vector_impl_data() (21x)
+   63  	{ }
+    .  
+    .  #if __cplusplus >= 201103L
+    .  	// Not defaulted, to enforce noexcept(true) even when
+    .  	// !is_nothrow_move_constructible<_Tp_alloc_type>.
+    .  	_Vector_impl(_Vector_impl&& __x) noexcept
+    .  	: _Tp_alloc_type(std::move(__x)), _Vector_impl_data(std::move(__x))
+    .  	{ }
+    .  
+-- line 143 ----------------------------------------
+-- line 265 ----------------------------------------
+    .  #define _GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC
+    .  #endif // _GLIBCXX_SANITIZE_STD_ALLOCATOR && _GLIBCXX_SANITIZE_VECTOR
+    .        };
+    .  
+    .      public:
+    .        typedef _Alloc allocator_type;
+    .  
+    .        _Tp_alloc_type&
+  396        _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+  297        { return this->_M_impl; }
+    .  
+    .        const _Tp_alloc_type&
+  284        _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
+  213        { return this->_M_impl; }
+    .  
+    .        allocator_type
+    .        get_allocator() const _GLIBCXX_NOEXCEPT
+    .        { return allocator_type(_M_get_Tp_allocator()); }
+    .  
+    .  #if __cplusplus >= 201103L
+   66        _Vector_base() = default;
+  270  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_Vector_impl::_Vector_impl() (6x)
+    .  #else
+    .        _Vector_base() { }
+    .  #endif
+    .  
+    .        _Vector_base(const allocator_type& __a) _GLIBCXX_NOEXCEPT
+    .        : _M_impl(__a) { }
+    .  
+    .        // Kept for ABI compatibility.
+    .  #if !_GLIBCXX_INLINE_VERSION
+    .        _Vector_base(size_t __n)
+    .        : _M_impl()
+    .        { _M_create_storage(__n); }
+    .  #endif
+    .  
+  168        _Vector_base(size_t __n, const allocator_type& __a)
+  105        : _M_impl(__a)
+1,092  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_Vector_impl::_Vector_impl(std::allocator<Card> const&) (21x)
+  210        { _M_create_storage(__n); }
+2,953  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_create_storage(unsigned long) (21x)
+    .  
+    .  #if __cplusplus >= 201103L
+    .        _Vector_base(_Vector_base&&) = default;
+    .  
+    .        // Kept for ABI compatibility.
+    .  # if !_GLIBCXX_INLINE_VERSION
+    .        _Vector_base(_Tp_alloc_type&& __a) noexcept
+    .        : _M_impl(std::move(__a)) { }
+-- line 310 ----------------------------------------
+-- line 322 ----------------------------------------
+    .        }
+    .  # endif
+    .  
+    .        _Vector_base(const allocator_type& __a, _Vector_base&& __x)
+    .        : _M_impl(_Tp_alloc_type(__a), std::move(__x._M_impl))
+    .        { }
+    .  #endif
+    .  
+  135        ~_Vector_base() _GLIBCXX_NOEXCEPT
+    .        {
+  189  	_M_deallocate(_M_impl._M_start,
+3,522  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_deallocate(Card*, unsigned long) (27x)
+  189  		      _M_impl._M_end_of_storage - _M_impl._M_start);
+  162        }
+  783  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_Vector_impl::~_Vector_impl() (27x)
+    .  
+    .      public:
+    .        _Vector_impl _M_impl;
+    .  
+    .        pointer
+  276        _M_allocate(size_t __n)
+    .        {
+    .  	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
+  363  	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+5,593  => /usr/include/c++/9/bits/alloc_traits.h:std::allocator_traits<std::allocator<Card> >::allocate(std::allocator<Card>&, unsigned long) (45x)
+   92        }
+    .  
+    .        void
+  364        _M_deallocate(pointer __p, size_t __n)
+    .        {
+    .  	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
+  104  	if (__p)
+  270  	  _Tr::deallocate(_M_impl, __p, __n);
+6,106  => /usr/include/c++/9/bits/alloc_traits.h:std::allocator_traits<std::allocator<Card> >::deallocate(std::allocator<Card>&, Card*, unsigned long) (45x)
+  156        }
+    .  
+    .      protected:
+    .        void
+  126        _M_create_storage(size_t __n)
+    .        {
+  147  	this->_M_impl._M_start = this->_M_allocate(__n);
+2,386  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_allocate(unsigned long) (21x)
+   84  	this->_M_impl._M_finish = this->_M_impl._M_start;
+  147  	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+   63        }
+    .      };
+    .  
+    .    /**
+    .     *  @brief A standard container which offers fixed time access to
+    .     *  individual elements in any order.
+    .     *
+    .     *  @ingroup sequences
+    .     *
+-- line 369 ----------------------------------------
+-- line 420 ----------------------------------------
+    .        typedef std::reverse_iterator<iterator>		reverse_iterator;
+    .        typedef size_t					size_type;
+    .        typedef ptrdiff_t					difference_type;
+    .        typedef _Alloc					allocator_type;
+    .  
+    .      private:
+    .  #if __cplusplus >= 201103L
+    .        static constexpr bool
+  150        _S_nothrow_relocate(true_type)
+    .        {
+    .  	return noexcept(std::__relocate_a(std::declval<pointer>(),
+    .  					  std::declval<pointer>(),
+    .  					  std::declval<pointer>(),
+   50  					  std::declval<_Tp_alloc_type&>()));
+  100        }
+    .  
+    .        static constexpr bool
+    .        _S_nothrow_relocate(false_type)
+    .        { return false; }
+    .  
+    .        static constexpr bool
+  350        _S_use_relocate()
+    .        {
+    .  	// Instantiating std::__relocate_a might cause an error outside the
+    .  	// immediate context (in __relocate_object_a's noexcept-specifier),
+    .  	// so only do it if we know the type can be move-inserted into *this.
+   50  	return _S_nothrow_relocate(__is_move_insertable<_Tp_alloc_type>{});
+  300  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_nothrow_relocate(std::integral_constant<bool, true>) (50x)
+  250        }
+    .  
+    .        static pointer
+  400        _S_do_relocate(pointer __first, pointer __last, pointer __result,
+    .  		     _Tp_alloc_type& __alloc, true_type) noexcept
+    .        {
+  300  	return std::__relocate_a(__first, __last, __result, __alloc);
+18,320  => /usr/include/c++/9/bits/stl_uninitialized.h:Card* std::__relocate_a<Card*, Card*, std::allocator<Card> >(Card*, Card*, Card*, std::allocator<Card>&) (50x)
+  100        }
+    .  
+    .        static pointer
+    .        _S_do_relocate(pointer, pointer, pointer __result,
+    .  		     _Tp_alloc_type&, false_type) noexcept
+    .        { return __result; }
+    .  
+    .        static pointer
+  550        _S_relocate(pointer __first, pointer __last, pointer __result,
+    .  		  _Tp_alloc_type& __alloc) noexcept
+    .        {
+    .  	using __do_it = __bool_constant<_S_use_relocate()>;
+  300  	return _S_do_relocate(__first, __last, __result, __alloc, __do_it{});
+19,120  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_do_relocate(Card*, Card*, Card*, std::allocator<Card>&, std::integral_constant<bool, true>) (50x)
+  250        }
+    .  #endif // C++11
+    .  
+    .      protected:
+    .        using _Base::_M_allocate;
+    .        using _Base::_M_deallocate;
+    .        using _Base::_M_impl;
+    .        using _Base::_M_get_Tp_allocator;
+    .  
+-- line 475 ----------------------------------------
+-- line 476 ----------------------------------------
+    .      public:
+    .        // [23.2.4.1] construct/copy/destroy
+    .        // (assign() and get_allocator() are also listed in this section)
+    .  
+    .        /**
+    .         *  @brief  Creates a %vector with no elements.
+    .         */
+    .  #if __cplusplus >= 201103L
+   66        vector() = default;
+  336  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_Vector_base() (6x)
+    .  #else
+    .        vector() { }
+    .  #endif
+    .  
+    .        /**
+    .         *  @brief  Creates a %vector with no elements.
+    .         *  @param  __a  An allocator object.
+    .         */
+-- line 492 ----------------------------------------
+-- line 542 ----------------------------------------
+    .         *
+    .         *  All the elements of @a __x are copied, but any unused capacity in
+    .         *  @a __x  will not be copied
+    .         *  (i.e. capacity() == size() in the new %vector).
+    .         *
+    .         *  The newly-created %vector uses a copy of the allocator object used
+    .         *  by @a __x (unless the allocator traits dictate a different object).
+    .         */
+  252        vector(const vector& __x)
+    .        : _Base(__x.size(),
+  441  	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
+4,528  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_Vector_base(unsigned long, std::allocator<Card> const&) (21x)
+1,176  => /usr/include/c++/9/ext/alloc_traits.h:__gnu_cxx::__alloc_traits<std::allocator<Card>, Card>::_S_select_on_copy(std::allocator<Card> const&) (21x)
+  378  => /usr/include/c++/9/bits/allocator.h:std::allocator<Card>::~allocator() (21x)
+  273  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::size() const (21x)
+  147  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_get_Tp_allocator() const (21x)
+    .        {
+   42  	this->_M_impl._M_finish =
+  294  	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
+10,097  => /usr/include/c++/9/bits/stl_uninitialized.h:Card* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*, Card>(__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*, std::allocator<Card>&) (21x)
+  714  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::end() const (21x)
+  714  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::begin() const (21x)
+    .  				      this->_M_impl._M_start,
+   84  				      _M_get_Tp_allocator());
+  147  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_get_Tp_allocator() (21x)
+  210        }
+    .  
+    .  #if __cplusplus >= 201103L
+    .        /**
+    .         *  @brief  %Vector move constructor.
+    .         *
+    .         *  The newly-created %vector contains the exact contents of the
+    .         *  moved instance.
+    .         *  The contents of the moved instance are a valid, but unspecified
+-- line 566 ----------------------------------------
+-- line 667 ----------------------------------------
+    .  #endif
+    .  
+    .        /**
+    .         *  The dtor only erases the elements, and note that if the
+    .         *  elements themselves are pointers, the pointed-to memory is
+    .         *  not touched in any way.  Managing the pointer is the user's
+    .         *  responsibility.
+    .         */
+  135        ~vector() _GLIBCXX_NOEXCEPT
+    .        {
+  189  	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+  999  => /usr/include/c++/9/bits/stl_construct.h:void std::_Destroy<Card*, Card>(Card*, Card*, std::allocator<Card>&) (27x)
+  108  		      _M_get_Tp_allocator());
+  189  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_get_Tp_allocator() (27x)
+    .  	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
+  162        }
+4,980  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::~_Vector_base() (27x)
+    .  
+    .        /**
+    .         *  @brief  %Vector assignment operator.
+    .         *  @param  __x  A %vector of identical element and allocator types.
+    .         *
+    .         *  All the elements of @a __x are copied, but any unused capacity in
+    .         *  @a __x will not be copied.
+    .         *
+-- line 688 ----------------------------------------
+-- line 800 ----------------------------------------
+    .  
+    .        // iterators
+    .        /**
+    .         *  Returns a read/write iterator that points to the first
+    .         *  element in the %vector.  Iteration is done in ordinary
+    .         *  element order.
+    .         */
+    .        iterator
+  328        begin() _GLIBCXX_NOEXCEPT
+  451        { return iterator(this->_M_impl._M_start); }
+  492  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::__normal_iterator(Card* const&) (41x)
+    .  
+    .        /**
+    .         *  Returns a read-only (constant) iterator that points to the
+    .         *  first element in the %vector.  Iteration is done in ordinary
+    .         *  element order.
+    .         */
+    .        const_iterator
+  168        begin() const _GLIBCXX_NOEXCEPT
+  294        { return const_iterator(this->_M_impl._M_start); }
+  252  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::__normal_iterator(Card const* const&) (21x)
+    .  
+    .        /**
+    .         *  Returns a read/write iterator that points one past the last
+    .         *  element in the %vector.  Iteration is done in ordinary
+    .         *  element order.
+    .         */
+    .        iterator
+  416        end() _GLIBCXX_NOEXCEPT
+  624        { return iterator(this->_M_impl._M_finish); }
+  624  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::__normal_iterator(Card* const&) (52x)
+    .  
+    .        /**
+    .         *  Returns a read-only (constant) iterator that points one past
+    .         *  the last element in the %vector.  Iteration is done in
+    .         *  ordinary element order.
+    .         */
+    .        const_iterator
+  168        end() const _GLIBCXX_NOEXCEPT
+  294        { return const_iterator(this->_M_impl._M_finish); }
+  252  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::__normal_iterator(Card const* const&) (21x)
+    .  
+    .        /**
+    .         *  Returns a read/write reverse iterator that points to the
+    .         *  last element in the %vector.  Iteration is done in reverse
+    .         *  element order.
+    .         */
+    .        reverse_iterator
+    .        rbegin() _GLIBCXX_NOEXCEPT
+-- line 844 ----------------------------------------
+-- line 873 ----------------------------------------
+    .  
+    .  #if __cplusplus >= 201103L
+    .        /**
+    .         *  Returns a read-only (constant) iterator that points to the
+    .         *  first element in the %vector.  Iteration is done in ordinary
+    .         *  element order.
+    .         */
+    .        const_iterator
+   56        cbegin() const noexcept
+   98        { return const_iterator(this->_M_impl._M_start); }
+   84  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::__normal_iterator(Card const* const&) (7x)
+    .  
+    .        /**
+    .         *  Returns a read-only (constant) iterator that points one past
+    .         *  the last element in the %vector.  Iteration is done in
+    .         *  ordinary element order.
+    .         */
+    .        const_iterator
+    .        cend() const noexcept
+-- line 890 ----------------------------------------
+-- line 907 ----------------------------------------
+    .        const_reverse_iterator
+    .        crend() const noexcept
+    .        { return const_reverse_iterator(begin()); }
+    .  #endif
+    .  
+    .        // [23.2.4.2] capacity
+    .        /**  Returns the number of elements in the %vector.  */
+    .        size_type
+  548        size() const _GLIBCXX_NOEXCEPT
+1,233        { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+    .  
+    .        /**  Returns the size() of the largest possible %vector.  */
+    .        size_type
+  250        max_size() const _GLIBCXX_NOEXCEPT
+  350        { return _S_max_size(_M_get_Tp_allocator()); }
+2,800  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_S_max_size(std::allocator<Card> const&) (50x)
+  350  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_get_Tp_allocator() const (50x)
+    .  
+    .  #if __cplusplus >= 201103L
+    .        /**
+    .         *  @brief  Resizes the %vector to the specified number of elements.
+    .         *  @param  __new_size  Number of elements the %vector should contain.
+    .         *
+    .         *  This function will %resize the %vector to the specified
+    .         *  number of elements.  If the number is smaller than the
+-- line 929 ----------------------------------------
+-- line 1032 ----------------------------------------
+    .         *  @return  Read/write reference to data.
+    .         *
+    .         *  This operator allows for easy, array-style, data access.
+    .         *  Note that data access with this operator is unchecked and
+    .         *  out_of_range lookups are not defined. (For checked lookups
+    .         *  see at().)
+    .         */
+    .        reference
+  525        operator[](size_type __n) _GLIBCXX_NOEXCEPT
+    .        {
+    .  	__glibcxx_requires_subscript(__n);
+  525  	return *(this->_M_impl._M_start + __n);
+  210        }
+    .  
+    .        /**
+    .         *  @brief  Subscript access to the data contained in the %vector.
+    .         *  @param __n The index of the element for which data should be
+    .         *  accessed.
+    .         *  @return  Read-only (constant) reference to data.
+    .         *
+    .         *  This operator allows for easy, array-style, data access.
+-- line 1052 ----------------------------------------
+-- line 1132 ----------------------------------------
+    .  	return *begin();
+    .        }
+    .  
+    .        /**
+    .         *  Returns a read/write reference to the data at the last
+    .         *  element of the %vector.
+    .         */
+    .        reference
+  104        back() _GLIBCXX_NOEXCEPT
+    .        {
+    .  	__glibcxx_requires_nonempty();
+  156  	return *(end() - 1);
+  507  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator-(long) const (13x)
+  416  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::end() (13x)
+  104  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator*() const (13x)
+   65        }
+    .  
+    .        /**
+    .         *  Returns a read-only (constant) reference to the data at the
+    .         *  last element of the %vector.
+    .         */
+    .        const_reference
+    .        back() const _GLIBCXX_NOEXCEPT
+    .        {
+-- line 1152 ----------------------------------------
+-- line 1176 ----------------------------------------
+    .         *
+    .         *  This is a typical stack operation.  The function creates an
+    .         *  element at the end of the %vector and assigns the given data
+    .         *  to it.  Due to the nature of a %vector this operation can be
+    .         *  done in constant time if the %vector has preallocated space
+    .         *  available.
+    .         */
+    .        void
+  384        push_back(const value_type& __x)
+    .        {
+  384  	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+    .  	  {
+    .  	    _GLIBCXX_ASAN_ANNOTATE_GROW(1);
+  273  	    _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+2,496  => /usr/include/c++/9/bits/alloc_traits.h:void std::allocator_traits<std::allocator<Card> >::construct<Card, Card const&>(std::allocator<Card>&, Card*, Card const&) (39x)
+    .  				     __x);
+  195  	    ++this->_M_impl._M_finish;
+    .  	    _GLIBCXX_ASAN_ANNOTATE_GREW(1);
+    .  	  }
+    .  	else
+  225  	  _M_realloc_insert(end(), __x);
+42,617  => /usr/include/c++/9/bits/vector.tcc:void std::vector<Card, std::allocator<Card> >::_M_realloc_insert<Card const&>(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >, Card const&) (25x)
+  800  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::end() (25x)
+  231        }
+    .  
+    .  #if __cplusplus >= 201103L
+    .        void
+    .        push_back(value_type&& __x)
+    .        { emplace_back(std::move(__x)); }
+    .  
+    .        template<typename... _Args>
+    .  #if __cplusplus > 201402L
+-- line 1204 ----------------------------------------
+-- line 1214 ----------------------------------------
+    .         *
+    .         *  This is a typical stack operation. It shrinks the %vector by one.
+    .         *
+    .         *  Note that no data is returned, and if the last element's
+    .         *  data is needed, it should be retrieved before pop_back() is
+    .         *  called.
+    .         */
+    .        void
+   65        pop_back() _GLIBCXX_NOEXCEPT
+    .        {
+    .  	__glibcxx_requires_nonempty();
+   65  	--this->_M_impl._M_finish;
+   78  	_Alloc_traits::destroy(this->_M_impl, this->_M_impl._M_finish);
+  286  => /usr/include/c++/9/bits/alloc_traits.h:void std::allocator_traits<std::allocator<Card> >::destroy<Card>(std::allocator<Card>&, Card*) (13x)
+    .  	_GLIBCXX_ASAN_ANNOTATE_SHRINK(1);
+   39        }
+    .  
+    .  #if __cplusplus >= 201103L
+    .        /**
+    .         *  @brief  Inserts an object in %vector before specified iterator.
+    .         *  @param  __position  A const_iterator into the %vector.
+    .         *  @param  __args  Arguments.
+    .         *  @return  An iterator that points to the inserted data.
+    .         *
+-- line 1236 ----------------------------------------
+-- line 1419 ----------------------------------------
+    .         *  frequently used the user should consider using std::list.
+    .         *  The user is also cautioned that this function only erases
+    .         *  the element, and that if the element is itself a pointer,
+    .         *  the pointed-to memory is not touched in any way.  Managing
+    .         *  the pointer is the user's responsibility.
+    .         */
+    .        iterator
+    .  #if __cplusplus >= 201103L
+   70        erase(const_iterator __position)
+  210        { return _M_erase(begin() + (__position - cbegin())); }
+2,932  => /usr/include/c++/9/bits/vector.tcc:std::vector<Card, std::allocator<Card> >::_M_erase(__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >) (7x)
+  266  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card*, std::vector<Card, std::allocator<Card> > >::operator+(long) const (7x)
+  252  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::difference_type __gnu_cxx::operator-<Card const*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > > const&) (7x)
+  238  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::cbegin() const (7x)
+  217  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::begin() (7x)
+    .  #else
+    .        erase(iterator __position)
+    .        { return _M_erase(__position); }
+    .  #endif
+    .  
+    .        /**
+    .         *  @brief  Remove a range of elements.
+    .         *  @param  __first  Iterator pointing to the first element to be erased.
+-- line 1436 ----------------------------------------
+-- line 1487 ----------------------------------------
+    .  
+    .        /**
+    .         *  Erases all the elements.  Note that this function only erases the
+    .         *  elements, and that if the elements themselves are pointers, the
+    .         *  pointed-to memory is not touched in any way.  Managing the pointer is
+    .         *  the user's responsibility.
+    .         */
+    .        void
+    5        clear() _GLIBCXX_NOEXCEPT
+    9        { _M_erase_at_end(this->_M_impl._M_start); }
+   73  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::_M_erase_at_end(Card*) (1x)
+    .  
+    .      protected:
+    .        /**
+    .         *  Memory expansion handler.  Uses the member allocation function to
+    .         *  obtain @a n bytes of memory, and then copies [first,last) into it.
+    .         */
+    .        template<typename _ForwardIterator>
+    .  	pointer
+-- line 1504 ----------------------------------------
+-- line 1745 ----------------------------------------
+    .        // Emplacing an rvalue of the correct type can use _M_insert_rval.
+    .        iterator
+    .        _M_emplace_aux(const_iterator __position, value_type&& __v)
+    .        { return _M_insert_rval(__position, std::move(__v)); }
+    .  #endif
+    .  
+    .        // Called by _M_fill_insert, _M_insert_aux etc.
+    .        size_type
+  275        _M_check_len(size_type __n, const char* __s) const
+    .        {
+  350  	if (max_size() - size() < __n)
+1,875  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::max_size() const (25x)
+  325  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::size() const (25x)
+    .  	  __throw_length_error(__N(__s));
+    .  
+  400  	const size_type __len = size() + (std::max)(size(), __n);
+  650  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::size() const (50x)
+  356  => /usr/include/c++/9/bits/stl_algobase.h:unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) (25x)
+  275  	return (__len < size() || __len > max_size()) ? max_size() : __len;
+1,875  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::max_size() const (25x)
+  325  => /usr/include/c++/9/bits/stl_vector.h:std::vector<Card, std::allocator<Card> >::size() const (25x)
+  175        }
+    .  
+    .        // Called by constructors to check initial size.
+    .        static size_type
+    .        _S_check_init_len(size_type __n, const allocator_type& __a)
+    .        {
+    .  	if (__n > _S_max_size(_Tp_alloc_type(__a)))
+    .  	  __throw_length_error(
+    .  	      __N("cannot create std::vector larger than max_size()"));
+    .  	return __n;
+    .        }
+    .  
+    .        static size_type
+  400        _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
+    .        {
+    .  	// std::distance(begin(), end()) cannot be greater than PTRDIFF_MAX,
+    .  	// and realistically we can't store more than PTRDIFF_MAX/sizeof(T)
+    .  	// (even if std::allocator_traits::max_size says we can).
+  100  	const size_t __diffmax
+    .  	  = __gnu_cxx::__numeric_traits<ptrdiff_t>::__max / sizeof(_Tp);
+  200  	const size_t __allocmax = _Alloc_traits::max_size(__a);
+  850  => /usr/include/c++/9/bits/alloc_traits.h:std::allocator_traits<std::allocator<Card> >::max_size(std::allocator<Card> const&) (50x)
+  300  	return (std::min)(__diffmax, __allocmax);
+  700  => /usr/include/c++/9/bits/stl_algobase.h:unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) (50x)
+  250        }
+    .  
+    .        // Internal erase functions follow.
+    .  
+    .        // Called by erase(q1,q2), clear(), resize(), _M_fill_assign,
+    .        // _M_assign_aux.
+    .        void
+    6        _M_erase_at_end(pointer __pos) _GLIBCXX_NOEXCEPT
+    .        {
+    7  	if (size_type __n = this->_M_impl._M_finish - __pos)
+    .  	  {
+    6  	    std::_Destroy(__pos, this->_M_impl._M_finish,
+   37  => /usr/include/c++/9/bits/stl_construct.h:void std::_Destroy<Card*, Card>(Card*, Card*, std::allocator<Card>&) (1x)
+    4  			  _M_get_Tp_allocator());
+    7  => /usr/include/c++/9/bits/stl_vector.h:std::_Vector_base<Card, std::allocator<Card> >::_M_get_Tp_allocator() (1x)
+    3  	    this->_M_impl._M_finish = __pos;
+    .  	    _GLIBCXX_ASAN_ANNOTATE_SHRINK(__n);
+    .  	  }
+    3        }
+    .  
+    .        iterator
+    .        _M_erase(iterator __position);
+    .  
+    .        iterator
+    .        _M_erase(iterator __first, iterator __last);
+    .  
+    .  #if __cplusplus >= 201103L
+-- line 1806 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/stl_uninitialized.h
+--------------------------------------------------------------------------------
+Ir    
+
+-- line 68 ----------------------------------------
+    .  {
+    .  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+    .  
+    .    template<bool _TrivialValueTypes>
+    .      struct __uninitialized_copy
+    .      {
+    .        template<typename _InputIterator, typename _ForwardIterator>
+    .          static _ForwardIterator
+  168          __uninit_copy(_InputIterator __first, _InputIterator __last,
+    .  		      _ForwardIterator __result)
+    .          {
+   42  	  _ForwardIterator __cur = __result;
+    .  	  __try
+    .  	    {
+  963  	      for (; __first != __last; ++__first, (void)++__cur)
+3,115  => /usr/include/c++/9/bits/stl_iterator.h:bool __gnu_cxx::operator!=<Card const*, std::vector<Card, std::allocator<Card> > >(__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > > const&, __gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > > const&) (89x)
+  816  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::operator++() (68x)
+  680  		std::_Construct(std::__addressof(*__cur), *__first);
+2,516  => /usr/include/c++/9/bits/stl_construct.h:void std::_Construct<Card, Card const&>(Card*, Card const&) (68x)
+  544  => /usr/include/c++/9/bits/stl_iterator.h:__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >::operator*() const (68x)
+  476  => /usr/include/c++/9/bits/move.h:Card* std::__addressof<Card>(Card&) (68x)
+   21  	      return __cur;
+    .  	    }
+    .  	  __catch(...)
+    .  	    {
+    .  	      std::_Destroy(__result, __cur);
+    .  	      __throw_exception_again;
+    .  	    }
+   84  	}
+    .      };
+    .  
+    .    template<>
+    .      struct __uninitialized_copy<true>
+    .      {
+    .        template<typename _InputIterator, typename _ForwardIterator>
+    .          static _ForwardIterator
+    .          __uninit_copy(_InputIterator __first, _InputIterator __last,
+-- line 99 ----------------------------------------
+-- line 107 ----------------------------------------
+    .     *  @param  __last   An input iterator.
+    .     *  @param  __result An output iterator.
+    .     *  @return   __result + (__first - __last)
+    .     *
+    .     *  Like copy(), but does not require an initialized output range.
+    .    */
+    .    template<typename _InputIterator, typename _ForwardIterator>
+    .      inline _ForwardIterator
+  147      uninitialized_copy(_InputIterator __first, _InputIterator __last,
+    .  		       _ForwardIterator __result)
+    .      {
+    .        typedef typename iterator_traits<_InputIterator>::value_type
+    .  	_ValueType1;
+    .        typedef typename iterator_traits<_ForwardIterator>::value_type
+    .  	_ValueType2;
+    .  #if __cplusplus < 201103L
+    .        const bool __assignable = true;
+-- line 123 ----------------------------------------
+-- line 126 ----------------------------------------
+    .        // optimization that uses memmove would happily "copy" them anyway.
+    .        static_assert(is_constructible<_ValueType2, decltype(*__first)>::value,
+    .  	  "result type must be constructible from value type of input range");
+    .  
+    .        typedef typename iterator_traits<_InputIterator>::reference _RefType1;
+    .        typedef typename iterator_traits<_ForwardIterator>::reference _RefType2;
+    .        // Trivial types can have deleted assignment, so using std::copy
+    .        // would be ill-formed. Require assignability before using std::copy:
+   21        const bool __assignable = is_assignable<_RefType2, _RefType1>::value;
+    .  #endif
+    .  
+    .        return std::__uninitialized_copy<__is_trivial(_ValueType1)
+    .  				       && __is_trivial(_ValueType2)
+    .  				       && __assignable>::
+  126  	__uninit_copy(__first, __last, __result);
+9,425  => /usr/include/c++/9/bits/stl_uninitialized.h:Card* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*>(__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*) (21x)
+   42      }
+    .  
+    .  
+    .    template<bool _TrivialValueType>
+    .      struct __uninitialized_fill
+    .      {
+    .        template<typename _ForwardIterator, typename _Tp>
+    .          static void
+    .          __uninit_fill(_ForwardIterator __first, _ForwardIterator __last,
+-- line 149 ----------------------------------------
+-- line 297 ----------------------------------------
+    .  	{
+    .  	  std::_Destroy(__result, __cur, __alloc);
+    .  	  __throw_exception_again;
+    .  	}
+    .      }
+    .  
+    .    template<typename _InputIterator, typename _ForwardIterator, typename _Tp>
+    .      inline _ForwardIterator
+  168      __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,
+    .  			   _ForwardIterator __result, allocator<_Tp>&)
+  168      { return std::uninitialized_copy(__first, __last, __result); }
+9,761  => /usr/include/c++/9/bits/stl_uninitialized.h:Card* std::uninitialized_copy<__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*>(__gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, __gnu_cxx::__normal_iterator<Card const*, std::vector<Card, std::allocator<Card> > >, Card*) (21x)
+    .  
+    .    template<typename _InputIterator, typename _ForwardIterator,
+    .  	   typename _Allocator>
+    .      inline _ForwardIterator
+    .      __uninitialized_move_a(_InputIterator __first, _InputIterator __last,
+    .  			   _ForwardIterator __result, _Allocator& __alloc)
+    .      {
+    .        return std::__uninitialized_copy_a(_GLIBCXX_MAKE_MOVE_ITERATOR(__first),
+-- line 315 ----------------------------------------
+-- line 897 ----------------------------------------
+    .  	 __count, __result);
+    .        return {__res.first.base(), __res.second};
+    .      }
+    .  #endif // C++17
+    .  
+    .  #if __cplusplus >= 201103L
+    .    template<typename _Tp, typename _Up, typename _Allocator>
+    .      inline void
+  644      __relocate_object_a(_Tp* __dest, _Up* __orig, _Allocator& __alloc)
+    .      noexcept(noexcept(std::allocator_traits<_Allocator>::construct(__alloc,
+    .  			 __dest, std::move(*__orig)))
+    .  	     && noexcept(std::allocator_traits<_Allocator>::destroy(
+    .  			    __alloc, std::__addressof(*__orig))))
+    .      {
+    .        typedef std::allocator_traits<_Allocator> __traits;
+  828        __traits::construct(__alloc, __dest, std::move(*__orig));
+5,888  => /usr/include/c++/9/bits/alloc_traits.h:void std::allocator_traits<std::allocator<Card> >::construct<Card, Card>(std::allocator<Card>&, Card*, Card&&) (92x)
+  644  => /usr/include/c++/9/bits/move.h:std::remove_reference<Card&>::type&& std::move<Card&>(Card&) (92x)
+  736        __traits::destroy(__alloc, std::__addressof(*__orig));
+2,024  => /usr/include/c++/9/bits/alloc_traits.h:void std::allocator_traits<std::allocator<Card> >::destroy<Card>(std::allocator<Card>&, Card*) (92x)
+  644  => /usr/include/c++/9/bits/move.h:Card* std::__addressof<Card>(Card&) (92x)
+  276      }
+    .  
+    .    // This class may be specialized for specific types.
+    .    // Also known as is_trivially_relocatable.
+    .    template<typename _Tp, typename = void>
+    .      struct __is_bitwise_relocatable
+    .      : is_trivial<_Tp> { };
+    .  
+    .    template <typename _Tp, typename _Up>
+-- line 922 ----------------------------------------
+-- line 928 ----------------------------------------
+    .        if (__count > 0)
+    .  	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
+    .        return __result + __count;
+    .      }
+    .  
+    .    template <typename _InputIterator, typename _ForwardIterator,
+    .  	    typename _Allocator>
+    .      inline _ForwardIterator
+  450      __relocate_a_1(_InputIterator __first, _InputIterator __last,
+    .  		   _ForwardIterator __result, _Allocator& __alloc)
+    .      noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
+    .  					       std::addressof(*__first),
+    .  					       __alloc)))
+    .      {
+    .        typedef typename iterator_traits<_InputIterator>::value_type
+    .  	_ValueType;
+    .        typedef typename iterator_traits<_ForwardIterator>::value_type
+    .  	_ValueType2;
+    .        static_assert(std::is_same<_ValueType, _ValueType2>::value,
+    .  	  "relocation is only possible for values of the same type");
+  100        _ForwardIterator __cur = __result;
+  702        for (; __first != __last; ++__first, (void)++__cur)
+1,196  	std::__relocate_object_a(std::__addressof(*__cur),
+11,684  => /usr/include/c++/9/bits/stl_uninitialized.h:void std::__relocate_object_a<Card, Card, std::allocator<Card> >(Card*, Card*, std::allocator<Card>&) (92x)
+1,288  => /usr/include/c++/9/bits/move.h:Card* std::__addressof<Card>(Card&) (184x)
+    .  				 std::__addressof(*__first), __alloc);
+   50        return __cur;
+  200      }
+    .  
+    .    template <typename _InputIterator, typename _ForwardIterator,
+    .  	    typename _Allocator>
+    .      inline _ForwardIterator
+  500      __relocate_a(_InputIterator __first, _InputIterator __last,
+    .  		 _ForwardIterator __result, _Allocator& __alloc)
+    .      noexcept(noexcept(__relocate_a_1(std::__niter_base(__first),
+    .  				     std::__niter_base(__last),
+    .  				     std::__niter_base(__result), __alloc)))
+    .      {
+  850        return __relocate_a_1(std::__niter_base(__first),
+15,670  => /usr/include/c++/9/bits/stl_uninitialized.h:Card* std::__relocate_a_1<Card*, Card*, std::allocator<Card> >(Card*, Card*, Card*, std::allocator<Card>&) (50x)
+1,050  => /usr/include/c++/9/bits/stl_algobase.h:Card* std::__niter_base<Card*>(Card*) (150x)
+    .  			    std::__niter_base(__last),
+    .  			    std::__niter_base(__result), __alloc);
+  250      }
+    .  #endif
+    .  
+    .  _GLIBCXX_END_NAMESPACE_VERSION
+    .  } // namespace
+    .  
+    .  #endif /* _STL_UNINITIALIZED_H */
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/9/bits/allocator.h
+--------------------------------------------------------------------------------
+Ir  
+
+-- line 129 ----------------------------------------
+  .        typedef true_type propagate_on_container_move_assignment;
+  .  
+  .        typedef true_type is_always_equal;
+  .  #endif
+  .  
+  .        // _GLIBCXX_RESOLVE_LIB_DEFECTS
+  .        // 3035. std::allocator's constructors should be constexpr
+  .        _GLIBCXX20_CONSTEXPR
+ 66        allocator() _GLIBCXX_NOTHROW { }
+ 42  => /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::new_allocator() (6x)
+  .  
+  .        _GLIBCXX20_CONSTEXPR
+252        allocator(const allocator& __a) _GLIBCXX_NOTHROW
+336        : __allocator_base<_Tp>(__a) { }
+336  => /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::new_allocator(__gnu_cxx::new_allocator<Card> const&) (42x)
+  .  
+  .  #if __cplusplus >= 201103L
+  .        // Avoid implicit deprecation.
+  .        allocator& operator=(const allocator&) = default;
+  .  #endif
+  .  
+  .        template<typename _Tp1>
+  .  	_GLIBCXX20_CONSTEXPR
+  .  	allocator(const allocator<_Tp1>&) _GLIBCXX_NOTHROW { }
+  .  
+528        ~allocator() _GLIBCXX_NOTHROW { }
+336  => /usr/include/c++/9/ext/new_allocator.h:__gnu_cxx::new_allocator<Card>::~new_allocator() (48x)
+  .  
+  .        friend bool
+  .        operator==(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+  .        { return true; }
+  .  
+  .        friend bool
+  .        operator!=(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+  .        { return false; }
+-- line 160 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /home/user/ECE350Final/src/Card.cpp
+--------------------------------------------------------------------------------
+Ir    
+
+    .  #include <iostream>
+    .  #include "Card.h"
+    .  
+    .  using namespace std;
+    .  
+  296  int Card::getNumValue(){
+    .    int card; //to store numerical value
+    .  
+1,036    switch(val){ //use char representing value
+    .    case 'A':
+    .      card = 14;
+    .      break;
+    .    case 'K':
+   14      card = 13;
+   14      break;
+    .    case 'Q':
+   13      card = 12;
+   13      break;
+    .    case 'J':
+    7      card = 11;
+    7      break;
+    .    case '0':
+    3      card = 10;
+    3      break;
+    .    case 'X':
+    .        card = -1;
+    .        break;
+    .    default: //for any other value, conver the char to int by subtracting 48 from the ASCII code
+  185      card = (int)val - 48;
+   37      break;
+    .    }
+   74    return card;
+  148  }
+    .  
+   24  bool Card::setSuit(char s){
+    .    
+   48    switch(s){
+    .    case 'H':
+    .    case 'h':
+    2      suit = 'H';
+    1      break;
+    .    case 'D':
+    .    case 'd':
+    2      suit = 'D';
+    1      break;
+    .    case 'C':
+    .    case 'c':
+    2      suit = 'C';
+    1      break;
+    .    case 'S':
+    .    case 's':
+    2      suit = 'S';
+    1      break;
+    .    case 'X':
+    .        suit = 'X';
+    .        break;
+    .    default: //if invalid suit
+    .      return false; 
+    .    }
+    4    return true; //if successful
+    8  }
+    .  //za setValue(char), koristim fju setValue(int)
+    .  //ovde sam uocila bag, a to je da je moguce bilo postaviti da  neki nevalidan char npr 'x' ili '@' bude isto postavljen, sto ne bi trebalo
+    .  //pokrivenost testovima je 100% sada
+    .  //Koriste se karte od 6-14, pa je i to promenjeno
+    .  bool Card::setVal(char value){
+    .  
+    .    if((value - '0') >= 6 && (value - '0') <= 9){
+    .    return setVal(value - '0');
+-- line 69 ----------------------------------------
+-- line 85 ----------------------------------------
+    .        return setVal(14);
+    .    }
+    .    if(value == 'X'){
+    .        return setVal(-1);
+    .  }
+    .    return false;
+    .  }
+    .  
+  180  bool Card::setVal(int value){
+    .    //1 thru 9, normal. ten is represented with 0. face cards A, K, Q, J are 14, 13, 12, 11
+    .  //  if(value > 14 || value < 0) //out of range
+    .   //   return false;
+  144    if(value >= 6 && value <= 9) {
+   80        val = value + 48;
+  272        return true;
+    .  }
+    .    switch(value){
+    .    case 10:
+    8      val = '0';
+    8      return true;
+    .    case 11:
+    8      val = 'J';
+    8      return true;
+    .    case 12:
+    8      val = 'Q';
+    8      return true;
+    .    case 13:
+    8      val = 'K';
+    8      return true;
+    .    case 14:
+    8      val = 'A';
+    8      return true;
+    .    case -1:
+    .        val = 'X';
+    .        return true;
+    .  
+    .    }
+    .    return false;
+   72  }
+    .  
+   45  void Card::print(){
+   36    if(val == '0')
+    4      cout << "10";
+  282  => ???:0x000000000010a250 (1x)
+    .    else
+   48      cout << val;
+1,976  => ???:0x000000000010a2a0 (8x)
+    .    
+   27    cout << " of ";
+2,610  => ???:0x000000000010a250 (9x)
+  103    switch(suit){
+    .    case 'H':
+   12      cout << "hearts ";
+1,220  => ???:0x000000000010a250 (4x)
+    4      break;
+    .    case 'D':
+    3      cout << "diamonds ";
+  313  => ???:0x000000000010a250 (1x)
+    1      break;
+    .    case 'S':
+    .      cout << "spades ";
+    .      break;
+    .    case 'C':
+   12      cout << "clubs ";
+1,216  => ???:0x000000000010a250 (4x)
+    4      break;
+    .    }
+   27  }
+    .  bool Card::isEmpty() {
+    .      return val == 'X' && suit == 'X';
+   21  }
+  120  => /home/user/ECE350Final/src/Card.cpp:__static_initialization_and_destruction_0(int, int) (1x)
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  /build/glibc-LcI20x/glibc-2.31/elf/../elf/dl-runtime.c
+  /build/glibc-LcI20x/glibc-2.31/elf/../elf/dl-sysdep.c
+  /build/glibc-LcI20x/glibc-2.31/elf/../elf/dl-tls.c
+  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/generic/ldsodefs.h
+  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86/dl-prop.h
+  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86_64/dl-machine.h
+  /build/glibc-LcI20x/glibc-2.31/elf/../sysdeps/x86_64/dl-trampoline.h
+  /build/glibc-LcI20x/glibc-2.31/elf/./dl-map-segments.h
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-addr.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-cache.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-deps.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-environ.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-error-skeleton.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-fini.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-hwcaps.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-init.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-load.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-lookup.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-minimal.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-misc.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-object.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-profstub.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-reloc.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-sort-maps.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-tunables.c
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-tunables.h
+  /build/glibc-LcI20x/glibc-2.31/elf/dl-version.c
+  /build/glibc-LcI20x/glibc-2.31/elf/do-rel.h
+  /build/glibc-LcI20x/glibc-2.31/elf/get-dynamic-info.h
+  /build/glibc-LcI20x/glibc-2.31/elf/rtld.c
+  /build/glibc-LcI20x/glibc-2.31/iconv/gconv_simple.c
+  /build/glibc-LcI20x/glibc-2.31/io/../sysdeps/unix/sysv/linux/open64_nocancel.c
+  /build/glibc-LcI20x/glibc-2.31/libio/fileops.c
+  /build/glibc-LcI20x/glibc-2.31/libio/iofflush.c
+  /build/glibc-LcI20x/glibc-2.31/libio/iofwrite.c
+  /build/glibc-LcI20x/glibc-2.31/libio/libioP.h
+  /build/glibc-LcI20x/glibc-2.31/malloc/malloc.c
+  /build/glibc-LcI20x/glibc-2.31/misc/../sysdeps/unix/sysv/linux/mmap64.c
+  /build/glibc-LcI20x/glibc-2.31/setjmp/../sysdeps/x86_64/setjmp.S
+  /build/glibc-LcI20x/glibc-2.31/stdlib/cxa_atexit.c
+  /build/glibc-LcI20x/glibc-2.31/stdlib/cxa_finalize.c
+  /build/glibc-LcI20x/glibc-2.31/stdlib/exit.c
+  /build/glibc-LcI20x/glibc-2.31/string/../bits/stdlib-bsearch.h
+  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86/cacheinfo.c
+  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strchr.S
+  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/../strlen.S
+  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S
+  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/strlen-avx2.S
+  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/strcmp.S
+  /build/glibc-LcI20x/glibc-2.31/wcsmbs/./wcsmbsload.h
+  /build/glibc-LcI20x/glibc-2.31/wcsmbs/btowc.c
+  /build/glibc-LcI20x/glibc-2.31/wcsmbs/wctob.c
+  /build/glibc-LcI20x/glibc-2.31/wctype/wctype_l.c
+
+--------------------------------------------------------------------------------
+Ir      
+--------------------------------------------------------------------------------
+110,295  events annotated
+

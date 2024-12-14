@@ -1,0 +1,7 @@
+==3627== HEAP SUMMARY:
+==3627==     in use at exit: 0 bytes in 0 blocks
+==3627==   total heap usage: 148 allocs, 148 frees, 75,842 bytes allocated
+==3627== 
+==3627== All heap blocks were freed -- no leaks are possible
+==3627== 
+==3627== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

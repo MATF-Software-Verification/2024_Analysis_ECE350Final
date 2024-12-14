@@ -1,0 +1,3 @@
+/home/user/ECE350Final/CMakeFiles/Durak.dir
+/home/user/ECE350Final/CMakeFiles/edit_cache.dir
+/home/user/ECE350Final/CMakeFiles/rebuild_cache.dir

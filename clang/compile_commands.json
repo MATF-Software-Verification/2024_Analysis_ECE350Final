@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/user/ECE350Final/build",
+  "command": "/usr/bin/c++   -Wall -Wextra -Wwrite-strings -o CMakeFiles/Durak.dir/home/user/ECE350Final/src/main.cpp.o -c /home/user/ECE350Final/src/main.cpp",
+  "file": "/home/user/ECE350Final/src/main.cpp"
+},
+{
+  "directory": "/home/user/ECE350Final/build",
+  "command": "/usr/bin/c++   -Wall -Wextra -Wwrite-strings -o CMakeFiles/Durak.dir/home/user/ECE350Final/src/Card.cpp.o -c /home/user/ECE350Final/src/Card.cpp",
+  "file": "/home/user/ECE350Final/src/Card.cpp"
+},
+{
+  "directory": "/home/user/ECE350Final/build",
+  "command": "/usr/bin/c++   -Wall -Wextra -Wwrite-strings -o CMakeFiles/Durak.dir/home/user/ECE350Final/src/Deck.cpp.o -c /home/user/ECE350Final/src/Deck.cpp",
+  "file": "/home/user/ECE350Final/src/Deck.cpp"
+}
+]

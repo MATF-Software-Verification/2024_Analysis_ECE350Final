@@ -1,0 +1,223 @@
+--------------------------------------------------------------------------------
+Command:            ./../../src/Durak
+Massif arguments:   --massif-out-file=massif_5796.out
+ms_print arguments: massif_5796.out
+--------------------------------------------------------------------------------
+
+
+    KB
+73.30^                                                            :@          
+     |                                                 :::::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+     |                                                 : :::#:::@::@:::::::::@
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   3.233
+
+Number of snapshots: 62
+ Detailed snapshots: [11 (peak), 20, 31, 55]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      2,323,410           72,712           72,704             8            0
+  2      2,436,175           72,736           72,706            30            0
+  3      2,442,213           72,776           72,752            24            0
+  4      2,457,223           72,848           72,832            16            0
+  5      2,492,123           72,872           72,834            38            0
+  6      2,506,177           72,896           72,850            46            0
+  7      2,522,790           73,928           73,888            40            0
+  8      2,530,829           73,952           73,900            52            0
+  9      2,544,146           73,952           73,890            62            0
+ 10      2,563,495           74,984           74,914            70            0
+ 11      2,570,940           75,008           74,918            90            0
+99.88% (74,918B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->96.93% (72,704B) 0x4902A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+| ->96.93% (72,704B) 0x4011B99: call_init.part.0 (dl-init.c:72)
+|   ->96.93% (72,704B) 0x4011CA0: call_init (dl-init.c:30)
+|     ->96.93% (72,704B) 0x4011CA0: _dl_init (dl-init.c:119)
+|       ->96.93% (72,704B) 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|         
+->02.73% (2,048B) 0x4ADAD03: _IO_file_doallocate (filedoalloc.c:101)
+| ->02.73% (2,048B) 0x4AEAECF: _IO_doallocbuf (genops.c:347)
+|   ->01.37% (1,024B) 0x4AE9CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|   | ->01.37% (1,024B) 0x4AEAF85: _IO_default_uflow (genops.c:362)
+|   |   ->01.37% (1,024B) 0x49654E0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |     ->01.37% (1,024B) 0x4973B52: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |       ->01.37% (1,024B) 0x4973DD1: std::istream::operator>>(int&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |         ->01.37% (1,024B) 0x10CEF0: Deck::askCard(Card, char) (Deck.cpp:231)
+|   |           ->01.37% (1,024B) 0x10B077: defend(Card, Deck&, int) (main.cpp:197)
+|   |             ->01.37% (1,024B) 0x10A7A0: main (main.cpp:75)
+|   |               
+|   ->01.37% (1,024B) 0x4AE9F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|     ->01.37% (1,024B) 0x4AE86B4: _IO_new_file_xsputn (fileops.c:1244)
+|       ->01.37% (1,024B) 0x4AE86B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|         ->01.37% (1,024B) 0x4ADC3C0: fwrite (iofwrite.c:39)
+|           ->01.37% (1,024B) 0x498F853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|             ->01.37% (1,024B) 0x498FC0B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|               ->01.37% (1,024B) 0x10A504: main (main.cpp:29)
+|                 
+->00.22% (166B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12      2,591,851           75,008           74,928            80            0
+ 13      2,594,977           74,984           74,916            68            0
+ 14      2,615,371           75,008           74,930            78            0
+ 15      2,633,241           74,984           74,916            68            0
+ 16      2,644,778           75,008           74,918            90            0
+ 17      2,662,000           74,984           74,920            64            0
+ 18      2,708,854           75,008           74,932            76            0
+ 19      2,712,677           74,984           74,920            64            0
+ 20      2,732,750           75,008           74,934            74            0
+99.90% (74,934B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->96.93% (72,704B) 0x4902A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+| ->96.93% (72,704B) 0x4011B99: call_init.part.0 (dl-init.c:72)
+|   ->96.93% (72,704B) 0x4011CA0: call_init (dl-init.c:30)
+|     ->96.93% (72,704B) 0x4011CA0: _dl_init (dl-init.c:119)
+|       ->96.93% (72,704B) 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|         
+->02.73% (2,048B) 0x4ADAD03: _IO_file_doallocate (filedoalloc.c:101)
+| ->02.73% (2,048B) 0x4AEAECF: _IO_doallocbuf (genops.c:347)
+|   ->01.37% (1,024B) 0x4AE9CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|   | ->01.37% (1,024B) 0x4AEAF85: _IO_default_uflow (genops.c:362)
+|   |   ->01.37% (1,024B) 0x49654E0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |     ->01.37% (1,024B) 0x4973B52: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |       ->01.37% (1,024B) 0x4973DD1: std::istream::operator>>(int&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |         ->01.37% (1,024B) 0x10CEF0: Deck::askCard(Card, char) (Deck.cpp:231)
+|   |           ->01.37% (1,024B) 0x10B077: defend(Card, Deck&, int) (main.cpp:197)
+|   |             ->01.37% (1,024B) 0x10A7A0: main (main.cpp:75)
+|   |               
+|   ->01.37% (1,024B) 0x4AE9F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|     ->01.37% (1,024B) 0x4AE86B4: _IO_new_file_xsputn (fileops.c:1244)
+|       ->01.37% (1,024B) 0x4AE86B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|         ->01.37% (1,024B) 0x4ADC3C0: fwrite (iofwrite.c:39)
+|           ->01.37% (1,024B) 0x498F853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|             ->01.37% (1,024B) 0x498FC0B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|               ->01.37% (1,024B) 0x10A504: main (main.cpp:29)
+|                 
+->00.24% (182B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 21      2,743,218           75,008           74,924            84            0
+ 22      2,757,684           74,984           74,920            64            0
+ 23      2,767,069           74,984           74,920            64            0
+ 24      2,814,549           75,008           74,932            76            0
+ 25      2,829,761           75,032           74,928           104            0
+ 26      2,836,402           75,056           74,932           124            0
+ 27      2,856,326           75,032           74,928           104            0
+ 28      2,865,078           74,984           74,920            64            0
+ 29      2,885,546           75,008           74,936            72            0
+ 30      2,900,154           75,008           74,924            84            0
+ 31      2,911,582           75,056           74,932           124            0
+99.83% (74,932B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->96.87% (72,704B) 0x4902A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+| ->96.87% (72,704B) 0x4011B99: call_init.part.0 (dl-init.c:72)
+|   ->96.87% (72,704B) 0x4011CA0: call_init (dl-init.c:30)
+|     ->96.87% (72,704B) 0x4011CA0: _dl_init (dl-init.c:119)
+|       ->96.87% (72,704B) 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|         
+->02.73% (2,048B) 0x4ADAD03: _IO_file_doallocate (filedoalloc.c:101)
+| ->02.73% (2,048B) 0x4AEAECF: _IO_doallocbuf (genops.c:347)
+|   ->01.36% (1,024B) 0x4AE9CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|   | ->01.36% (1,024B) 0x4AEAF85: _IO_default_uflow (genops.c:362)
+|   |   ->01.36% (1,024B) 0x49654E0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |     ->01.36% (1,024B) 0x4973B52: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |       ->01.36% (1,024B) 0x4973DD1: std::istream::operator>>(int&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |         ->01.36% (1,024B) 0x10CEF0: Deck::askCard(Card, char) (Deck.cpp:231)
+|   |           ->01.36% (1,024B) 0x10B077: defend(Card, Deck&, int) (main.cpp:197)
+|   |             ->01.36% (1,024B) 0x10A7A0: main (main.cpp:75)
+|   |               
+|   ->01.36% (1,024B) 0x4AE9F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|     ->01.36% (1,024B) 0x4AE86B4: _IO_new_file_xsputn (fileops.c:1244)
+|       ->01.36% (1,024B) 0x4AE86B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|         ->01.36% (1,024B) 0x4ADC3C0: fwrite (iofwrite.c:39)
+|           ->01.36% (1,024B) 0x498F853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|             ->01.36% (1,024B) 0x498FC0B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|               ->01.36% (1,024B) 0x10A504: main (main.cpp:29)
+|                 
+->00.24% (180B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 32      2,937,091           75,032           74,928           104            0
+ 33      2,945,876           74,984           74,920            64            0
+ 34      2,966,306           75,008           74,936            72            0
+ 35      2,977,166           75,032           74,928           104            0
+ 36      2,991,369           74,984           74,920            64            0
+ 37      3,035,837           75,008           74,932            76            0
+ 38      3,048,603           75,008           74,924            84            0
+ 39      3,062,416           74,984           74,920            64            0
+ 40      3,107,434           75,008           74,930            78            0
+ 41      3,120,970           75,008           74,924            84            0
+ 42      3,131,069           74,984           74,920            64            0
+ 43      3,180,794           75,008           74,926            82            0
+ 44      3,183,697           74,984           74,920            64            0
+ 45      3,201,878           75,008           74,928            80            0
+ 46      3,221,238           75,008           74,930            78            0
+ 47      3,240,126           74,984           74,920            64            0
+ 48      3,248,847           74,984           74,920            64            0
+ 49      3,284,149           75,008           74,924            84            0
+ 50      3,300,733           75,008           74,926            82            0
+ 51      3,305,125           75,008           74,924            84            0
+ 52      3,308,185           75,032           74,928           104            0
+ 53      3,311,781           74,984           74,920            64            0
+ 54      3,315,881           74,984           74,920            64            0
+ 55      3,350,230           75,008           74,922            86            0
+99.89% (74,922B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->96.93% (72,704B) 0x4902A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+| ->96.93% (72,704B) 0x4011B99: call_init.part.0 (dl-init.c:72)
+|   ->96.93% (72,704B) 0x4011CA0: call_init (dl-init.c:30)
+|     ->96.93% (72,704B) 0x4011CA0: _dl_init (dl-init.c:119)
+|       ->96.93% (72,704B) 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+|         
+->02.73% (2,048B) 0x4ADAD03: _IO_file_doallocate (filedoalloc.c:101)
+| ->02.73% (2,048B) 0x4AEAECF: _IO_doallocbuf (genops.c:347)
+|   ->01.37% (1,024B) 0x4AE9CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|   | ->01.37% (1,024B) 0x4AEAF85: _IO_default_uflow (genops.c:362)
+|   |   ->01.37% (1,024B) 0x49654E0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |     ->01.37% (1,024B) 0x4973B52: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |       ->01.37% (1,024B) 0x4973DD1: std::istream::operator>>(int&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|   |         ->01.37% (1,024B) 0x10CEF0: Deck::askCard(Card, char) (Deck.cpp:231)
+|   |           ->01.37% (1,024B) 0x10B077: defend(Card, Deck&, int) (main.cpp:197)
+|   |             ->01.37% (1,024B) 0x10A7A0: main (main.cpp:75)
+|   |               
+|   ->01.37% (1,024B) 0x4AE9F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|     ->01.37% (1,024B) 0x4AE86B4: _IO_new_file_xsputn (fileops.c:1244)
+|       ->01.37% (1,024B) 0x4AE86B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|         ->01.37% (1,024B) 0x4ADC3C0: fwrite (iofwrite.c:39)
+|           ->01.37% (1,024B) 0x498F853: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|             ->01.37% (1,024B) 0x498FC0B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+|               ->01.37% (1,024B) 0x10A504: main (main.cpp:29)
+|                 
+->00.23% (170B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 56      3,364,429           75,008           74,924            84            0
+ 57      3,368,364           75,008           74,924            84            0
+ 58      3,372,058           75,008           74,924            84            0
+ 59      3,375,355           75,008           74,922            86            0
+ 60      3,381,611           74,960           74,912            48            0
+ 61      3,390,227            2,064            2,048            16            0
