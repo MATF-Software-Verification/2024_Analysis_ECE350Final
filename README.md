@@ -137,7 +137,7 @@ Da biste pokrenuli Valgrind Massif , pratite sledeće korake:
 
 3. Pozicionirajte se u direktorijum gde se nalazi skript za pokretanje massifa-a:
     ```bash
-    cd valgrind/callgrind
+    cd valgrind/massif
     ```
 
 4. Dodajte **+x** privilegiju za skriptu `run_massif.sh`:
