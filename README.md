@@ -62,7 +62,7 @@ Da biste pokrenuli testove, pratite sledeće korake:
     ```
 
 Ovim postupkom možete pokrenuti testove i generisati izveštaje o pokrivenosti koda.
-## Valgrind:
+## Valgrind
 Napomena: pre pokretanja svih Valgrind alata neophodno je:
 1. Klonirajte projekat pomoću sledeće komande:
     ```bash
