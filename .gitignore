@@ -83,3 +83,19 @@ lint/reports/
 .env
 .env.*
 *.tmp
+
+# Ignorisanje izvršnih fajlova
+*.bin
+*.exe
+*.out
+*.o
+*.so
+*.a
+
+# Ignorisanje specifičnih direktorijuma
+/build/
+*.dSYM/
+
+# Ignorisanje specifičnih fajlova
+src/Durak
+unit_tests/testsAll
