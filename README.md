@@ -219,7 +219,7 @@ Glavni izazov ostaje refaktorisanje **main.cpp** radi omogućavanja modularnog t
 
 **Valgrind Memcheck**
 
-Program izgleda vrlo dobro u pogledu upravljanja memorijom.** Memcheck ** je
+Program izgleda vrlo dobro u pogledu upravljanja memorijom. **Memcheck** je
 potvrdio da nema curenja memorije, nevalidnog pristupa ili drugih problema
 sa memorijom. S obzirom na ovo, možemo biti sigurni da nema značajnih
 problema sa memorijom.
