@@ -62,23 +62,23 @@ Da biste pokrenuli testove, pratite sledeće korake:
     ```
 
 Ovim postupkom možete pokrenuti testove i generisati izveštaje o pokrivenosti koda.
-## Pokretanje programa
-Napomena: pre pokretanja svih Valgrind alata neophodno je:
-1. Klonirajte projekat pomoću sledeće komande:
+## Prevođenje programa
+Napomena: pre pokretanja svih Valgrind alata neophodno je da:
+1. Klonirate projekat pomoću sledeće komande:
     ```bash
     git clone https://github.com/MATF-Software-Verification/2024_Analysis_ECE350Final.git
     ```
-2. Pozicionirati se u `src` folder:
+2. Pozicionirate se u `src` folder:
     ```bash
     cd src
     ```
-3. Pokrenuti program naredbom:
+3. Prevedete program naredbom:
     ```bash
     make
     ```
 
 ## Valgrind Memcheck
-Nakon sto ste pokrenuli program kao sto je opisano u delu **Pokretanje programa**, potrebno je da:
+Nakon sto ste preveli program kao sto je opisano u delu **Prevođenje programa**, potrebno je da pratite sledeće korake:
 
 1. Instalacija potrebnih alata
 
@@ -103,7 +103,7 @@ Nakon sto ste pokrenuli program kao sto je opisano u delu **Pokretanje programa*
 Kada pokrenete skriptu na ovaj način, **Valgrind** analizira vaš program tokom njegove izvršne faze. To znači da će se sam program pokrenuti i izvršavati dok Valgrind prati memorijske greške. Potrebno je poznavati pravila igre, kako bi bilo moguce da se skript izvrsi do kraja.
 
 ## Valgrind Callgrind
-Nakon sto ste pokrenuli program kao sto je opisano u delu **Pokretanje programa**, potrebno je da:
+Nakon sto ste preveli program kao sto je opisano u delu **Prevođenje programa**, potrebno je da pratite sledeće korake:
 1. Instalacija potrebnih alata
 
    ```bash
@@ -128,8 +128,7 @@ Nakon sto ste pokrenuli program kao sto je opisano u delu **Pokretanje programa*
 Pokretanje skripte će se sam program pokrenuti i izvršavati pa je potrebno je poznavati pravila igre, kako bi bilo moguce da se skript izvrsi do kraja.
 
 ## Valgrind Massif
-
-Nakon sto ste pokrenuli program kao sto je opisano u delu **Pokretanje programa**, potrebno je da:
+Nakon sto ste preveli program kao sto je opisano u delu **Prevođenje programa**, potrebno je da pratite sledeće korake:
 1. Instalacija potrebnih alata
 
    ```bash
