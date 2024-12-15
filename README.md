@@ -273,7 +273,7 @@ Alat identifikuje probleme poput nepravilnog formatiranja, korišćenja zastarel
 Alat **Cppcheck** je analizirao kod i detektovao nekoliko grešaka koje su klasifikovane u različite kategorije: greške vezane za `const` kvalifikator, eksplicitne konstruktore, negativne indekse i neiskorišćene funkcije. Međutim, većina ovih grešaka nije bila kritična ili relevantna za stabilnost programa. Konkretno, greške vezane za negativne indekse su bile opravdane u kontekstu validacije korisničkog unosa, a neiskorišćene funkcije su bile korišćene u testiranju. Na kraju, alat nije pronašao veće greške koje bi uticale na stabilnost programa.
 
 
-Detaljne rezultate primene svih alata i sve zaključke, možete pogledati fajlu u ProjectAnalysisReport.pdf.
+Detaljne rezultate primene svih alata i sve zaključke možete pogledati fajlu u ProjectAnalysisReport.pdf.
 
 ## Autor
 
