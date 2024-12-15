@@ -39,6 +39,7 @@ Da biste pokrenuli testove, pratite sledeće korake:
 1. Klonirajte projekat pomoću sledeće komande:
     ```bash
     git clone https://github.com/MATF-Software-Verification/2024_Analysis_ECE350Final.git
+    cd 2024_Analysis_ECE350Final
     ```
 
 2. Instalirajte alat **lcov**:
@@ -67,6 +68,7 @@ Napomena: pre pokretanja svih Valgrind alata neophodno je da:
 1. Klonirate projekat pomoću sledeće komande:
     ```bash
     git clone https://github.com/MATF-Software-Verification/2024_Analysis_ECE350Final.git
+    cd 2024_Analysis_ECE350Final
     ```
 2. Pozicionirate se u `src` folder:
     ```bash
@@ -158,6 +160,7 @@ Da biste pokrenuli Clang-tidy , pratite sledeće korake:
 1. Klonirajte projekat pomoću sledeće komande:
     ```bash
     git clone https://github.com/MATF-Software-Verification/2024_Analysis_ECE350Final.git
+    cd 2024_Analysis_ECE350Final
     ```
 2. Instalacija potrebnih alata
 
@@ -187,6 +190,7 @@ Da biste pokrenuli CppCheck , pratite sledeće korake:
 1. Klonirajte projekat pomoću sledeće komande:
     ```bash
     git clone https://github.com/MATF-Software-Verification/2024_Analysis_ECE350Final.git
+    cd 2024_Analysis_ECE350Final
     ```
 2. Instalacija potrebnih alata
 
