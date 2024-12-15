@@ -209,7 +209,68 @@ Da biste pokrenuli CppCheck , pratite sledeće korake:
     ./run_cppCheck.sh
     ```
 ## Zaključak
-Rezultate primene svih alata i sve zaključke, možete pogledati fajlu ProjectAnalysisReport.pdf.
+**Testiranje jedinica koda**:
+
+Testiranje klasa **Card** i **Deck** postiglo je visok nivo pokrivenosti koda, sa 95.3% pokrivenosti linija i 100% pokrivenosti funkcija, što potvrđuje stabilnost i ispravnost implementacije. 
+
+Uočene greške su ispravljene, a dodate funkcionalnosti omogućile su detaljno testiranje ključnih scenarija. 
+
+Glavni izazov ostaje refaktorisanje **main.cpp** radi omogućavanja modularnog testiranja, što predstavlja prostor za dalja poboljšanja.
+
+**Valgrind Memcheck**
+
+Program izgleda vrlo dobro u pogledu upravljanja memorijom.** Memcheck ** je
+potvrdio da nema curenja memorije, nevalidnog pristupa ili drugih problema
+sa memorijom. S obzirom na ovo, možemo biti sigurni da nema značajnih
+problema sa memorijom.
+
+**Valgrind Callgrind**
+
+Alat **Callgrind** je identifikovao nekoliko ključnih problema u performansama igre:
+
+1. **Visoka potrošnja resursa**  
+Funkcija `dl_lookup_symbol_x` uzrokuje značajan trošak resursa, što ukazuje na učestalo dinamičko povezivanje, verovatno zbog poziva spoljnog koda i učitavanja biblioteka.
+
+2. **Česta upotreba funkcija**  
+Funkcije kao što su `Card::print()`, `defend`, `attact` i manipulacija špilom karata najčešće se pozivaju, što ukazuje na potrebu za optimizacijom ključnih delova logike igre.
+
+3. **Intenzivna upotreba standardnih biblioteka**  
+Funkcije povezane sa `std::ostream` (ispis) i operacije sa `std::vector` izazivaju prekomerne alokacije memorije zbog čestih modifikacija vektora, što negativno utiče na performanse.
+
+### Preporuke za optimizaciju
+
+- **Optimizacija operacija sa `std::vector`**  
+Unapred rezervisati memoriju pomoću `reserve` kako bi se smanjio broj alokacija i manipulacija.
+
+- **Implementacija move semantike**  
+Korišćenje move semantike može smanjiti operacije kopiranja i povećati efikasnost, čime se izbegava nepotrebno trošenje resursa.
+
+**Valgrind Massif**
+
+- **Glavna potrošnja memorije**: Program alocira ukupno 72.862 bajta na heap-u, pri čemu 96,91% dolazi iz standardnih C++ biblioteka tokom inicijalizacije (`dl init`), što je očekivano ponašanje.
+
+- **Direktne alokacije memorije**: Povezane su sa funkcijama `Deck::askCard` (ulazne operacije) i `main` (izlazne operacije).
+
+- **Efikasnost upravljanja memorijom**: 
+  - Nema značajnih curenja memorije.
+  - Dodatna memorija (extra-heap) raste u malim granicama, što ukazuje na efikasno upravljanje memorijom.
+
+- **Problemi s memorijom**: Memorija koja se alocira tokom trajanja programa (npr. zbog velikog broja vektora) nije oslobađana do kraja, što uzrokuje stabilizaciju memorijske potrošnje na višem nivou.
+
+Program pokazuje stabilnu potrošnju memorije, ali dodatna optimizacija, kao što je smanjenje učestalosti alokacija i dealokacija, može poboljšati efikasnost i skalabilnost.
+Primena ovih preporuka može značajno unaprediti efikasnost igre, smanjiti troškove resursa i poboljšati stabilnost i sigurnost koda.
+
+**Clang-tidy**
+
+Alat identifikuje probleme poput nepravilnog formatiranja, korišćenja zastarelih stilova, nedostatka inicijalizacije promenljivih, upotrebe "magic numbers" i nesigurnog kastovanja, te nudi preporuke za poboljšanje koda u skladu sa modernim standardima.
+
+**CppCheck**
+
+Alat **Cppcheck** je analizirao kod i detektovao nekoliko grešaka koje su klasifikovane u različite kategorije: greške vezane za `const` kvalifikator, eksplicitne konstruktore, negativne indekse i neiskorišćene funkcije. Međutim, većina ovih grešaka nije bila kritična ili relevantna za stabilnost programa. Konkretno, greške vezane za negativne indekse su bile opravdane u kontekstu validacije korisničkog unosa, a neiskorišćene funkcije su bile korišćene u testiranju. Na kraju, alat nije pronašao veće greške koje bi uticale na stabilnost programa.
+
+
+Detaljne rezultate primene svih alata i sve zaključke, možete pogledati fajlu ProjectAnalysisReport.pdf.
+
 ## Autor
 
 **Jelena Mitrović**  
