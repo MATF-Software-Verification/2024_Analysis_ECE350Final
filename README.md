@@ -237,7 +237,7 @@ Funkcije kao što su `Card::print()`, `defend`, `attact` i manipulacija špilom 
 3. **Intenzivna upotreba standardnih biblioteka**  
 Funkcije povezane sa `std::ostream` (ispis) i operacije sa `std::vector` izazivaju prekomerne alokacije memorije zbog čestih modifikacija vektora, što negativno utiče na performanse.
 
-### Preporuke za optimizaciju
+**Preporuke za optimizaciju**
 
 - **Optimizacija operacija sa `std::vector`**  
 Unapred rezervisati memoriju pomoću `reserve` kako bi se smanjio broj alokacija i manipulacija.
