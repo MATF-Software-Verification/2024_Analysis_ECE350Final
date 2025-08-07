@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# Ime programa koji želite da testirate
 PROGRAM="../../src/Durak"
 
-# Fajl u koji će se sačuvati rezultati, uključujući PID
 OUTPUT_FILE="valgrind_memcheck_output_$$.txt"
 
 # Pokrećemo program kroz valgrind sa memcheck opcijom i upisujemo rezultat u fajl
